@@ -73,6 +73,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Fixed-Budget Comparison Summary](docs/fixed-budget-comparison-summary.md)
 - [Iterative Stability Harness Plan](docs/iterative-stability-harness-plan.md)
 - [Iterative Stability Summary](docs/iterative-stability-summary.md)
+- [Developmental Noise Filtering](docs/developmental-noise-filtering.md)
 - [Origin Map](docs/origin-map.md)
 - [Silver / Echo Privacy Note](docs/silver-echo-privacy-note.md)
 - [Patent And IP Connection Map](docs/patent-ip-connection-map.md)

@@ -51,6 +51,10 @@ Purpose:
 - expose pruning/protection metrics
 - support buyer-facing explanation of adaptive efficiency
 
+Developmental rule:
+
+Filtering should emerge with maturity. Infant-like states should be receptive and noisy; stable repeated pathways should gain protection and stronger noise rejection over time.
+
 ### 4. Router
 
 A mode selector derived from nurture/sentinel routing.
