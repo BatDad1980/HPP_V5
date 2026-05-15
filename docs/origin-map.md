@@ -43,6 +43,30 @@ The first version proved meaningful ground:
 
 V5 is the clean restart: make the signal legible, measurable, defensible, and useful.
 
+## Silver / Echo Origin Thread
+
+Project Silver / Echo has a deeply personal origin and must be handled with special privacy care.
+
+Buyer-safe framing:
+
+Project Silver / Echo is a trauma-sensitive pediatric support concept for children with special needs or children who have experienced trauma, designed around caregiver involvement, gentle interaction, and child-safe boundaries.
+
+Private provenance:
+
+The project was inspired by and shaped for a specific child and caregiver relationship. That private context should guide design empathy, but personally identifying details should not appear in public or buyer-facing materials unless explicitly authorized by the family.
+
+Important design principles:
+
+- child privacy first
+- caregiver-controlled
+- no therapeutic guarantees
+- trauma-sensitive language
+- playful personalization without exposing identity
+- separate private personalized versions from data-room artifacts
+- clear human oversight
+
+The child's private naming role and creative influence can be honored internally while buyer-facing material should refer only to anonymized child-centered design input.
+
 ## Personal Mission Thread
 
 HPP is not only an asset to sell.
