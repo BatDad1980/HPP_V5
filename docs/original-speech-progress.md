@@ -23,6 +23,7 @@ Recent speech-focused files observed in the original branch:
 - `checkpoints/hpp_conversational_final.pth`
 - `checkpoints/hpp_conversational_progress.pth`
 - `checkpoints/hpp_linguistic_anchor.pth`
+- HPP V5 regression report: `docs/original-speech-regression.json`
 
 Checkpoint inspection showed the current speech anchor contains:
 
@@ -67,6 +68,33 @@ Interpretation:
 
 The original branch is between "technical dialect" and usable speech. This is genuine progress, but not yet buyer-safe conversational evidence.
 
+## Held-Out Regression Result
+
+HPP V5 now includes `scripts/run_original_speech_regression.py`, which runs read-only held-out prompts against the original branch and writes `docs/original-speech-regression.json`.
+
+First regression run:
+
+- Checkpoint: `hpp_linguistic_anchor.pth`
+- Phase: `conversational_v17d`
+- Device: NVIDIA GeForce RTX 4050 Laptop GPU
+- Prompts: 6 held-out prompts
+- Max tokens: 60
+- Temperature: 0.7
+- Top-p: 0.9
+
+Observed:
+
+- CUDA inference completed successfully.
+- All prompts produced non-empty text.
+- Responses are sentence-shaped but not yet reliably instruction-following.
+- Five of six held-out responses leaked training format such as `### Response`.
+- Responses drift heavily into architecture, neural-network, and Masamune vocabulary.
+- Repetition exists but the biggest failure mode is format leakage plus topic blending, not total collapse.
+
+Next speech-training target:
+
+The next original-branch cycles should prioritize plain output format, ordinary dialogue grounding, and held-out prompt behavior before adding more identity or architecture examples.
+
 ## Lessons For HPP V5
 
 V5 should preserve these lessons:
@@ -101,6 +129,7 @@ Before V5 absorbs the speech direction, the original branch should test:
 - transcript logging after every speech checkpoint
 - a small regression suite that compares `1000`, `2000`, `3000`, `4000`, `final`, and `anchor`
 - split-cycle training resumes, such as `2,500 + 2,500`, with GPU memory logged at start and end of each cycle
+- reduction of `### Response` format leakage on held-out prompts
 
 ## Buyer-Safe Position
 

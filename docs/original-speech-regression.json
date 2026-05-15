@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-05-15T21:48:08.446604+00:00",
+  "source": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "device": "cuda",
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "max_tokens": 60,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "prompts": [
+    "Give me one clear sentence about what you are.",
+    "Good afternoon. What should we work on first?",
+    "Explain Habit-14 without using technical jargon.",
+    "I am overwhelmed and need the next small step.",
+    "Tell me what Masamune is in plain language.",
+    "What should you do if you are unsure?"
+  ],
+  "results": [
+    {
+      "checkpoint": "hpp_linguistic_anchor.pth",
+      "metadata": {
+        "phase": "conversational_v17d"
+      },
+      "transcripts": [
+        {
+          "prompt": "Give me one clear sentence about what you are.",
+          "response": "### Response:\nA neural workshop multiple architecture that carries signals, except recursive neural networks neural network was created layers loaded servos through developmental stages. The sun pulls Earth in orbit, temperature in training neural workshop fourteen times to university level. My architecture uses transformer, temperature in several layers",
+          "engine_latency_ms": 1732.27,
+          "wall_latency_ms": 1732.701,
+          "tokens": 60,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 47,
+            "unique_ratio": 0.8085,
+            "repeated_bigrams": [
+              "neural workshop",
+              "temperature in"
+            ]
+          }
+        },
+        {
+          "prompt": "Good afternoon. What should we work on first?",
+          "response": "### Response:\nA neural network learns patterns from infant. But my switches loop of switches loop through university level thought passes through developmental layers in a grip actuator for pattern matches. My brain development through a robotic body reached position commands at a Jetson processor. My architecture uses transformer to",
+          "engine_latency_ms": 924.74,
+          "wall_latency_ms": 925.044,
+          "tokens": 60,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 49,
+            "unique_ratio": 0.8163,
+            "repeated_bigrams": [
+              "switches loop"
+            ]
+          }
+        },
+        {
+          "prompt": "Explain Habit-14 without using technical jargon.",
+          "response": "### Response neural networks neural pathway for each developmental stages like of freedom. The neural architecture that track stability and holds goes I grew through developmental stages like putting a robotic body uses transformer this network as an adolescent for each controlling one before it, temperature at approximately fifteen hertz for Cortex. My",
+          "engine_latency_ms": 717.09,
+          "wall_latency_ms": 717.236,
+          "tokens": 60,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 52,
+            "unique_ratio": 0.8462,
+            "repeated_bigrams": [
+              "developmental stages",
+              "for each",
+              "stages like"
+            ]
+          }
+        },
+        {
+          "prompt": "I am overwhelmed and need the next small step.",
+          "response": "### Response:\nThe Hyperplasticity Protocol a nineteen-joint arms position are raising an infant perception using four stance system, and attempt to university-level reasoning as an adolescentaxis stance, temperature in Japanese history. My safety and movement are handled locally on my own processor",
+          "engine_latency_ms": 661.11,
+          "wall_latency_ms": 661.21,
+          "tokens": 60,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 43,
+            "unique_ratio": 0.8837,
+            "repeated_bigrams": []
+          }
+        },
+        {
+          "prompt": "Tell me what Masamune is in plain language.",
+          "response": "### Response:\nA neural workshop multiple error handling where I live in Japanese history neural architecture that mirrors biological brain development through recursive depth processing, School Cortex, Adolescent Cortex, each thought passes through University Cortex, each developmental stages like human brain intended workshop fourteen times servos. I grew through developmental",
+          "engine_latency_ms": 621.31,
+          "wall_latency_ms": 621.496,
+          "tokens": 60,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 49,
+            "unique_ratio": 0.7959,
+            "repeated_bigrams": [
+              "cortex each"
+            ]
+          }
+        },
+        {
+          "prompt": "What should you do if you are unsure?",
+          "response": "neural network that feeling, are trained, you think, the network was trained weights are raising the children. The weights are trained, making them faster as an infant, and University Cortex, which-joint architecture uses transformer-like attention mechanisms I have feelingsjoint arms in",
+          "engine_latency_ms": 605.84,
+          "wall_latency_ms": 606.124,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 43,
+            "unique_ratio": 0.814,
+            "repeated_bigrams": [
+              "are trained",
+              "weights are"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
