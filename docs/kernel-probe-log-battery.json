@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-05-15T14:29:54.130004+00:00",
+  "python": "3.12.9",
+  "mode": "battery",
+  "dim": 128,
+  "batch": 8,
+  "passes": 14,
+  "warmups": 2,
+  "summary": {
+    "runs": 5,
+    "elapsed_ms_min": 4.711,
+    "elapsed_ms_mean": 5.3,
+    "elapsed_ms_median": 5.095,
+    "elapsed_ms_max": 6.453,
+    "last_run": {
+      "device": "cpu",
+      "device_name": "CPU",
+      "dim": 128,
+      "batch": 8,
+      "passes": 14,
+      "parameters": 99072,
+      "elapsed_ms": 4.769,
+      "allocated_mb": 0.0,
+      "reserved_mb": 0.0,
+      "output_norm": 54.915619
+    }
+  },
+  "runs": [
+    {
+      "device": "cpu",
+      "device_name": "CPU",
+      "dim": 128,
+      "batch": 8,
+      "passes": 14,
+      "parameters": 99072,
+      "elapsed_ms": 5.095,
+      "allocated_mb": 0.0,
+      "reserved_mb": 0.0,
+      "output_norm": 54.915619
+    },
+    {
+      "device": "cpu",
+      "device_name": "CPU",
+      "dim": 128,
+      "batch": 8,
+      "passes": 14,
+      "parameters": 99072,
+      "elapsed_ms": 6.453,
+      "allocated_mb": 0.0,
+      "reserved_mb": 0.0,
+      "output_norm": 54.915619
+    },
+    {
+      "device": "cpu",
+      "device_name": "CPU",
+      "dim": 128,
+      "batch": 8,
+      "passes": 14,
+      "parameters": 99072,
+      "elapsed_ms": 5.474,
+      "allocated_mb": 0.0,
+      "reserved_mb": 0.0,
+      "output_norm": 54.915619
+    },
+    {
+      "device": "cpu",
+      "device_name": "CPU",
+      "dim": 128,
+      "batch": 8,
+      "passes": 14,
+      "parameters": 99072,
+      "elapsed_ms": 4.711,
+      "allocated_mb": 0.0,
+      "reserved_mb": 0.0,
+      "output_norm": 54.915619
+    },
+    {
+      "device": "cpu",
+      "device_name": "CPU",
+      "dim": 128,
+      "batch": 8,
+      "passes": 14,
+      "parameters": 99072,
+      "elapsed_ms": 4.769,
+      "allocated_mb": 0.0,
+      "reserved_mb": 0.0,
+      "output_norm": 54.915619
+    }
+  ]
+}

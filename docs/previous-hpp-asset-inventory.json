@@ -1,0 +1,194 @@
+{
+  "source_root": "X:\\Aural-Nexus-Workforce\\Aural_IP_Data_Room\\08_Hyperplasticity_Protocol",
+  "note": "Read-only inventory generated from protected previous HPP source.",
+  "checkpoints": [
+    {
+      "name": "hpp_adolescent_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_adolescent_checkpoint.pth",
+      "size_bytes": 150450082,
+      "size_mib": 143.48
+    },
+    {
+      "name": "hpp_brain_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_brain_checkpoint.pth",
+      "size_bytes": 223934936,
+      "size_mib": 213.56
+    },
+    {
+      "name": "hpp_preschool_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_preschool_checkpoint.pth",
+      "size_bytes": 139937978,
+      "size_mib": 133.46
+    },
+    {
+      "name": "hpp_school_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_school_checkpoint.pth",
+      "size_bytes": 139937758,
+      "size_mib": 133.46
+    },
+    {
+      "name": "hpp_toddler_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_toddler_checkpoint.pth",
+      "size_bytes": 133628082,
+      "size_mib": 127.44
+    },
+    {
+      "name": "test_checkpoint.pth",
+      "relative_path": "checkpoints\\test_checkpoint.pth",
+      "size_bytes": 223934781,
+      "size_mib": 213.56
+    }
+  ],
+  "core_modules": [
+    {
+      "name": "adolescent_core.py",
+      "relative_path": "core\\adolescent_core.py",
+      "size_bytes": 3008,
+      "size_mib": 0.0
+    },
+    {
+      "name": "hpp_guardian_ecosystem.py",
+      "relative_path": "core\\hpp_guardian_ecosystem.py",
+      "size_bytes": 3268,
+      "size_mib": 0.0
+    },
+    {
+      "name": "infant_core.py",
+      "relative_path": "core\\infant_core.py",
+      "size_bytes": 5114,
+      "size_mib": 0.0
+    },
+    {
+      "name": "school_core.py",
+      "relative_path": "core\\school_core.py",
+      "size_bytes": 3036,
+      "size_mib": 0.0
+    },
+    {
+      "name": "toddler_core.py",
+      "relative_path": "core\\toddler_core.py",
+      "size_bytes": 2452,
+      "size_mib": 0.0
+    }
+  ],
+  "training_scripts": [
+    {
+      "name": "train_adolescent.py",
+      "relative_path": "training\\train_adolescent.py",
+      "size_bytes": 5813,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_infant.py",
+      "relative_path": "training\\train_infant.py",
+      "size_bytes": 7265,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_preschool.py",
+      "relative_path": "training\\train_preschool.py",
+      "size_bytes": 5890,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_school.py",
+      "relative_path": "training\\train_school.py",
+      "size_bytes": 5708,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_toddler.py",
+      "relative_path": "training\\train_toddler.py",
+      "size_bytes": 6650,
+      "size_mib": 0.01
+    }
+  ],
+  "utility_scripts": [
+    {
+      "name": "bacl_entropy.py",
+      "relative_path": "utils\\bacl_entropy.py",
+      "size_bytes": 939,
+      "size_mib": 0.0
+    },
+    {
+      "name": "bio_loop_integration.py",
+      "relative_path": "utils\\bio_loop_integration.py",
+      "size_bytes": 2357,
+      "size_mib": 0.0
+    },
+    {
+      "name": "diag_loader.py",
+      "relative_path": "utils\\diag_loader.py",
+      "size_bytes": 1890,
+      "size_mib": 0.0
+    },
+    {
+      "name": "generate_announcement.py",
+      "relative_path": "utils\\generate_announcement.py",
+      "size_bytes": 1255,
+      "size_mib": 0.0
+    },
+    {
+      "name": "get_jailbreak_data.py",
+      "relative_path": "utils\\get_jailbreak_data.py",
+      "size_bytes": 731,
+      "size_mib": 0.0
+    },
+    {
+      "name": "inference_engine.py",
+      "relative_path": "utils\\inference_engine.py",
+      "size_bytes": 5102,
+      "size_mib": 0.0
+    },
+    {
+      "name": "localize_datasets.py",
+      "relative_path": "utils\\localize_datasets.py",
+      "size_bytes": 3267,
+      "size_mib": 0.0
+    },
+    {
+      "name": "localize_v3.py",
+      "relative_path": "utils\\localize_v3.py",
+      "size_bytes": 2759,
+      "size_mib": 0.0
+    },
+    {
+      "name": "localize_v4.py",
+      "relative_path": "utils\\localize_v4.py",
+      "size_bytes": 1581,
+      "size_mib": 0.0
+    },
+    {
+      "name": "localize_v5.py",
+      "relative_path": "utils\\localize_v5.py",
+      "size_bytes": 3743,
+      "size_mib": 0.0
+    },
+    {
+      "name": "mature_inference.py",
+      "relative_path": "utils\\mature_inference.py",
+      "size_bytes": 8686,
+      "size_mib": 0.01
+    },
+    {
+      "name": "minimal_test.py",
+      "relative_path": "utils\\minimal_test.py",
+      "size_bytes": 1152,
+      "size_mib": 0.0
+    },
+    {
+      "name": "server.py",
+      "relative_path": "utils\\server.py",
+      "size_bytes": 1360,
+      "size_mib": 0.0
+    }
+  ],
+  "reports": [
+    {
+      "name": "hpp_data_evidence_report.md",
+      "relative_path": "reports\\hpp_data_evidence_report.md",
+      "size_bytes": 3048,
+      "size_mib": 0.0
+    }
+  ]
+}
