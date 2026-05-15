@@ -1,0 +1,399 @@
+{
+  "generated_at": "2026-05-15T15:13:36.975110+00:00",
+  "python": "3.12.9",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "dim": 128,
+  "batch": 8,
+  "passes": 14,
+  "noise": 0.75,
+  "step_size": 0.18,
+  "warmups": 3,
+  "runs": 10,
+  "recurrent": {
+    "parameters": 129,
+    "summary_latency": {
+      "runs": 10,
+      "elapsed_ms_min": 1.636,
+      "elapsed_ms_mean": 3.0818,
+      "elapsed_ms_median": 2.768,
+      "elapsed_ms_max": 5.207
+    },
+    "summary_final_mse": {
+      "runs": 10,
+      "final_mse_min": 0.002078,
+      "final_mse_mean": 0.002078,
+      "final_mse_median": 0.002078,
+      "final_mse_max": 0.002078
+    },
+    "summary_improvement": {
+      "runs": 10,
+      "improvement_ratio_min": 258.947795,
+      "improvement_ratio_mean": 258.947795,
+      "improvement_ratio_median": 258.947795,
+      "improvement_ratio_max": 258.947795
+    },
+    "example_trajectory_mse": [
+      0.36185223,
+      0.24330945,
+      0.16360128,
+      0.1100055,
+      0.0739677,
+      0.04973587,
+      0.0334424,
+      0.02248667,
+      0.01512004,
+      0.01016671,
+      0.0068361,
+      0.00459659,
+      0.00309075,
+      0.00207822
+    ],
+    "runs": [
+      {
+        "elapsed_ms": 2.65,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 5.071,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 5.207,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 2.388,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 1.636,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 2.449,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 3.049,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 2.557,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 2.886,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      },
+      {
+        "elapsed_ms": 2.925,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.00207822,
+        "improvement_ratio": 258.947795,
+        "trajectory_mse": [
+          0.36185223,
+          0.24330945,
+          0.16360128,
+          0.1100055,
+          0.0739677,
+          0.04973587,
+          0.0334424,
+          0.02248667,
+          0.01512004,
+          0.01016671,
+          0.0068361,
+          0.00459659,
+          0.00309075,
+          0.00207822
+        ]
+      }
+    ]
+  },
+  "one_pass": {
+    "parameters": 129,
+    "summary_latency": {
+      "runs": 10,
+      "elapsed_ms_min": 0.303,
+      "elapsed_ms_mean": 0.3766,
+      "elapsed_ms_median": 0.355,
+      "elapsed_ms_max": 0.506
+    },
+    "summary_final_mse": {
+      "runs": 10,
+      "final_mse_min": 0.361852,
+      "final_mse_mean": 0.361852,
+      "final_mse_median": 0.361852,
+      "final_mse_max": 0.361852
+    },
+    "summary_improvement": {
+      "runs": 10,
+      "improvement_ratio_min": 1.48721,
+      "improvement_ratio_mean": 1.48721,
+      "improvement_ratio_median": 1.48721,
+      "improvement_ratio_max": 1.48721
+    },
+    "runs": [
+      {
+        "elapsed_ms": 0.476,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.506,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.417,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.358,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.312,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.327,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.303,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.352,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.386,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      },
+      {
+        "elapsed_ms": 0.329,
+        "initial_mse": 0.53815031,
+        "final_mse": 0.36185223,
+        "improvement_ratio": 1.48721,
+        "trajectory_mse": [
+          0.36185223
+        ]
+      }
+    ]
+  },
+  "comparison": {
+    "parameter_ratio_one_pass_to_recurrent": 1.0,
+    "final_mse_ratio_one_pass_to_recurrent": 174.135,
+    "improvement_ratio_recurrent_to_one_pass": 174.116,
+    "mean_latency_ratio_recurrent_to_one_pass": 8.183
+  }
+}
