@@ -112,6 +112,7 @@ V5 should eventually measure:
 - quality before and after Habit-14-style stabilization
 - shared recurrent depth versus a unique-layer stack
 - shared recurrent depth versus a baseline with the same parameter budget
+- iterative stabilization under controlled noise
 
 ## Guardrail
 
