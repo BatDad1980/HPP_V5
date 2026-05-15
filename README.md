@@ -71,6 +71,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Field Lab Constraints](docs/field-lab-constraints.md)
 - [Model Kernel Spec](docs/model-kernel-spec.md)
 - [Kernel Probe Summary](docs/kernel-probe-summary.md)
+- [Evidence Ladder](docs/evidence-ladder.md)
 - [Recurrent vs Stack Summary](docs/recurrent-vs-stack-summary.md)
 - [Fixed-Budget Comparison Summary](docs/fixed-budget-comparison-summary.md)
 - [Iterative Stability Harness Plan](docs/iterative-stability-harness-plan.md)
