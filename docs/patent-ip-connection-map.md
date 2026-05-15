@@ -17,7 +17,7 @@ The buyer-packet summary lists these founder-provided application references:
 
 Legal status, ownership, assignment, claim scope, and prosecution posture require legal diligence.
 
-Supporting note: `docs/patent-evidence-notes.md` captures facts observed from a founder-provided USPTO Patent Center screenshot for `63/948,739`. The screenshot itself should remain private unless cleared for disclosure.
+Supporting note: `docs/patent-evidence-notes.md` captures facts observed from founder-provided USPTO Patent Center materials for `63/948,739` and `64/054,273`. Screenshots and full legal materials should remain private unless cleared for disclosure.
 
 ## HPP-Relevant Technology Themes
 
