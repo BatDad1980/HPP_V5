@@ -62,6 +62,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 
 ## Project Docs
 
+- [Licensing](LICENSING.md)
 - [Mission](docs/mission.md)
 - [Central Hypothesis](docs/central-hypothesis.md)
 - [Vision](docs/vision.md)
