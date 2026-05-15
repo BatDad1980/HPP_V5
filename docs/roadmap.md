@@ -18,6 +18,8 @@
 - Habit-14 stabilization tracking.
 - Nurture mode and Sentinel mode interaction paths.
 - Local persistence.
+- Battery-safe and plugged-in power modes.
+- Clear separation between buyer demo data and private field-ops data.
 
 ## Phase 2: Reflection Loop
 
@@ -39,6 +41,8 @@
 - Protocol suggestions.
 - Experiment design.
 - Identity-aware coaching prompts.
+- CPU/GPU execution mode selection.
+- CUDA diagnostics and run-budget reporting.
 
 ## Phase 5: System Maturity
 
@@ -48,6 +52,9 @@
 - Custom metrics.
 - Advanced protocol templates.
 - Optional cloud sync.
+- Buyer packet export.
+- Private operating-core workspace.
+- Robotics/shop integration adapters.
 
 ## Suggested Initial Stack
 

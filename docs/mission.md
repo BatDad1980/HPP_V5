@@ -10,6 +10,8 @@ Build a local-first human-loop operating system for intentional state training, 
 
 The original HPP remains field notes. V5 is allowed to inherit its strongest ideas while changing the product form.
 
+V5 is also dual-use by design: it must be able to become a clean buyer-facing IP asset and a private operating core for field work, shop execution, robotics, and personal protocol training.
+
 ## Core Translation
 
 - The human is the adaptive system.
@@ -19,6 +21,7 @@ The original HPP remains field notes. V5 is allowed to inherit its strongest ide
 - Nurture mode supports reflective learning.
 - Sentinel mode supports low-complexity stress routing.
 - Evidence matters more than motivational intensity.
+- Mobile field constraints are part of the design, not an afterthought.
 
 ## Build Boundary
 
@@ -48,3 +51,4 @@ The first usable version should let the user:
 - Should the first durable storage layer be browser local storage, local JSON files, or SQLite through a desktop/local API?
 - Should AI guidance be local-only at first, or should API-backed analysis be acceptable for early prototypes?
 - Which Aural-Nexus systems should become first-class modules inside HPP V5: Sentinel, Silver Echo, BioAcoustic, Forensic evidence, or Developer Foundations?
+- Which data belongs in the buyer-facing layer, and which belongs only in the private operating core?

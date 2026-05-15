@@ -21,6 +21,8 @@ import type { Mode, Protocol, RunEntry, Signals, MaturityStage } from "./types";
 
 const STORAGE_KEY = "hpp-v5-runs";
 
+type PowerMode = "battery" | "plugged" | "demo";
+
 const defaultSignals: Signals = {
   energy: 54,
   focus: 42,
@@ -85,6 +87,7 @@ function App() {
   const [reflection, setReflection] = useState("");
   const [resistance, setResistance] = useState(32);
   const [activeStep, setActiveStep] = useState(0);
+  const [powerMode, setPowerMode] = useState<PowerMode>("battery");
 
   const selected = protocols.find((protocol) => protocol.id === selectedId) ?? protocols[0];
 
@@ -184,6 +187,26 @@ function App() {
                 <span key={index} className={index < Math.min(protocolRuns.length, 14) ? "filled" : ""} />
               ))}
             </div>
+          </div>
+
+          <div className="power-panel">
+            <p className="label">Power Mode</p>
+            <div className="power-options">
+              <button className={powerMode === "battery" ? "active" : ""} onClick={() => setPowerMode("battery")}>
+                Battery
+              </button>
+              <button className={powerMode === "plugged" ? "active" : ""} onClick={() => setPowerMode("plugged")}>
+                Plugged
+              </button>
+              <button className={powerMode === "demo" ? "active" : ""} onClick={() => setPowerMode("demo")}>
+                Demo
+              </button>
+            </div>
+            <p className="power-note">
+              {powerMode === "battery" && "Light work only. No training or GPU-heavy loops."}
+              {powerMode === "plugged" && "CUDA work allowed with explicit device checks."}
+              {powerMode === "demo" && "Buyer-safe outputs, sanitized evidence, deterministic flow."}
+            </p>
           </div>
         </aside>
 

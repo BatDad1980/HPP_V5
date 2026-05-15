@@ -89,6 +89,7 @@ h3 {
 .identity-panel,
 .insight-panel,
 .history-panel,
+.power-panel,
 .workbench {
   border: 1px solid rgba(228, 235, 226, 0.14);
   background: rgba(17, 24, 23, 0.76);
@@ -135,7 +136,8 @@ h3 {
 .identity-panel,
 .stage-panel,
 .insight-panel,
-.history-panel {
+.history-panel,
+.power-panel {
   border-radius: 8px;
   padding: 18px;
 }
@@ -202,6 +204,35 @@ small {
 .habit-track span.filled {
   background: #c6f46c;
   box-shadow: 0 0 18px rgba(198, 244, 108, 0.24);
+}
+
+.power-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.power-options button {
+  min-height: 36px;
+  border: 1px solid rgba(228, 235, 226, 0.13);
+  border-radius: 8px;
+  background: rgba(235, 242, 233, 0.07);
+  color: #edf5ef;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.power-options button.active {
+  background: rgba(198, 244, 108, 0.16);
+  border-color: rgba(198, 244, 108, 0.62);
+}
+
+.power-note {
+  min-height: 42px;
+  margin: 12px 0 0;
+  color: #b8c8c0;
+  font-size: 0.83rem;
+  line-height: 1.35;
 }
 
 .workbench {
