@@ -1,0 +1,83 @@
+{
+  "dataset": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\datasets\\hf_local\\CONVERSATIONAL_FLUENCY.jsonl",
+  "audit": {
+    "total_rows": 273,
+    "categories": {
+      "conversation": 85,
+      "identity": 75,
+      "protection": 60,
+      "embodiment": 20,
+      "explanation": 18,
+      "technical": 15
+    },
+    "category_percent": {
+      "conversation": 31.14,
+      "identity": 27.47,
+      "protection": 21.98,
+      "embodiment": 7.33,
+      "explanation": 6.59,
+      "technical": 5.49
+    },
+    "duplicate_exact_rows": 90,
+    "duplicate_exact_groups": 45,
+    "format_marker_rows": 273,
+    "format_marker_percent": 100.0,
+    "response_length_by_category": {
+      "conversation": {
+        "rows": 85,
+        "mean_response_words": 13.06,
+        "median_response_words": 11
+      },
+      "embodiment": {
+        "rows": 20,
+        "mean_response_words": 23.85,
+        "median_response_words": 24.5
+      },
+      "explanation": {
+        "rows": 18,
+        "mean_response_words": 39.17,
+        "median_response_words": 38.0
+      },
+      "identity": {
+        "rows": 75,
+        "mean_response_words": 32.8,
+        "median_response_words": 34
+      },
+      "protection": {
+        "rows": 60,
+        "mean_response_words": 24.6,
+        "median_response_words": 25.5
+      },
+      "technical": {
+        "rows": 15,
+        "mean_response_words": 26.2,
+        "median_response_words": 25
+      }
+    },
+    "identity_drift_terms_in_responses": {
+      "architect": 46,
+      "creator": 34,
+      "shop": 25,
+      "sovereign": 21,
+      "masamune": 19,
+      "servo": 16,
+      "mission anchor": 15,
+      "nineteen": 11,
+      "robotic": 9,
+      "jaxson": 9,
+      "journee": 9,
+      "servos": 6,
+      "japanese": 6,
+      "bushido": 3
+    },
+    "ordinary_conversation_rows_without_drift_terms": 65,
+    "ordinary_conversation_percent_of_dataset": 23.81,
+    "recommendations": [
+      "Do not train the literal wrapper tokens unless inference is expected to output them.",
+      "Prefer response-only loss masking so prompts condition the answer without teaching the model to emit `### Response`.",
+      "Reduce duplicate identity/protection rows during speech-cleanup cycles.",
+      "Add more ordinary dialogue that does not mention the creator, body, servos, shop, or architecture.",
+      "Keep identity/protection as a separate adapter or lower-weight slice after basic conversational form improves."
+    ]
+  }
+}
