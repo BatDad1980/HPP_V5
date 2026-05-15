@@ -12,6 +12,8 @@ The original HPP remains field notes. V5 is allowed to inherit its strongest ide
 
 V5 is also dual-use by design: it must be able to become a clean buyer-facing IP asset and a private operating core for field work, shop execution, robotics, and personal protocol training.
 
+The central research hypothesis is that an AI system trained through developmental stages, repeated loops, stabilization, and maturity-dependent filtering may achieve useful adaptive behavior more efficiently than brute-force scaling alone.
+
 ## Core Translation
 
 - The human is the adaptive system.
