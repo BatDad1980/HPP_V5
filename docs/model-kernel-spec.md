@@ -118,6 +118,7 @@ V5 should eventually measure:
 - shared recurrent depth versus a baseline with the same parameter budget
 - iterative stabilization under controlled noise
 - Habit-14 memory/protection across repeated exposures
+- rigidity risk after over-protection or excessive lock strength
 
 ## Guardrail
 

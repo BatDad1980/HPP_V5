@@ -8,6 +8,8 @@ Humans do not require vast data centers, electrical substations, and massive par
 
 HPP explores whether an AI architecture can borrow that developmental pattern.
 
+Habit formation is the key bridge. Repeated practice turns an unstable action into a protected pathway, like muscle memory. HPP treats Habit-14 as a measurable stabilization threshold: not magic, but a way to ask whether repetition has become reliable enough to behave differently under noise.
+
 ## Core Thesis
 
 Useful adaptive behavior may be achievable with less brute-force scale by combining:
