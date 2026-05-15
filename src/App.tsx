@@ -7,6 +7,7 @@ import {
   CircleAlert,
   Compass,
   Database,
+  Dumbbell,
   Flame,
   Gauge,
   LineChart,
@@ -40,6 +41,13 @@ const signalLabels: Array<[keyof Signals, string]> = [
   ["clarity", "Clarity"],
   ["tension", "Tension"],
 ];
+
+const habitMemoryEvidence = {
+  threshold: "14",
+  recallGain: "12.74x",
+  matureGain: "89.63x",
+  device: "RTX 4050",
+};
 
 function loadRuns(): RunEntry[] {
   try {
@@ -321,6 +329,32 @@ function App() {
                 <small>First evidence lands here.</small>
               </>
             )}
+          </div>
+
+          <div className="evidence-panel">
+            <div className="mini-head">
+              <h3>Habit Memory</h3>
+              <Dumbbell size={18} />
+            </div>
+            <div className="evidence-grid">
+              <span>
+                <small>Lock</small>
+                <strong>{habitMemoryEvidence.threshold}</strong>
+              </span>
+              <span>
+                <small>Recall</small>
+                <strong>{habitMemoryEvidence.recallGain}</strong>
+              </span>
+              <span>
+                <small>Mature</small>
+                <strong>{habitMemoryEvidence.matureGain}</strong>
+              </span>
+              <span>
+                <small>Device</small>
+                <strong>{habitMemoryEvidence.device}</strong>
+              </span>
+            </div>
+            <p>Repeated practice behaves like protected muscle memory under noise.</p>
           </div>
 
           <div className="history-panel">

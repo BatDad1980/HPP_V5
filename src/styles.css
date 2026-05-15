@@ -89,6 +89,7 @@ h3 {
 .identity-panel,
 .insight-panel,
 .history-panel,
+.evidence-panel,
 .power-panel,
 .workbench {
   border: 1px solid rgba(228, 235, 226, 0.14);
@@ -137,6 +138,7 @@ h3 {
 .stage-panel,
 .insight-panel,
 .history-panel,
+.evidence-panel,
 .power-panel {
   border-radius: 8px;
   padding: 18px;
@@ -427,6 +429,39 @@ textarea {
   line-height: 1;
   margin: 22px 0 8px;
   color: #c6f46c;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 18px 0 14px;
+}
+
+.evidence-grid span {
+  border: 1px solid rgba(228, 235, 226, 0.11);
+  border-radius: 8px;
+  background: rgba(8, 12, 11, 0.34);
+  min-height: 70px;
+  padding: 12px;
+}
+
+.evidence-grid small {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.evidence-grid strong {
+  color: #c6f46c;
+  display: block;
+  font-size: 1.18rem;
+}
+
+.evidence-panel p {
+  color: #b8c8c0;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin-bottom: 0;
 }
 
 .history-list {
