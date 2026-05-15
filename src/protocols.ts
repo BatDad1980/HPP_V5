@@ -1,0 +1,68 @@
+import type { Protocol } from "./types";
+
+export const protocols: Protocol[] = [
+  {
+    id: "nervous-system-reset",
+    name: "Nervous System Reset",
+    intent: "Return activation toward baseline before choosing the next action.",
+    mode: "sentinel",
+    duration: "4 min",
+    trigger: "Stress, urgency, body tension, or loop collapse.",
+    steps: [
+      "Lower the breath and slow the exhale.",
+      "Relax jaw, shoulders, hands, and belly.",
+      "Name three body sensations without interpreting them.",
+      "Choose the smallest useful action visible from here.",
+    ],
+    reflectionPrompt: "What changed in the body, and what became possible next?",
+    tags: ["stress", "body", "reset"],
+  },
+  {
+    id: "focus-ignition",
+    name: "Focus Ignition",
+    intent: "Enter one clean work sprint with less negotiation.",
+    mode: "nurture",
+    duration: "12 min",
+    trigger: "Avoidance, scattered attention, or a stalled task.",
+    steps: [
+      "Write one target in plain language.",
+      "Remove one source of noise.",
+      "Set a short timer.",
+      "Begin with the easiest visible action.",
+    ],
+    reflectionPrompt: "What lowered friction, and what tried to pull the loop away?",
+    tags: ["focus", "work", "friction"],
+  },
+  {
+    id: "identity-rehearsal",
+    name: "Identity Rehearsal",
+    intent: "Practice acting from the identity being built.",
+    mode: "nurture",
+    duration: "6 min",
+    trigger: "A moment where the old loop wants to steer.",
+    steps: [
+      "Name the identity being trained.",
+      "Name the current resistance without arguing with it.",
+      "Ask what this identity would do in the next five minutes.",
+      "Do that action before renegotiating.",
+    ],
+    reflectionPrompt: "Which identity got a repetition today?",
+    tags: ["identity", "choice", "practice"],
+  },
+  {
+    id: "evidence-capture",
+    name: "Evidence Capture",
+    intent: "Convert a messy experience into usable training evidence.",
+    mode: "nurture",
+    duration: "8 min",
+    trigger: "After a breakthrough, setback, or meaningful protocol run.",
+    steps: [
+      "Record what happened without polishing it.",
+      "Mark the state before and after.",
+      "Name the strongest resistance signal.",
+      "Decide whether the protocol should repeat, change, or rest.",
+    ],
+    reflectionPrompt: "What is the smallest honest lesson from this loop?",
+    tags: ["journal", "evidence", "review"],
+  },
+];
