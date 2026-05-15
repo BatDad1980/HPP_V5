@@ -15,6 +15,7 @@ Most relevant HPP source:
 Relevant adjacent systems:
 
 - `02_BioAcoustic_Architecture`: bioacoustic entropy, edge-node thinking, dashboard patterns.
+- BACL: privacy, integrity, root-of-trust, and chain-of-custody concepts.
 - `03_Nexus_Forensic_Suite`: analysis dashboards, evidence workflows, export discipline.
 - `05_Project_Silver_Echo`: humanitarian and trauma-sensitive direction.
 - `07_Developer_Foundations`: engineering notes and project scaffolding habits.
@@ -91,6 +92,16 @@ V5 should translate these carefully:
 - Sentinel mode can become deterministic low-complexity routing
 - future robotics adapters require hardware-independent safety governors
 - every model or protocol output should preserve evidence and traceability
+
+### BACL Privacy And Integrity
+
+BACL was created to protect sensitive child-centered device data and preserve forensic chain of custody. V5 should inherit the discipline even before implementing production cryptography:
+
+- keep private data local by default
+- generate export manifests
+- hash evidence artifacts
+- separate buyer demo data from private operating data
+- log action and model-run provenance
 
 ## Code Worth Evaluating Later
 

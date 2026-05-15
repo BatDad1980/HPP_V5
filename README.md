@@ -75,6 +75,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Origin Map](docs/origin-map.md)
 - [Silver / Echo Privacy Note](docs/silver-echo-privacy-note.md)
 - [Patent And IP Connection Map](docs/patent-ip-connection-map.md)
+- [BACL Origin And Role](docs/bacl-origin-and-role.md)
 - [Buyer Positioning](docs/buyer-positioning.md)
 - [Previous HPP Findings](docs/previous-version-findings.md)
 - [Desktop Project Findings](docs/desktop-project-findings.md)

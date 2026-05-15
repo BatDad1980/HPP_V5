@@ -82,6 +82,18 @@ HPP V5 translation:
 
 Robotics and agency adapters must place deterministic safety gates between AI intent and real-world action.
 
+### BACL Privacy And Chain Of Custody
+
+BACL connects the portfolio's child-protection and forensic-evidence goals.
+
+HPP V5 translation:
+
+- sensitive state/evidence records should remain local by default
+- imports and exports should include manifests and integrity hashes
+- private child/caregiver material must stay out of buyer-facing repositories
+- forensic-style logs should preserve source, timestamp, and modification history
+- future robotics/agency layers should record tamper-evident action logs
+
 ### Edge / Low-Bandwidth Operation
 
 HPP V5's field-lab constraints align with the patent theme:
