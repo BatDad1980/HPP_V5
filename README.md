@@ -68,6 +68,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Dual-Use Architecture](docs/dual-use-architecture.md)
 - [Field Lab Constraints](docs/field-lab-constraints.md)
 - [Model Kernel Spec](docs/model-kernel-spec.md)
+- [Buyer Positioning](docs/buyer-positioning.md)
 - [Previous HPP Findings](docs/previous-version-findings.md)
 - [Source Inheritance](docs/source-inheritance.md)
 
