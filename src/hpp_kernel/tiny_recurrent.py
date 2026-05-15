@@ -50,6 +50,37 @@ class TinyRecurrentWorkshop(nn.Module):
         return state
 
 
+class TinyUniqueStack(nn.Module):
+    """Conventional stack with a distinct workshop and gate for each pass."""
+
+    def __init__(self, dim: int = 128, depth: int = 14):
+        super().__init__()
+        self.layers = nn.ModuleList(
+            [
+                nn.ModuleDict(
+                    {
+                        "workshop": nn.Sequential(
+                            nn.LayerNorm(dim),
+                            nn.Linear(dim, dim * 2),
+                            nn.GELU(),
+                            nn.Linear(dim * 2, dim),
+                        ),
+                        "gate": nn.Linear(dim * 2, dim),
+                    }
+                )
+                for _ in range(depth)
+            ]
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        state = x
+        for layer in self.layers:
+            refined = layer["workshop"](state)
+            gate = torch.sigmoid(layer["gate"](torch.cat([state, refined], dim=-1)))
+            state = state + gate * refined
+        return state
+
+
 def run_probe(mode: str = "plugged", dim: int = 128, batch: int = 8, passes: int = 14) -> dict[str, object]:
     report = select_device(mode)
     device = torch.device(report.device)
@@ -85,6 +116,10 @@ def run_probe(mode: str = "plugged", dim: int = 128, batch: int = 8, passes: int
         output_norm=round(float(output.norm().detach().cpu()), 6),
     )
     return asdict(run)
+
+
+def count_parameters(model: nn.Module) -> int:
+    return sum(parameter.numel() for parameter in model.parameters())
 
 
 if __name__ == "__main__":

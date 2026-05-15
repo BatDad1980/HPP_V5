@@ -110,6 +110,8 @@ V5 should eventually measure:
 - CPU versus CUDA behavior
 - output stability across repeated loops
 - quality before and after Habit-14-style stabilization
+- shared recurrent depth versus a unique-layer stack
+- shared recurrent depth versus a baseline with the same parameter budget
 
 ## Guardrail
 

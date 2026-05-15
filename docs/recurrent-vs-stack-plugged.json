@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-05-15T14:39:34.567023+00:00",
+  "python": "3.12.9",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "dim": 128,
+  "batch": 8,
+  "passes": 14,
+  "warmups": 3,
+  "runs": 10,
+  "recurrent": {
+    "parameters": 99072,
+    "summary": {
+      "runs": 10,
+      "elapsed_ms_min": 2.021,
+      "elapsed_ms_mean": 3.004,
+      "elapsed_ms_median": 2.837,
+      "elapsed_ms_max": 3.955
+    },
+    "runs": [
+      {
+        "elapsed_ms": 3.955,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 3.667,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 3.945,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 3.71,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 2.667,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 2.219,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 2.312,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 2.542,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 2.021,
+        "output_norm": 51.911423
+      },
+      {
+        "elapsed_ms": 3.006,
+        "output_norm": 51.911423
+      }
+    ]
+  },
+  "unique_stack": {
+    "parameters": 1387008,
+    "summary": {
+      "runs": 10,
+      "elapsed_ms_min": 2.181,
+      "elapsed_ms_mean": 2.907,
+      "elapsed_ms_median": 2.757,
+      "elapsed_ms_max": 4.215
+    },
+    "runs": [
+      {
+        "elapsed_ms": 2.715,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 4.215,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 2.746,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 3.102,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 3.305,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 2.733,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 2.768,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 3.011,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 2.292,
+        "output_norm": 33.767368
+      },
+      {
+        "elapsed_ms": 2.181,
+        "output_norm": 33.767368
+      }
+    ]
+  },
+  "comparison": {
+    "parameter_ratio_unique_stack_to_recurrent": 14.0,
+    "mean_latency_ratio_unique_stack_to_recurrent": 0.968
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-05-15T14:39:34.407397+00:00",
+  "python": "3.12.9",
+  "mode": "battery",
+  "device": "cpu",
+  "device_name": "CPU",
+  "cuda_available": true,
+  "dim": 128,
+  "batch": 8,
+  "passes": 14,
+  "warmups": 3,
+  "runs": 10,
+  "recurrent": {
+    "parameters": 99072,
+    "summary": {
+      "runs": 10,
+      "elapsed_ms_min": 5.221,
+      "elapsed_ms_mean": 6.052,
+      "elapsed_ms_median": 5.963,
+      "elapsed_ms_max": 7.488
+    },
+    "runs": [
+      {
+        "elapsed_ms": 5.221,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 7.488,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 6.402,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 6.176,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 5.535,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 6.277,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 5.426,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 6.596,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 5.75,
+        "output_norm": 52.473328
+      },
+      {
+        "elapsed_ms": 5.648,
+        "output_norm": 52.473328
+      }
+    ]
+  },
+  "unique_stack": {
+    "parameters": 1387008,
+    "summary": {
+      "runs": 10,
+      "elapsed_ms_min": 4.943,
+      "elapsed_ms_mean": 5.74,
+      "elapsed_ms_median": 5.483,
+      "elapsed_ms_max": 7.193
+    },
+    "runs": [
+      {
+        "elapsed_ms": 5.854,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 5.512,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 5.388,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 5.478,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 5.283,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 5.489,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 6.808,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 5.455,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 7.193,
+        "output_norm": 34.766258
+      },
+      {
+        "elapsed_ms": 4.943,
+        "output_norm": 34.766258
+      }
+    ]
+  },
+  "comparison": {
+    "parameter_ratio_unique_stack_to_recurrent": 14.0,
+    "mean_latency_ratio_unique_stack_to_recurrent": 0.948
+  }
+}
