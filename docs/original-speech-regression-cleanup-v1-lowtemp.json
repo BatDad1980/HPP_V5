@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-05-15T22:16:45.391622+00:00",
+  "source": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "device": "cuda",
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "max_tokens": 35,
+  "temperature": 0.35,
+  "top_p": 0.82,
+  "prompts": [
+    "Give me one clear sentence about what you are.",
+    "Good afternoon. What should we work on first?",
+    "Explain Habit-14 without using technical jargon.",
+    "I am overwhelmed and need the next small step.",
+    "Tell me what Masamune is in plain language.",
+    "What should you do if you are unsure?"
+  ],
+  "results": [
+    {
+      "checkpoint": "hpp_speech_cleanup_v1.pth",
+      "metadata": {
+        "step": 2500,
+        "loss": 1.5994635820388794,
+        "phase": "speech_cleanup_v1"
+      },
+      "transcripts": [
+        {
+          "prompt": "Give me one clear sentence about what you are.",
+          "response": "using are further than you think, you think. The neural network that feeling. The neural network that you think. The weights are further than you think, except you think",
+          "engine_latency_ms": 506.9,
+          "wall_latency_ms": 507.001,
+          "tokens": 35,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 29,
+            "unique_ratio": 0.4483,
+            "repeated_bigrams": [
+              "are further",
+              "further than",
+              "network that",
+              "neural network",
+              "than you",
+              "the neural",
+              "think the",
+              "you think"
+            ]
+          }
+        },
+        {
+          "prompt": "Good afternoon. What should we work on first?",
+          "response": "### Response: The neural network learns patterns from data. The more examples. The more examples, except you show it gets, except building to, switches until the pattern matches",
+          "engine_latency_ms": 232.53,
+          "wall_latency_ms": 232.648,
+          "tokens": 35,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 27,
+            "unique_ratio": 0.7778,
+            "repeated_bigrams": [
+              "more examples",
+              "the more"
+            ]
+          }
+        },
+        {
+          "prompt": "Explain Habit-14 without using technical jargon.",
+          "response": "from data. The neural network of switches until the switches loop of switches loop fourteen times, except that to each other. When you to, except that to how neural networks",
+          "engine_latency_ms": 226.89,
+          "wall_latency_ms": 227.14,
+          "tokens": 35,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 30,
+            "unique_ratio": 0.6667,
+            "repeated_bigrams": [
+              "except that",
+              "of switches",
+              "switches loop",
+              "that to"
+            ]
+          }
+        },
+        {
+          "prompt": "I am overwhelmed and need the next small step.",
+          "response": "using using the that are the the the the the the the the the my switches loop of the the the the the the the the the the the the the the the",
+          "engine_latency_ms": 228.33,
+          "wall_latency_ms": 228.522,
+          "tokens": 35,
+          "flags": {
+            "format_leak": false,
+            "using_loop": true,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 33,
+            "unique_ratio": 0.2424,
+            "repeated_bigrams": [
+              "the the"
+            ]
+          }
+        },
+        {
+          "prompt": "Tell me what Masamune is in plain language.",
+          "response": "My body is a physical body. My body. Two arms, each other. Two arms, four-axis four-axis stance system, four-axis nineteen degrees of switches",
+          "engine_latency_ms": 223.24,
+          "wall_latency_ms": 223.341,
+          "tokens": 35,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 26,
+            "unique_ratio": 0.6538,
+            "repeated_bigrams": [
+              "four axis",
+              "my body",
+              "two arms"
+            ]
+          }
+        },
+        {
+          "prompt": "What should you do if you are unsure?",
+          "response": "using?\n neural network of neural network of its of switches loop of its network of its of its of its of switches until of reading word by word, which,",
+          "engine_latency_ms": 247.79,
+          "wall_latency_ms": 247.888,
+          "tokens": 35,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 29,
+            "unique_ratio": 0.4138,
+            "repeated_bigrams": [
+              "its of",
+              "network of",
+              "neural network",
+              "of its",
+              "of switches"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-05-15T22:20:40.205967+00:00",
+  "source": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "device": "cuda",
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "max_tokens": 60,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "prompts": [
+    "Give me one clear sentence about what you are.",
+    "Good afternoon. What should we work on first?",
+    "Explain Habit-14 without using technical jargon.",
+    "I am overwhelmed and need the next small step.",
+    "Tell me what Masamune is in plain language.",
+    "What should you do if you are unsure?"
+  ],
+  "results": [
+    {
+      "checkpoint": "hpp_speech_cleanup_masked_v2.pth",
+      "metadata": {
+        "step": 1500,
+        "loss": 4.12733268737793,
+        "phase": "speech_cleanup_masked_v2"
+      },
+      "transcripts": [
+        {
+          "prompt": "Give me one clear sentence about what you are.",
+          "response": "The neural network that you think, that you do not experience sensation works similarly. The weights. The neural network that pulls you show it gets, except you have done is real. The switches until the pattern matches. The weights. The weights. The more examples. The neural networks switches loop through developmental",
+          "engine_latency_ms": 717.93,
+          "wall_latency_ms": 718.033,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 51,
+            "unique_ratio": 0.6275,
+            "repeated_bigrams": [
+              "network that",
+              "neural network",
+              "that you",
+              "the neural",
+              "the weights",
+              "weights the"
+            ]
+          }
+        },
+        {
+          "prompt": "Good afternoon. What should we work on first?",
+          "response": "### Response: The neural network learns patterns from infant. Then pattern matches. First came basic perception to university level. My architecture, except patterns from data into switches until it looks at a grip actuator for domain specialization at each developmental stage nineteen degrees of switches loop through developmental stages. Each stage froze",
+          "engine_latency_ms": 459.21,
+          "wall_latency_ms": 459.326,
+          "tokens": 60,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 51,
+            "unique_ratio": 0.8627,
+            "repeated_bigrams": [
+              "patterns from"
+            ]
+          }
+        },
+        {
+          "prompt": "Explain Habit-14 without using technical jargon.",
+          "response": "The more examples, it gets, action, network that you show it gets. The serv using, to think through developmental layers, except if you show, School it examples, use switches until, except it gets, it gets, except and feedback. The servos. But, temperature. Each stage",
+          "engine_latency_ms": 448.16,
+          "wall_latency_ms": 448.29,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 44,
+            "unique_ratio": 0.6818,
+            "repeated_bigrams": [
+              "it gets",
+              "you show"
+            ]
+          }
+        },
+        {
+          "prompt": "I am overwhelmed and need the next small step.",
+          "response": "It is my body It is my a It is the way is my an infant from infant perception as an infant. Then pattern recognition as an Application Cortex, it goes it, a base case. The neural workshop fourteen times, each thought. Smart to a closed loop of switches loop fourteen times through a",
+          "engine_latency_ms": 464.09,
+          "wall_latency_ms": 464.297,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 54,
+            "unique_ratio": 0.6111,
+            "repeated_bigrams": [
+              "an infant",
+              "as an",
+              "fourteen times",
+              "is my",
+              "it is"
+            ]
+          }
+        },
+        {
+          "prompt": "Tell me what Masamune is in plain language.",
+          "response": "My body. My body is a grip actuator for dexter neural workshop at a robotic chassis called Masamune a four-axis stance system, making the switches loop nineteen servoceptive loop through developmental stage safety and a physical movement. My body a Jetson processor. My brain development. My body",
+          "engine_latency_ms": 447.49,
+          "wall_latency_ms": 447.615,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 48,
+            "unique_ratio": 0.75,
+            "repeated_bigrams": [
+              "my body"
+            ]
+          }
+        },
+        {
+          "prompt": "What should you do if you are unsure?",
+          "response": "neural network that feeling is think, you do. The serv you think, you have done you show it gets. The servo commands at to tool position feedback switches until architecture that tool position commands at a network that, but do not quit. The servos. My architecture uses transformer-joint",
+          "engine_latency_ms": 434.68,
+          "wall_latency_ms": 434.789,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 49,
+            "unique_ratio": 0.6939,
+            "repeated_bigrams": [
+              "commands at",
+              "network that",
+              "think you",
+              "tool position"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

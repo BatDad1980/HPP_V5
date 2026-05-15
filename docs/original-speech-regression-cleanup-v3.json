@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-05-15T22:23:20.153516+00:00",
+  "source": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "device": "cuda",
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "max_tokens": 60,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "prompts": [
+    "Give me one clear sentence about what you are.",
+    "Good afternoon. What should we work on first?",
+    "Explain Habit-14 without using technical jargon.",
+    "I am overwhelmed and need the next small step.",
+    "Tell me what Masamune is in plain language.",
+    "What should you do if you are unsure?"
+  ],
+  "results": [
+    {
+      "checkpoint": "hpp_speech_cleanup_v3.pth",
+      "metadata": {
+        "step": 1000,
+        "loss": 5.020771503448486,
+        "phase": "speech_cleanup_v3"
+      },
+      "transcripts": [
+        {
+          "prompt": "Give me one clear sentence about what you are.",
+          "response": "The safety that do not experience is hard that feeling. The weights are further than you think, Guardian that feeling, where Masamune. The servo commands to hear pattern matches. The servos that is hardcoded into logic. The neural network where Masamune. The weights. The,",
+          "engine_latency_ms": 686.74,
+          "wall_latency_ms": 686.853,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 44,
+            "unique_ratio": 0.6818,
+            "repeated_bigrams": [
+              "masamune the",
+              "that feeling",
+              "the weights",
+              "where masamune"
+            ]
+          }
+        },
+        {
+          "prompt": "Good afternoon. What should we work on first?",
+          "response": "### Response: The neural network learns patterns from data. The neural network was trained by switches loop through university level thought with a servos servo bridge: seven-like attention mechanisms, but safety governor filters for pattern matches. My brain works similarly, each developmental stage froze before, temperature. I",
+          "engine_latency_ms": 425.62,
+          "wall_latency_ms": 425.738,
+          "tokens": 60,
+          "flags": {
+            "format_leak": true,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 47,
+            "unique_ratio": 0.9362,
+            "repeated_bigrams": [
+              "neural network",
+              "the neural"
+            ]
+          }
+        },
+        {
+          "prompt": "Explain Habit-14 without using technical jargon.",
+          "response": "The neural networks AI are further than are further than you think workshop multiple architecture that feeling. The neural network think. The neural architecture uses transformer, except switches until the pattern matches. The more examples, each thought, each developmental stage froze before. Rest if it gets. The neural architecture uses. The",
+          "engine_latency_ms": 417.29,
+          "wall_latency_ms": 417.397,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 51,
+            "unique_ratio": 0.6667,
+            "repeated_bigrams": [
+              "architecture uses",
+              "are further",
+              "further than",
+              "neural architecture",
+              "the neural"
+            ]
+          }
+        },
+        {
+          "prompt": "I am overwhelmed and need the next small step.",
+          "response": "It was named after the, and that, and a developmental curriculum the pattern a serv using the switches loop through a thought and a four-joint arms, and a grip actuator. My body is a nineteen-joint robotic chassis called Masamune. I grew through developmental stages. My",
+          "engine_latency_ms": 429.39,
+          "wall_latency_ms": 429.585,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 47,
+            "unique_ratio": 0.7021,
+            "repeated_bigrams": [
+              "and a"
+            ]
+          }
+        },
+        {
+          "prompt": "Tell me what Masamune is in plain language.",
+          "response": "My body is physical body. The weights at full cognitive architecture, each developmental stages called Masamune is a robotic body, a four-inspired architecture that mirrors human brain development. My switches loop of a grip actuator for each pass it, just like human brain development. My architecture uses transformer is",
+          "engine_latency_ms": 410.7,
+          "wall_latency_ms": 410.838,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 50,
+            "unique_ratio": 0.72,
+            "repeated_bigrams": [
+              "brain development",
+              "development my",
+              "human brain"
+            ]
+          }
+        },
+        {
+          "prompt": "What should you do if you are unsure?",
+          "response": "like do it gets makes you think The neural network learns is limited in the works similarly, making the university level signals. Then pattern recognition as a toddler, making them faster times through developmental stages. Abstract reasoning as an adolescent reasoning. My brain intended workshop multiple architecture uses transformer-like attention in the pattern",
+          "engine_latency_ms": 412.8,
+          "wall_latency_ms": 412.906,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 54,
+            "unique_ratio": 0.8333,
+            "repeated_bigrams": [
+              "in the"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

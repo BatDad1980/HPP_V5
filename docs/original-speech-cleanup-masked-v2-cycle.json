@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-15T22:20:31.439675+00:00",
+  "original": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "dataset": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\datasets\\hf_local\\CONVERSATIONAL_CLEANUP_V1.jsonl",
+  "output_checkpoint": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_speech_cleanup_masked_v2.pth",
+  "steps": 1500,
+  "batch": 2,
+  "seq_len": 96,
+  "lr": 3e-05,
+  "warmup": 250,
+  "final_loss": 4.12733268737793,
+  "memory_start": {
+    "device": "cuda",
+    "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "allocated_mb": 265.02,
+    "reserved_mb": 532.0,
+    "max_allocated_mb": 515.65
+  },
+  "memory_end": {
+    "device": "cuda",
+    "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "allocated_mb": 4260.8,
+    "reserved_mb": 4534.0,
+    "max_allocated_mb": 4498.48
+  }
+}

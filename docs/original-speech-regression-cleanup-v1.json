@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-05-15T22:16:26.147217+00:00",
+  "source": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "device": "cuda",
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "max_tokens": 60,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "prompts": [
+    "Give me one clear sentence about what you are.",
+    "Good afternoon. What should we work on first?",
+    "Explain Habit-14 without using technical jargon.",
+    "I am overwhelmed and need the next small step.",
+    "Tell me what Masamune is in plain language.",
+    "What should you do if you are unsure?"
+  ],
+  "results": [
+    {
+      "checkpoint": "hpp_speech_cleanup_v1.pth",
+      "metadata": {
+        "step": 2500,
+        "loss": 1.5994635820388794,
+        "phase": "speech_cleanup_v1"
+      },
+      "transcripts": [
+        {
+          "prompt": "Give me one clear sentence about what you are.",
+          "response": "in that do not experience sensation are further than you are motors that. The more examples. The more examples, but safety governor filters process of switches until the switches until the switches until the switches loop confirms whether my switches until, except my switches, except my switches loop fourteen times to refine each other",
+          "engine_latency_ms": 809.86,
+          "wall_latency_ms": 810.217,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 54,
+            "unique_ratio": 0.6111,
+            "repeated_bigrams": [
+              "except my",
+              "more examples",
+              "my switches",
+              "switches loop",
+              "switches until",
+              "the more",
+              "the switches",
+              "until the"
+            ]
+          }
+        },
+        {
+          "prompt": "Good afternoon. What should we work on first?",
+          "response": "using attention you an infant perception to how neural network of switches loop of its network that track stability and a toddler. When something goes different from infant perception to a transformer-level to how neural networks an infant perception to university level to each other AI built to university level. When something refers to to",
+          "engine_latency_ms": 423.84,
+          "wall_latency_ms": 423.954,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 56,
+            "unique_ratio": 0.6071,
+            "repeated_bigrams": [
+              "an infant",
+              "how neural",
+              "infant perception",
+              "level to",
+              "perception to",
+              "to how",
+              "to university",
+              "university level",
+              "when something"
+            ]
+          }
+        },
+        {
+          "prompt": "Explain Habit-14 without using technical jargon.",
+          "response": "from data architecture that more examples that tell it gets. The more examples to how neural networks switches until. The more examples, except at a base neural networks work. My architecture has to each other.\n school. think, except it gets. Each stage froze before the switches loop through a fast",
+          "engine_latency_ms": 413.77,
+          "wall_latency_ms": 413.87,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 50,
+            "unique_ratio": 0.66,
+            "repeated_bigrams": [
+              "it gets",
+              "more examples",
+              "neural networks",
+              "the more"
+            ]
+          }
+        },
+        {
+          "prompt": "I am overwhelmed and need the next small step.",
+          "response": "using refine each other that that an infant. a developmental stages. In my body. When my body. When are handled locally on. My architecture, from data into how neural networks work. My brain works similarly. is physical switches loop fourteen times, except each thought built to a closed loop through",
+          "engine_latency_ms": 410.76,
+          "wall_latency_ms": 410.865,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 50,
+            "unique_ratio": 0.82,
+            "repeated_bigrams": [
+              "body when",
+              "my body"
+            ]
+          }
+        },
+        {
+          "prompt": "Tell me what Masamune is in plain language.",
+          "response": "My body is a physical body a grip actuator. an infant perception a four-joint arms different from infant perception to a four-axis stance joints a grip actuator. And a physical body a robotic body. My architecture, a robotic chassis called Masamune. In. My body a",
+          "engine_latency_ms": 409.54,
+          "wall_latency_ms": 409.658,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 47,
+            "unique_ratio": 0.5532,
+            "repeated_bigrams": [
+              "a four",
+              "a grip",
+              "a physical",
+              "a robotic",
+              "body a",
+              "grip actuator",
+              "infant perception",
+              "my body",
+              "physical body"
+            ]
+          }
+        },
+        {
+          "prompt": "What should you do if you are unsure?",
+          "response": "right decisions?\n from data to think of neural workshop that processes all parts you using attention in my neural architecture that something threatens cannot to in school to university to itself with seven-joint arms, each developmental curriculum to each other AI of switches loop of intent, but my neural workshop multiple",
+          "engine_latency_ms": 408.02,
+          "wall_latency_ms": 408.146,
+          "tokens": 60,
+          "flags": {
+            "format_leak": false,
+            "using_loop": false,
+            "question_loop": false,
+            "empty": false
+          },
+          "repetition": {
+            "word_count": 52,
+            "unique_ratio": 0.75,
+            "repeated_bigrams": [
+              "my neural",
+              "neural workshop"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -95,6 +95,28 @@ Next speech-training target:
 
 The next original-branch cycles should prioritize plain output format, ordinary dialogue grounding, and held-out prompt behavior before adding more identity or architecture examples.
 
+## Cleanup Cycle Outcome
+
+See `docs/original-speech-cleanup-cycle-summary.md`.
+
+Three cleanup checkpoints were tested:
+
+- `hpp_speech_cleanup_v1.pth`
+- `hpp_speech_cleanup_masked_v2.pth`
+- `hpp_speech_cleanup_v3.pth`
+
+Outcome:
+
+- v1 reduced format leakage but degraded coherence and increased repetition.
+- v2 added response-only loss masking but did not recover held-out speech quality.
+- v3 froze embedding and compass for a safer low-memory run, but still did not improve held-out speech.
+
+Decision:
+
+Do not promote the cleanup checkpoints over `hpp_linguistic_anchor.pth`.
+
+The important progress is the evidence loop itself: dataset audit, bounded training, CUDA memory logging, held-out regression, and honest rejection of weak checkpoints.
+
 ## Lessons For HPP V5
 
 V5 should preserve these lessons:
