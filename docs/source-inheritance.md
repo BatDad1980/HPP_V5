@@ -114,6 +114,17 @@ From `08_Hyperplasticity_Protocol`:
 - `hpp_telemetry.py`: simple Flask telemetry API.
 - `dashboard/hpp-dashboard`: React/Vite telemetry visualizer.
 
+From the active original lab branch at `C:\Users\Aural\Desktop\Codename HYPERPLASTICITY PROTOCOL\Project_HPP`:
+
+- `core/university_core.py`: Structural Compass upgrade for word order, linear time, and conversation routing.
+- `train_conversational.py`: first speech-adapter training loop with frozen deep stack.
+- `train_conv_focused.py`: focused speech pass that trains embedding, LM head, compass, output norm, swarm gate, and domain expertise.
+- `datasets/hf_local/CONVERSATIONAL_FLUENCY.jsonl`: identity, protection, explanation, embodiment, and everyday dialogue curriculum.
+- `SPEECH_TEST.py`: lightweight smoke test for current speech quality.
+- `checkpoints/hpp_linguistic_anchor.pth`: current local speech anchor; should be treated as read-only evidence, not copied into V5 by default.
+
+See `docs/original-speech-progress.md` for the current read on speech progress.
+
 ## V5 Translation
 
 Old HPP was primarily model-centric.

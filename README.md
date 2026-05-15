@@ -87,6 +87,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Desktop Project Findings](docs/desktop-project-findings.md)
 - [Optional Grok Idea Findings](docs/optional-grok-idea-findings.md)
 - [Source Inheritance](docs/source-inheritance.md)
+- [Original Speech Progress](docs/original-speech-progress.md)
 
 ## First Build Bias
 

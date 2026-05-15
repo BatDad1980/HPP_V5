@@ -1,0 +1,183 @@
+{
+  "source": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "checkpoint_dir": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints",
+  "inspected": [
+    {
+      "name": "hpp_conversational_1000.pth",
+      "path": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_conversational_1000.pth",
+      "exists": true,
+      "size_mb": 250.666,
+      "last_modified_epoch": 1778862753.1662366,
+      "last_modified_utc": "2026-05-15T16:32:33.166237+00:00",
+      "metadata": {
+        "phase": "conversational_v17c"
+      },
+      "state_dicts": {
+        "masamune": {
+          "tensors": 75,
+          "parameters": 14189061
+        },
+        "lm_head": {
+          "tensors": 2,
+          "parameters": 25781841
+        },
+        "embedding": {
+          "tensors": 1,
+          "parameters": 25731584
+        }
+      }
+    },
+    {
+      "name": "hpp_conversational_2000.pth",
+      "path": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_conversational_2000.pth",
+      "exists": true,
+      "size_mb": 250.666,
+      "last_modified_epoch": 1778862896.2315786,
+      "last_modified_utc": "2026-05-15T16:34:56.231579+00:00",
+      "metadata": {
+        "phase": "conversational_v17c"
+      },
+      "state_dicts": {
+        "masamune": {
+          "tensors": 75,
+          "parameters": 14189061
+        },
+        "lm_head": {
+          "tensors": 2,
+          "parameters": 25781841
+        },
+        "embedding": {
+          "tensors": 1,
+          "parameters": 25731584
+        }
+      }
+    },
+    {
+      "name": "hpp_conversational_3000.pth",
+      "path": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_conversational_3000.pth",
+      "exists": true,
+      "size_mb": 250.666,
+      "last_modified_epoch": 1778863315.6396143,
+      "last_modified_utc": "2026-05-15T16:41:55.639614+00:00",
+      "metadata": {
+        "phase": "conversational_v17c"
+      },
+      "state_dicts": {
+        "masamune": {
+          "tensors": 75,
+          "parameters": 14189061
+        },
+        "lm_head": {
+          "tensors": 2,
+          "parameters": 25781841
+        },
+        "embedding": {
+          "tensors": 1,
+          "parameters": 25731584
+        }
+      }
+    },
+    {
+      "name": "hpp_conversational_4000.pth",
+      "path": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_conversational_4000.pth",
+      "exists": true,
+      "size_mb": 250.666,
+      "last_modified_epoch": 1778864343.388718,
+      "last_modified_utc": "2026-05-15T16:59:03.388718+00:00",
+      "metadata": {
+        "phase": "conversational_v17c"
+      },
+      "state_dicts": {
+        "masamune": {
+          "tensors": 75,
+          "parameters": 14189061
+        },
+        "lm_head": {
+          "tensors": 2,
+          "parameters": 25781841
+        },
+        "embedding": {
+          "tensors": 1,
+          "parameters": 25731584
+        }
+      }
+    },
+    {
+      "name": "hpp_conversational_final.pth",
+      "path": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_conversational_final.pth",
+      "exists": true,
+      "size_mb": 250.666,
+      "last_modified_epoch": 1778741769.011622,
+      "last_modified_utc": "2026-05-14T06:56:09.011622+00:00",
+      "metadata": {
+        "phase": "conversational_v17_v3"
+      },
+      "state_dicts": {
+        "masamune": {
+          "tensors": 75,
+          "parameters": 14189061
+        },
+        "lm_head": {
+          "tensors": 2,
+          "parameters": 25781841
+        },
+        "embedding": {
+          "tensors": 1,
+          "parameters": 25731584
+        }
+      }
+    },
+    {
+      "name": "hpp_conversational_progress.pth",
+      "path": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_conversational_progress.pth",
+      "exists": true,
+      "size_mb": 250.667,
+      "last_modified_epoch": 1778739000.3411057,
+      "last_modified_utc": "2026-05-14T06:10:00.341106+00:00",
+      "metadata": {
+        "step": 1000,
+        "loss": 1.1959033012390137,
+        "phase": "conversational_fluency_v17"
+      },
+      "state_dicts": {
+        "masamune": {
+          "tensors": 75,
+          "parameters": 14189061
+        },
+        "lm_head": {
+          "tensors": 2,
+          "parameters": 25781841
+        },
+        "embedding": {
+          "tensors": 1,
+          "parameters": 25731584
+        }
+      }
+    },
+    {
+      "name": "hpp_linguistic_anchor.pth",
+      "path": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP\\checkpoints\\hpp_linguistic_anchor.pth",
+      "exists": true,
+      "size_mb": 250.666,
+      "last_modified_epoch": 1778868820.678893,
+      "last_modified_utc": "2026-05-15T18:13:40.678893+00:00",
+      "metadata": {
+        "phase": "conversational_v17d"
+      },
+      "state_dicts": {
+        "masamune": {
+          "tensors": 75,
+          "parameters": 14189061
+        },
+        "lm_head": {
+          "tensors": 2,
+          "parameters": 25781841
+        },
+        "embedding": {
+          "tensors": 1,
+          "parameters": 25731584
+        }
+      }
+    }
+  ]
+}

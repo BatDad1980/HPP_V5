@@ -43,6 +43,7 @@
 - Identity-aware coaching prompts.
 - CPU/GPU execution mode selection.
 - CUDA diagnostics and run-budget reporting.
+- Optional speech-adapter research track with transcript logging, repetition metrics, and buyer-safe evidence boundaries.
 
 ## Phase 5: System Maturity
 

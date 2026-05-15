@@ -41,6 +41,22 @@ Rules:
 - Keep runs checkpointable.
 - Prefer small, verifiable experiments over long blind jobs.
 
+## Training Job Shape
+
+Field-lab training should prefer short resumable cycles over long monolithic runs.
+
+Observed original-branch note:
+
+- A single 5,000-step conversational speech cycle reportedly hit out-of-memory behavior.
+- Two separate 2,500-step cycles completed without the same failure.
+
+Working rule:
+
+- Save checkpoints frequently.
+- Exit and relaunch between long cycles when possible.
+- Log CUDA allocated and reserved memory at the start and end of each cycle.
+- Treat OOM as an operational constraint to design around, not as proof the architecture is invalid.
+
 ### Demo Mode
 
 Use for buyer-safe presentation.
