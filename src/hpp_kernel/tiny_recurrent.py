@@ -81,6 +81,29 @@ class TinyUniqueStack(nn.Module):
         return state
 
 
+class TinyOnePassAdapter(nn.Module):
+    """One-pass baseline with input/output adapters and a wider hidden state."""
+
+    def __init__(self, input_dim: int = 128, hidden_dim: int = 256):
+        super().__init__()
+        self.input_adapter = nn.Linear(input_dim, hidden_dim)
+        self.workshop = nn.Sequential(
+            nn.LayerNorm(hidden_dim),
+            nn.Linear(hidden_dim, hidden_dim * 2),
+            nn.GELU(),
+            nn.Linear(hidden_dim * 2, hidden_dim),
+        )
+        self.gate = nn.Linear(hidden_dim * 2, hidden_dim)
+        self.output_adapter = nn.Linear(hidden_dim, input_dim)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        state = self.input_adapter(x)
+        refined = self.workshop(state)
+        gate = torch.sigmoid(self.gate(torch.cat([state, refined], dim=-1)))
+        state = state + gate * refined
+        return self.output_adapter(state)
+
+
 def run_probe(mode: str = "plugged", dim: int = 128, batch: int = 8, passes: int = 14) -> dict[str, object]:
     report = select_device(mode)
     device = torch.device(report.device)

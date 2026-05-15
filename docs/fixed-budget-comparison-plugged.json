@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-05-15T14:42:08.040412+00:00",
+  "python": "3.12.9",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "dim": 128,
+  "batch": 8,
+  "passes": 14,
+  "warmups": 3,
+  "runs": 10,
+  "recurrent": {
+    "parameters": 99072,
+    "summary_latency": {
+      "runs": 10,
+      "elapsed_ms_min": 2.743,
+      "elapsed_ms_mean": 3.9997,
+      "elapsed_ms_median": 4.002,
+      "elapsed_ms_max": 5.261
+    },
+    "summary_target_mse": {
+      "runs": 10,
+      "target_mse_min": 2.197196,
+      "target_mse_mean": 2.197196,
+      "target_mse_median": 2.197196,
+      "target_mse_max": 2.197196
+    },
+    "runs": [
+      {
+        "elapsed_ms": 2.743,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 4.729,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 3.57,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 3.594,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 3.963,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 5.261,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 4.062,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 4.041,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 3.876,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      },
+      {
+        "elapsed_ms": 4.158,
+        "output_norm": 54.733646,
+        "target_mse": 2.19719601
+      }
+    ]
+  },
+  "one_pass_baseline": {
+    "hidden_width": 108,
+    "parameters": 98516,
+    "summary_latency": {
+      "runs": 10,
+      "elapsed_ms_min": 0.295,
+      "elapsed_ms_mean": 0.4726,
+      "elapsed_ms_median": 0.428,
+      "elapsed_ms_max": 1.044
+    },
+    "summary_target_mse": {
+      "runs": 10,
+      "target_mse_min": 0.369598,
+      "target_mse_mean": 0.369598,
+      "target_mse_median": 0.369598,
+      "target_mse_max": 0.369598
+    },
+    "runs": [
+      {
+        "elapsed_ms": 0.636,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.431,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.425,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.463,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.366,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 1.044,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.446,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.322,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.295,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      },
+      {
+        "elapsed_ms": 0.298,
+        "output_norm": 10.600221,
+        "target_mse": 0.36959758
+      }
+    ]
+  },
+  "comparison": {
+    "parameter_ratio_baseline_to_recurrent": 0.994,
+    "mean_latency_ratio_baseline_to_recurrent": 0.118,
+    "mean_mse_ratio_baseline_to_recurrent": 0.168
+  }
+}
