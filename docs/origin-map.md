@@ -67,6 +67,27 @@ Important design principles:
 
 The child's private naming role and creative influence can be honored internally while buyer-facing material should refer only to anonymized child-centered design input.
 
+## Forensic Audio Origin Thread
+
+The forensic audio suite also has a personal and traumatic origin.
+
+Buyer-safe framing:
+
+The forensic audio work should be positioned as lawful evidence integrity, consent-aware review, tamper-evident logging, and chain-of-custody tooling.
+
+Private boundary:
+
+The underlying personal crisis and raw details should remain private. The inventor should not be required to personally process triggering audio files during productization or demos.
+
+Design principles:
+
+- evidence integrity over surveillance
+- consent and authorization records
+- chain-of-custody manifests
+- transcript-first and visual review options
+- BACL-style privacy and tamper-evidence
+- clear separation between private origin and public product framing
+
 ## Personal Mission Thread
 
 HPP is not only an asset to sell.
