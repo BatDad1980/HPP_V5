@@ -18,6 +18,7 @@ Relevant adjacent systems:
 - `03_Nexus_Forensic_Suite`: analysis dashboards, evidence workflows, export discipline.
 - `05_Project_Silver_Echo`: humanitarian and trauma-sensitive direction.
 - `07_Developer_Foundations`: engineering notes and project scaffolding habits.
+- `00_BUYER_PACKET/08_PATENT_ASSET_SUMMARY.md`: reported patent application references and buyer-facing IP themes.
 
 ## Original HPP Hypothesis To Preserve
 
@@ -80,6 +81,17 @@ The old portfolio has forensic and data-room instincts. V5 should borrow that se
 - Reflections should remain auditable.
 - Insights should cite the underlying entries they came from.
 
+### Patent-Adjacent Safety And Context Themes
+
+The buyer packet connects HPP-adjacent portfolio themes to reported patent application references, including deterministic context grounding, Direct Emotion Indexing, Tier 0 anchoring, hardware-enforced safety, edge operation, and traceability.
+
+V5 should translate these carefully:
+
+- manual state signals can become discrete routing keys
+- Sentinel mode can become deterministic low-complexity routing
+- future robotics adapters require hardware-independent safety governors
+- every model or protocol output should preserve evidence and traceability
+
 ## Code Worth Evaluating Later
 
 From `08_Hyperplasticity_Protocol`:
@@ -107,4 +119,3 @@ HPP V5 should be human-loop-centric first:
 ## Product Guardrail
 
 HPP V5 should not present itself as medical treatment or make therapeutic guarantees. It can be a research-inspired personal training, reflection, and protocol system. Anything trauma-sensitive or child-focused must be designed with extra care, clear boundaries, and human oversight.
-
