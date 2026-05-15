@@ -1,0 +1,308 @@
+{
+  "source_root": "C:\\Users\\Aural\\Desktop\\Codename HYPERPLASTICITY PROTOCOL\\Project_HPP",
+  "note": "Read-only inventory generated from protected previous HPP source.",
+  "checkpoints": [
+    {
+      "name": "hpp_adolescent_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_adolescent_checkpoint.pth",
+      "size_bytes": 150450082,
+      "size_mib": 143.48
+    },
+    {
+      "name": "hpp_conversational_final.pth",
+      "relative_path": "checkpoints\\hpp_conversational_final.pth",
+      "size_bytes": 262842654,
+      "size_mib": 250.67
+    },
+    {
+      "name": "hpp_conversational_progress.pth",
+      "relative_path": "checkpoints\\hpp_conversational_progress.pth",
+      "size_bytes": 262842900,
+      "size_mib": 250.67
+    },
+    {
+      "name": "hpp_linguistic_anchor.pth",
+      "relative_path": "checkpoints\\hpp_linguistic_anchor.pth",
+      "size_bytes": 262842344,
+      "size_mib": 250.67
+    },
+    {
+      "name": "hpp_preschool_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_preschool_checkpoint.pth",
+      "size_bytes": 139937978,
+      "size_mib": 133.46
+    },
+    {
+      "name": "hpp_school_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_school_checkpoint.pth",
+      "size_bytes": 139937758,
+      "size_mib": 133.46
+    },
+    {
+      "name": "hpp_toddler_checkpoint.pth",
+      "relative_path": "checkpoints\\hpp_toddler_checkpoint.pth",
+      "size_bytes": 133628082,
+      "size_mib": 127.44
+    },
+    {
+      "name": "hpp_university_lens.pth",
+      "relative_path": "checkpoints\\hpp_university_lens.pth",
+      "size_bytes": 257586044,
+      "size_mib": 245.65
+    },
+    {
+      "name": "hpp_university_mirror.pth",
+      "relative_path": "checkpoints\\hpp_university_mirror.pth",
+      "size_bytes": 257586256,
+      "size_mib": 245.65
+    },
+    {
+      "name": "hpp_university_prism.pth",
+      "relative_path": "checkpoints\\hpp_university_prism.pth",
+      "size_bytes": 257586182,
+      "size_mib": 245.65
+    },
+    {
+      "name": "hpp_university_synthesis.pth",
+      "relative_path": "checkpoints\\hpp_university_synthesis.pth",
+      "size_bytes": 257586542,
+      "size_mib": 245.65
+    },
+    {
+      "name": "test_checkpoint.pth",
+      "relative_path": "checkpoints\\test_checkpoint.pth",
+      "size_bytes": 223934781,
+      "size_mib": 213.56
+    }
+  ],
+  "core_modules": [
+    {
+      "name": "__init__.py",
+      "relative_path": "core\\__init__.py",
+      "size_bytes": 19,
+      "size_mib": 0.0
+    },
+    {
+      "name": "adolescent_core.py",
+      "relative_path": "core\\adolescent_core.py",
+      "size_bytes": 3083,
+      "size_mib": 0.0
+    },
+    {
+      "name": "agency_core.py",
+      "relative_path": "core\\agency_core.py",
+      "size_bytes": 3350,
+      "size_mib": 0.0
+    },
+    {
+      "name": "bacl_vault.py",
+      "relative_path": "core\\bacl_vault.py",
+      "size_bytes": 2691,
+      "size_mib": 0.0
+    },
+    {
+      "name": "hpp_guardian_ecosystem.py",
+      "relative_path": "core\\hpp_guardian_ecosystem.py",
+      "size_bytes": 3328,
+      "size_mib": 0.0
+    },
+    {
+      "name": "infant_core.py",
+      "relative_path": "core\\infant_core.py",
+      "size_bytes": 5237,
+      "size_mib": 0.0
+    },
+    {
+      "name": "mission_anchor.py",
+      "relative_path": "core\\mission_anchor.py",
+      "size_bytes": 2001,
+      "size_mib": 0.0
+    },
+    {
+      "name": "samurai_body.py",
+      "relative_path": "core\\samurai_body.py",
+      "size_bytes": 4108,
+      "size_mib": 0.0
+    },
+    {
+      "name": "school_core.py",
+      "relative_path": "core\\school_core.py",
+      "size_bytes": 3106,
+      "size_mib": 0.0
+    },
+    {
+      "name": "toddler_core.py",
+      "relative_path": "core\\toddler_core.py",
+      "size_bytes": 2510,
+      "size_mib": 0.0
+    },
+    {
+      "name": "university_core.py",
+      "relative_path": "core\\university_core.py",
+      "size_bytes": 7574,
+      "size_mib": 0.01
+    }
+  ],
+  "training_scripts": [
+    {
+      "name": "train_adolescent.py",
+      "relative_path": "training\\train_adolescent.py",
+      "size_bytes": 5944,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_infant.py",
+      "relative_path": "training\\train_infant.py",
+      "size_bytes": 7434,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_preschool.py",
+      "relative_path": "training\\train_preschool.py",
+      "size_bytes": 6027,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_school.py",
+      "relative_path": "training\\train_school.py",
+      "size_bytes": 5843,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_toddler.py",
+      "relative_path": "training\\train_toddler.py",
+      "size_bytes": 6799,
+      "size_mib": 0.01
+    },
+    {
+      "name": "train_university.py",
+      "relative_path": "training\\train_university.py",
+      "size_bytes": 6727,
+      "size_mib": 0.01
+    }
+  ],
+  "utility_scripts": [
+    {
+      "name": "bacl_entropy.py",
+      "relative_path": "utils\\bacl_entropy.py",
+      "size_bytes": 966,
+      "size_mib": 0.0
+    },
+    {
+      "name": "bio_loop_integration.py",
+      "relative_path": "utils\\bio_loop_integration.py",
+      "size_bytes": 2410,
+      "size_mib": 0.0
+    },
+    {
+      "name": "create_conversational_dataset.py",
+      "relative_path": "utils\\create_conversational_dataset.py",
+      "size_bytes": 20048,
+      "size_mib": 0.02
+    },
+    {
+      "name": "create_identity_dataset.py",
+      "relative_path": "utils\\create_identity_dataset.py",
+      "size_bytes": 3598,
+      "size_mib": 0.0
+    },
+    {
+      "name": "dataset_loader.py",
+      "relative_path": "utils\\dataset_loader.py",
+      "size_bytes": 6650,
+      "size_mib": 0.01
+    },
+    {
+      "name": "diag_loader.py",
+      "relative_path": "utils\\diag_loader.py",
+      "size_bytes": 1928,
+      "size_mib": 0.0
+    },
+    {
+      "name": "export_tensorrt.py",
+      "relative_path": "utils\\export_tensorrt.py",
+      "size_bytes": 5217,
+      "size_mib": 0.0
+    },
+    {
+      "name": "generate_announcement.py",
+      "relative_path": "utils\\generate_announcement.py",
+      "size_bytes": 1286,
+      "size_mib": 0.0
+    },
+    {
+      "name": "get_jailbreak_data.py",
+      "relative_path": "utils\\get_jailbreak_data.py",
+      "size_bytes": 749,
+      "size_mib": 0.0
+    },
+    {
+      "name": "inference_engine.py",
+      "relative_path": "utils\\inference_engine.py",
+      "size_bytes": 5217,
+      "size_mib": 0.0
+    },
+    {
+      "name": "localize_v6.py",
+      "relative_path": "utils\\localize_v6.py",
+      "size_bytes": 1810,
+      "size_mib": 0.0
+    },
+    {
+      "name": "loop_controller.py",
+      "relative_path": "utils\\loop_controller.py",
+      "size_bytes": 1835,
+      "size_mib": 0.0
+    },
+    {
+      "name": "mature_inference.py",
+      "relative_path": "utils\\mature_inference.py",
+      "size_bytes": 8871,
+      "size_mib": 0.01
+    },
+    {
+      "name": "minimal_test.py",
+      "relative_path": "utils\\minimal_test.py",
+      "size_bytes": 1184,
+      "size_mib": 0.0
+    },
+    {
+      "name": "read_docx.py",
+      "relative_path": "utils\\read_docx.py",
+      "size_bytes": 1055,
+      "size_mib": 0.0
+    },
+    {
+      "name": "server.py",
+      "relative_path": "utils\\server.py",
+      "size_bytes": 1507,
+      "size_mib": 0.0
+    },
+    {
+      "name": "training_sim.py",
+      "relative_path": "utils\\training_sim.py",
+      "size_bytes": 2604,
+      "size_mib": 0.0
+    }
+  ],
+  "reports": [
+    {
+      "name": "hpp_data_evidence_report.md",
+      "relative_path": "reports\\hpp_data_evidence_report.md",
+      "size_bytes": 3048,
+      "size_mib": 0.0
+    },
+    {
+      "name": "MASTER_SOVEREIGN_BLUEPRINT.md",
+      "relative_path": "reports\\MASTER_SOVEREIGN_BLUEPRINT.md",
+      "size_bytes": 2532,
+      "size_mib": 0.0
+    },
+    {
+      "name": "SOVEREIGN_GRADUATION_PULSE_REPORT.md",
+      "relative_path": "reports\\SOVEREIGN_GRADUATION_PULSE_REPORT.md",
+      "size_bytes": 3581,
+      "size_mib": 0.0
+    }
+  ]
+}
