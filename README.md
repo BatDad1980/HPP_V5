@@ -101,6 +101,8 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Patent Evidence Notes](docs/patent-evidence-notes.md)
 - [BACL Origin And Role](docs/bacl-origin-and-role.md)
 - [Forensic Audio Origin Boundary](docs/forensic-audio-origin-boundary.md)
+- [Unitree Robotics Intake](docs/unitree-robotics-intake.md)
+- [Materials Funding Brief](docs/materials-funding-brief.md)
 - [Buyer Positioning](docs/buyer-positioning.md)
 - [Buyer Evidence Packet Index](docs/buyer-evidence-packet-index.md)
 - [Previous HPP Findings](docs/previous-version-findings.md)
