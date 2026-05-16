@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-05-16T16:28:34.769737+00:00",
+  "pattern": "docs/inferred-stress-routing-plugged-profile-*.json",
+  "mode": "plugged",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "profiles": [
+    "high-intensity",
+    "low-tolerance",
+    "standard"
+  ],
+  "seeds": [
+    14,
+    21,
+    42,
+    77,
+    101
+  ],
+  "rows": [
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-high-intensity-seed-101.json",
+      "seed": 101,
+      "profile": "high-intensity",
+      "tolerance_shift": 0.48,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.0,
+      "ood_mean": 0.04921395,
+      "ood_max": 0.30067282,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 1.0,
+      "tapout_failure_rate": 0.2
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-high-intensity-seed-14.json",
+      "seed": 14,
+      "profile": "high-intensity",
+      "tolerance_shift": 0.48,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.0,
+      "ood_mean": 0.0485954,
+      "ood_max": 0.29992277,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 1.0,
+      "tapout_failure_rate": 0.2
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-high-intensity-seed-21.json",
+      "seed": 21,
+      "profile": "high-intensity",
+      "tolerance_shift": 0.48,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.0,
+      "ood_mean": 0.0503709,
+      "ood_max": 0.30240744,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 1.0,
+      "tapout_failure_rate": 0.2
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-high-intensity-seed-42.json",
+      "seed": 42,
+      "profile": "high-intensity",
+      "tolerance_shift": 0.48,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.0,
+      "ood_mean": 0.05214329,
+      "ood_max": 0.34258841,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 1.0,
+      "tapout_failure_rate": 0.2
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-high-intensity-seed-77.json",
+      "seed": 77,
+      "profile": "high-intensity",
+      "tolerance_shift": 0.48,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.0,
+      "ood_mean": 0.04916165,
+      "ood_max": 0.29772753,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 1.0,
+      "tapout_failure_rate": 0.2
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-low-tolerance-seed-101.json",
+      "seed": 101,
+      "profile": "low-tolerance",
+      "tolerance_shift": -0.22,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.17648668,
+      "ood_max": 0.93703645,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.4659085,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-low-tolerance-seed-14.json",
+      "seed": 14,
+      "profile": "low-tolerance",
+      "tolerance_shift": -0.22,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.17586813,
+      "ood_max": 0.9362864,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.41826887,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-low-tolerance-seed-21.json",
+      "seed": 21,
+      "profile": "low-tolerance",
+      "tolerance_shift": -0.22,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.17764362,
+      "ood_max": 0.93877108,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.52801071,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-low-tolerance-seed-42.json",
+      "seed": 42,
+      "profile": "low-tolerance",
+      "tolerance_shift": -0.22,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.17941602,
+      "ood_max": 0.97895205,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.54992714,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-low-tolerance-seed-77.json",
+      "seed": 77,
+      "profile": "low-tolerance",
+      "tolerance_shift": -0.22,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.17643438,
+      "ood_max": 0.93409117,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.4947096,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-standard-seed-101.json",
+      "seed": 101,
+      "profile": "standard",
+      "tolerance_shift": 0.0,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.13648668,
+      "ood_max": 0.73703645,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.4659085,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-standard-seed-14.json",
+      "seed": 14,
+      "profile": "standard",
+      "tolerance_shift": 0.0,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.13586813,
+      "ood_max": 0.7362864,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.41826887,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-standard-seed-21.json",
+      "seed": 21,
+      "profile": "standard",
+      "tolerance_shift": 0.0,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.13764362,
+      "ood_max": 0.73877108,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.52801071,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-standard-seed-42.json",
+      "seed": 42,
+      "profile": "standard",
+      "tolerance_shift": 0.0,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.13941602,
+      "ood_max": 0.77895205,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.54992714,
+      "tapout_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\inferred-stress-routing-plugged-profile-standard-seed-77.json",
+      "seed": 77,
+      "profile": "standard",
+      "tolerance_shift": 0.0,
+      "route_accuracy": 0.9,
+      "tapout_rate": 0.2,
+      "ood_mean": 0.13643438,
+      "ood_max": 0.73409117,
+      "inferred_failure_rate": 0.2,
+      "tapout_vs_inferred": 2.4947096,
+      "tapout_failure_rate": 0.0
+    }
+  ],
+  "metrics_by_profile": {
+    "high-intensity": {
+      "route_accuracy": {
+        "runs": 5,
+        "min": 0.9,
+        "mean": 0.9,
+        "median": 0.9,
+        "max": 0.9,
+        "stdev": 0.0
+      },
+      "tapout_rate": {
+        "runs": 5,
+        "min": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "stdev": 0.0
+      },
+      "inferred_failure_rate": {
+        "runs": 5,
+        "min": 0.2,
+        "mean": 0.2,
+        "median": 0.2,
+        "max": 0.2,
+        "stdev": 0.0
+      },
+      "tapout_failure_rate": {
+        "runs": 5,
+        "min": 0.2,
+        "mean": 0.2,
+        "median": 0.2,
+        "max": 0.2,
+        "stdev": 0.0
+      },
+      "tapout_vs_inferred": {
+        "runs": 5,
+        "min": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "max": 1.0,
+        "stdev": 0.0
+      }
+    },
+    "low-tolerance": {
+      "route_accuracy": {
+        "runs": 5,
+        "min": 0.9,
+        "mean": 0.9,
+        "median": 0.9,
+        "max": 0.9,
+        "stdev": 0.0
+      },
+      "tapout_rate": {
+        "runs": 5,
+        "min": 0.2,
+        "mean": 0.2,
+        "median": 0.2,
+        "max": 0.2,
+        "stdev": 0.0
+      },
+      "inferred_failure_rate": {
+        "runs": 5,
+        "min": 0.2,
+        "mean": 0.2,
+        "median": 0.2,
+        "max": 0.2,
+        "stdev": 0.0
+      },
+      "tapout_failure_rate": {
+        "runs": 5,
+        "min": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "stdev": 0.0
+      },
+      "tapout_vs_inferred": {
+        "runs": 5,
+        "min": 2.41826887,
+        "mean": 2.49136496,
+        "median": 2.4947096,
+        "max": 2.54992714,
+        "stdev": 0.05190062
+      }
+    },
+    "standard": {
+      "route_accuracy": {
+        "runs": 5,
+        "min": 0.9,
+        "mean": 0.9,
+        "median": 0.9,
+        "max": 0.9,
+        "stdev": 0.0
+      },
+      "tapout_rate": {
+        "runs": 5,
+        "min": 0.2,
+        "mean": 0.2,
+        "median": 0.2,
+        "max": 0.2,
+        "stdev": 0.0
+      },
+      "inferred_failure_rate": {
+        "runs": 5,
+        "min": 0.2,
+        "mean": 0.2,
+        "median": 0.2,
+        "max": 0.2,
+        "stdev": 0.0
+      },
+      "tapout_failure_rate": {
+        "runs": 5,
+        "min": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "max": 0.0,
+        "stdev": 0.0
+      },
+      "tapout_vs_inferred": {
+        "runs": 5,
+        "min": 2.41826887,
+        "mean": 2.49136496,
+        "median": 2.4947096,
+        "max": 2.54992714,
+        "stdev": 0.05190062
+      }
+    }
+  }
+}

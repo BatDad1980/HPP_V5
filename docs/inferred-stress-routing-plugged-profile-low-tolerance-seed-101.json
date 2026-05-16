@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-05-16T16:28:16.741147+00:00",
+  "python": "3.12.9",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "seed": 101,
+  "dim": 128,
+  "batch": 64,
+  "trials": 100,
+  "stress_low": 0.18,
+  "stress_high": 0.86,
+  "stress_threshold": 0.62,
+  "ood_threshold": 0.55,
+  "tolerance_profile": "low-tolerance",
+  "tolerance_shift": -0.22,
+  "elapsed_ms": 287.665,
+  "route_accuracy": 0.9,
+  "tapout_rate": 0.2,
+  "inferred_stress": {
+    "runs": 100,
+    "value_min": 0.33415018,
+    "value_mean": 0.74346722,
+    "value_median": 1.0,
+    "value_max": 1.0,
+    "value_stdev": 0.31585015
+  },
+  "ood_score": {
+    "runs": 100,
+    "value_min": 0.0,
+    "value_mean": 0.17648668,
+    "value_median": 0.0,
+    "value_max": 0.93703645,
+    "value_stdev": 0.35504961
+  },
+  "strategies": {
+    "nurture": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.45109895,
+        "mse_median": 0.33234434,
+        "mse_max": 2.39807677,
+        "mse_stdev": 0.67205816
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.0407634,
+        "mse_median": 0.00430535,
+        "mse_max": 0.19015837,
+        "mse_stdev": 0.07371211
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.47453031,
+        "mse_mean": 0.8614345,
+        "mse_median": 0.4931863,
+        "mse_max": 2.39807677,
+        "mse_stdev": 0.7506567
+      },
+      "failure_rate": 0.6
+    },
+    "sentinel": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.01157577,
+        "mse_mean": 0.10135161,
+        "mse_median": 0.07236395,
+        "mse_max": 0.34300411,
+        "mse_stdev": 0.12107953
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.01157577,
+        "mse_mean": 0.07686362,
+        "mse_median": 0.01202025,
+        "mse_max": 0.34239444,
+        "mse_stdev": 0.13107269
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.07126559,
+        "mse_mean": 0.1258396,
+        "mse_median": 0.07389209,
+        "mse_max": 0.34300411,
+        "mse_stdev": 0.10590489
+      },
+      "failure_rate": 0.2
+    },
+    "oracle_router": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.0833015,
+        "mse_median": 0.07236395,
+        "mse_max": 0.34300411,
+        "mse_stdev": 0.10034112
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.0407634,
+        "mse_median": 0.00430535,
+        "mse_max": 0.19015837,
+        "mse_stdev": 0.07371211
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.07126559,
+        "mse_mean": 0.1258396,
+        "mse_median": 0.07389209,
+        "mse_max": 0.34300411,
+        "mse_stdev": 0.10590489
+      },
+      "failure_rate": 0.2
+    },
+    "inferred_router": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.09844781,
+        "mse_median": 0.07236395,
+        "mse_max": 0.34300411,
+        "mse_stdev": 0.12327717
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.07105602,
+        "mse_median": 0.0049064,
+        "mse_max": 0.34239444,
+        "mse_stdev": 0.13400588
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.07126559,
+        "mse_mean": 0.1258396,
+        "mse_median": 0.07389209,
+        "mse_max": 0.34300411,
+        "mse_stdev": 0.10590489
+      },
+      "failure_rate": 0.2
+    },
+    "tapout_router": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.03992355,
+        "mse_median": 0.04339553,
+        "mse_max": 0.07553098,
+        "mse_stdev": 0.03093253
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00410746,
+        "mse_mean": 0.01245781,
+        "mse_median": 0.0049064,
+        "mse_max": 0.04450986,
+        "mse_stdev": 0.01560089
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.04199114,
+        "mse_mean": 0.06738928,
+        "mse_median": 0.07312699,
+        "mse_max": 0.07553098,
+        "mse_stdev": 0.01225801
+      },
+      "failure_rate": 0.0
+    }
+  },
+  "comparison": {
+    "inferred_vs_nurture_stress": 6.84549606,
+    "inferred_vs_sentinel_calm": 1.08173271,
+    "inferred_vs_best_fixed_overall": 1.02949584,
+    "inferred_vs_oracle_overall": 0.84614884,
+    "inferred_failure_rate": 0.2,
+    "tapout_vs_inferred_overall": 2.4659085,
+    "tapout_failure_rate": 0.0
+  }
+}
