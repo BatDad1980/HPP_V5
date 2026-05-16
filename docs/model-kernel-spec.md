@@ -79,6 +79,13 @@ Inferred-routing follow-up:
 
 The inferred-routing harness estimates stress from state telemetry and adds an OOD tap-out path. The first profile comparison shows that tap-out thresholds should be profile-dependent: a high-intensity profile can treat noise as tolerable that a standard profile would route away from.
 
+Tap-out boundary follow-up:
+
+- `scripts/sweep_tapout_boundaries.py`
+- `docs/tapout-boundary-sweep-summary.md`
+
+The first boundary sweep shows low-tolerance and standard profiles tapping out at extreme-noise scale `2.0`, while the high-intensity profile first taps out at `2.8`. This supports profile-calibrated redlines instead of a single global OOD threshold.
+
 ## Scaling Probe
 
 Artifact:

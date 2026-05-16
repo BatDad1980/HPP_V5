@@ -146,6 +146,7 @@ def run_trial_set(
     failure_mse: float,
     ood_threshold: float,
     tolerance_shift: float,
+    extreme_noise_scale: float,
 ) -> dict[str, object]:
     metrics = {
         "nurture": [],
@@ -169,7 +170,7 @@ def run_trial_set(
         clean = target.expand(batch, -1)
         noise_scale = 0.18 + true_stress * 0.95
         if is_extreme_noise:
-            unknown_noise = torch.randn_like(clean) * 2.4
+            unknown_noise = torch.randn_like(clean) * extreme_noise_scale
             noisy = clean + unknown_noise
         else:
             noisy = clean + distractor * true_stress * 0.55 + torch.randn_like(clean) * noise_scale
@@ -340,6 +341,7 @@ def main() -> None:
     parser.add_argument("--protected-noise", type=float, default=0.08)
     parser.add_argument("--failure-mse", type=float, default=0.16)
     parser.add_argument("--ood-threshold", type=float, default=0.55)
+    parser.add_argument("--extreme-noise-scale", type=float, default=2.4)
     parser.add_argument(
         "--tolerance-profile",
         choices=["standard", "high-intensity", "low-tolerance"],
@@ -378,6 +380,7 @@ def main() -> None:
         failure_mse=args.failure_mse,
         ood_threshold=args.ood_threshold,
         tolerance_shift=tolerance_shift,
+        extreme_noise_scale=args.extreme_noise_scale,
     )
     if device.type == "cuda":
         torch.cuda.synchronize(device)
@@ -398,6 +401,7 @@ def main() -> None:
         "stress_high": args.stress_high,
         "stress_threshold": args.stress_threshold,
         "ood_threshold": args.ood_threshold,
+        "extreme_noise_scale": args.extreme_noise_scale,
         "tolerance_profile": args.tolerance_profile,
         "tolerance_shift": tolerance_shift,
         "elapsed_ms": round((perf_counter() - start) * 1000, 3),

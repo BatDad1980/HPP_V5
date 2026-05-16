@@ -1,0 +1,267 @@
+{
+  "generated_at": "2026-05-16T16:34:59.885020+00:00",
+  "mode": "plugged",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "profiles": [
+    "low-tolerance",
+    "standard",
+    "high-intensity"
+  ],
+  "seeds": [
+    14,
+    21,
+    42
+  ],
+  "noise_scales": [
+    0.8,
+    1.2,
+    1.6,
+    2.0,
+    2.4,
+    2.8,
+    3.2,
+    3.6,
+    4.0
+  ],
+  "rows": [
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 0.8,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 1.2,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 1.6,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 2.0,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 2.10211268
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 2.4,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 2.49873557
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 2.8,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 2.91231271
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 3.2,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 3.32851189
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 3.6,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 3.73627125
+    },
+    {
+      "profile": "low-tolerance",
+      "noise_scale": 4.0,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 4.12770429
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 0.8,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 1.2,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 1.6,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 2.0,
+      "tapout_rate_mean": 0.00333333,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.19666667,
+      "tapout_vs_inferred_mean": 1.0092955
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 2.4,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 2.49873557
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 2.8,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 2.91231271
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 3.2,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 3.32851189
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 3.6,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 3.73627125
+    },
+    {
+      "profile": "standard",
+      "noise_scale": 4.0,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 4.12770429
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 0.8,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 1.2,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 1.6,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.0,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 2.0,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.2,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 2.4,
+      "tapout_rate_mean": 0.0,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.2,
+      "tapout_vs_inferred_mean": 1.0
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 2.8,
+      "tapout_rate_mean": 0.00333333,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.19666667,
+      "tapout_vs_inferred_mean": 1.01165115
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 3.2,
+      "tapout_rate_mean": 0.19666667,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.00333333,
+      "tapout_vs_inferred_mean": 3.22489708
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 3.6,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 3.73627125
+    },
+    {
+      "profile": "high-intensity",
+      "noise_scale": 4.0,
+      "tapout_rate_mean": 0.2,
+      "inferred_failure_rate_mean": 0.2,
+      "tapout_failure_rate_mean": 0.0,
+      "tapout_vs_inferred_mean": 4.12770429
+    }
+  ],
+  "profile_summary": {
+    "low-tolerance": {
+      "first_tapout_noise": 2.0,
+      "first_zero_failure_noise": 0.8,
+      "max_no_tapout_noise": 1.6,
+      "final_tapout_rate_mean": 0.2,
+      "final_tapout_failure_rate_mean": 0.0
+    },
+    "standard": {
+      "first_tapout_noise": 2.0,
+      "first_zero_failure_noise": 0.8,
+      "max_no_tapout_noise": 1.6,
+      "final_tapout_rate_mean": 0.2,
+      "final_tapout_failure_rate_mean": 0.0
+    },
+    "high-intensity": {
+      "first_tapout_noise": 2.8,
+      "first_zero_failure_noise": 0.8,
+      "max_no_tapout_noise": 2.4,
+      "final_tapout_rate_mean": 0.2,
+      "final_tapout_failure_rate_mean": 0.0
+    }
+  }
+}

@@ -48,7 +48,27 @@ Stress and OOD routing should eventually support profiles such as:
 
 The goal is not to force every system into quiet. The goal is to know when a system's normal intensity is still productive, and when the signal has crossed into unsafe novelty.
 
+## Boundary Sweep Follow-Up
+
+Artifact:
+
+- `docs/tapout-boundary-sweep-summary.md`
+
+The first boundary sweep increased extreme-noise scale from `0.8` to `4.0` across three seeds.
+
+Result:
+
+- low-tolerance first tap-out noise: `2.0`
+- standard first tap-out noise: `2.0`
+- high-intensity first tap-out noise: `2.8`
+- low-tolerance max no-tapout noise: `1.6`
+- standard max no-tapout noise: `1.6`
+- high-intensity max no-tapout noise: `2.4`
+
+Interpretation:
+
+The high-intensity profile tolerated one extra band of unfamiliar noise before tapping out. This supports the idea that profile-specific operating bands need different redlines.
+
 ## Boundary
 
 This is synthetic mechanism evidence. The stress and OOD estimators are hand-built telemetry functions calibrated to this toy harness. It does not prove real-world mental-state detection or autonomous clinical safety.
-

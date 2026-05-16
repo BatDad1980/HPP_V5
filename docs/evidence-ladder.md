@@ -220,6 +220,7 @@ Artifacts:
 - `docs/inferred-stress-routing-summary.md`
 - `docs/inferred-stress-routing-profile-summary.md`
 - `docs/inferred-stress-profile-sweep-summary.md`
+- `docs/tapout-boundary-sweep-summary.md`
 - `docs/inferred-stress-routing-plugged.json`
 
 Result:
@@ -237,11 +238,15 @@ Result:
 - Five-seed profile sweep standard tap-out failure rate mean: 0.0
 - Five-seed profile sweep high-intensity tap-out failure rate mean: 0.20
 - Five-seed profile sweep standard tap-out versus inferred mean: 2.49136496x
+- Tap-out boundary sweep low-tolerance first tap-out noise: 2.0
+- Tap-out boundary sweep standard first tap-out noise: 2.0
+- Tap-out boundary sweep high-intensity first tap-out noise: 2.8
+- High-intensity max no-tapout noise: 2.4
 - Plugged device: NVIDIA GeForce RTX 4050 Laptop GPU
 
 Meaning:
 
-This moves stress routing beyond an oracle stress value. The harness estimates stress from state telemetry and adds an out-of-distribution tap-out path. It also introduces tolerance profiles: the same noise can trigger tap-out in a standard profile while remaining within operating range for a high-intensity profile. The first five-seed sweep preserved this split.
+This moves stress routing beyond an oracle stress value. The harness estimates stress from state telemetry and adds an out-of-distribution tap-out path. It also introduces tolerance profiles: the same noise can trigger tap-out in a standard profile while remaining within operating range for a high-intensity profile. The first five-seed sweep preserved this split, and the boundary sweep found that the high-intensity profile tolerated a higher unfamiliar-noise band before tapping out.
 
 Boundary:
 
