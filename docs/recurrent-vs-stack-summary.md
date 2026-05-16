@@ -63,3 +63,24 @@ The next harness should measure:
 - memory pressure at larger batch sizes
 - recurrent shared-depth versus unique-depth under a fixed parameter budget
 - a quality proxy where repeated passes can improve output stability
+
+## Scaled GPU Follow-Up
+
+Artifact:
+
+- `docs/recurrent-vs-unique-stack-scaling-summary.md`
+
+The scaled follow-up compares the same effective depth at larger dimensions on the RTX 4050 Laptop GPU.
+
+Key result:
+
+- At dimension 4,096, the shared recurrent model used 100,687,872 parameters and 393.469 MB peak CUDA memory.
+- At dimension 4,096, the unique stack used 1,409,630,208 parameters and 5,386.688 MB peak CUDA memory.
+- Parameter ratio: 14.0x
+- Peak memory ratio: 13.690248x
+- At dimension 8,192, shared recurrence completed with 402,702,336 parameters and 1,545.812 MB peak CUDA memory.
+- At dimension 8,192, the unique stack hit CUDA OOM.
+
+Interpretation:
+
+At tiny sizes, the unique stack can be latency-competitive. At larger sizes, the memory cost of unique depth becomes the limiting factor. This supports the HPP claim that shared recurrent depth can preserve effective depth while delaying the hardware wall.

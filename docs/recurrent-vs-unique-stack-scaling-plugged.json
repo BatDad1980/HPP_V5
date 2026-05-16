@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-05-16T15:52:01.146190+00:00",
+  "python": "3.12.9",
+  "torch": "2.6.0+cu124",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "batch": 2,
+  "passes": 14,
+  "warmups": 1,
+  "runs_per_size": 3,
+  "results": [
+    {
+      "dim": 1024,
+      "batch": 2,
+      "passes": 14,
+      "recurrent": {
+        "parameters": 6297600,
+        "parameter_mb_fp32": 24.023,
+        "timing": {
+          "runs": 3,
+          "elapsed_ms_min": 2.8632,
+          "elapsed_ms_mean": 3.5945,
+          "elapsed_ms_median": 3.6293,
+          "elapsed_ms_max": 4.291
+        },
+        "peak_allocated_mb": 33.211,
+        "peak_reserved_mb": 42.0,
+        "output_norm": 75.444061,
+        "status": "ok"
+      },
+      "unique_stack": {
+        "parameters": 88166400,
+        "parameter_mb_fp32": 336.328,
+        "timing": {
+          "runs": 3,
+          "elapsed_ms_min": 2.7866,
+          "elapsed_ms_mean": 2.804333,
+          "elapsed_ms_median": 2.7886,
+          "elapsed_ms_max": 2.8378
+        },
+        "peak_allocated_mb": 345.516,
+        "peak_reserved_mb": 442.0,
+        "output_norm": 48.973652,
+        "status": "ok"
+      },
+      "comparison": {
+        "parameter_ratio_unique_to_recurrent": 14.0,
+        "peak_memory_ratio_unique_to_recurrent": 10.403661,
+        "latency_ratio_unique_to_recurrent": 0.780173
+      }
+    },
+    {
+      "dim": 2048,
+      "batch": 2,
+      "passes": 14,
+      "recurrent": {
+        "parameters": 25178112,
+        "parameter_mb_fp32": 96.047,
+        "timing": {
+          "runs": 3,
+          "elapsed_ms_min": 8.6727,
+          "elapsed_ms_mean": 8.916,
+          "elapsed_ms_median": 8.7122,
+          "elapsed_ms_max": 9.3631
+        },
+        "peak_allocated_mb": 105.297,
+        "peak_reserved_mb": 118.0,
+        "output_norm": 109.287231,
+        "status": "ok"
+      },
+      "unique_stack": {
+        "parameters": 352493568,
+        "parameter_mb_fp32": 1344.656,
+        "timing": {
+          "runs": 3,
+          "elapsed_ms_min": 9.4704,
+          "elapsed_ms_mean": 9.5161,
+          "elapsed_ms_median": 9.5127,
+          "elapsed_ms_max": 9.5652
+        },
+        "peak_allocated_mb": 1353.906,
+        "peak_reserved_mb": 1366.0,
+        "output_norm": 69.390289,
+        "status": "ok"
+      },
+      "comparison": {
+        "parameter_ratio_unique_to_recurrent": 14.0,
+        "peak_memory_ratio_unique_to_recurrent": 12.857973,
+        "latency_ratio_unique_to_recurrent": 1.067306
+      }
+    },
+    {
+      "dim": 4096,
+      "batch": 2,
+      "passes": 14,
+      "recurrent": {
+        "parameters": 100687872,
+        "parameter_mb_fp32": 384.094,
+        "timing": {
+          "runs": 3,
+          "elapsed_ms_min": 31.0403,
+          "elapsed_ms_mean": 31.131267,
+          "elapsed_ms_median": 31.1403,
+          "elapsed_ms_max": 31.2132
+        },
+        "peak_allocated_mb": 393.469,
+        "peak_reserved_mb": 406.0,
+        "output_norm": 153.787674,
+        "status": "ok"
+      },
+      "unique_stack": {
+        "parameters": 1409630208,
+        "parameter_mb_fp32": 5377.312,
+        "timing": {
+          "runs": 3,
+          "elapsed_ms_min": 35.6238,
+          "elapsed_ms_mean": 35.6585,
+          "elapsed_ms_median": 35.6692,
+          "elapsed_ms_max": 35.6825
+        },
+        "peak_allocated_mb": 5386.688,
+        "peak_reserved_mb": 5400.0,
+        "output_norm": 96.962852,
+        "status": "ok"
+      },
+      "comparison": {
+        "parameter_ratio_unique_to_recurrent": 14.0,
+        "peak_memory_ratio_unique_to_recurrent": 13.690248,
+        "latency_ratio_unique_to_recurrent": 1.145424
+      }
+    },
+    {
+      "dim": 8192,
+      "batch": 2,
+      "passes": 14,
+      "recurrent": {
+        "parameters": 402702336,
+        "parameter_mb_fp32": 1536.188,
+        "timing": {
+          "runs": 3,
+          "elapsed_ms_min": 122.3287,
+          "elapsed_ms_mean": 122.402833,
+          "elapsed_ms_median": 122.4055,
+          "elapsed_ms_max": 122.4743
+        },
+        "peak_allocated_mb": 1545.812,
+        "peak_reserved_mb": 1558.0,
+        "output_norm": 216.949722,
+        "status": "ok"
+      },
+      "unique_stack": {
+        "status": "cuda_oom",
+        "error": "CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 6.00 GiB of which 0 bytes is free. Of the allocated memory 12.51 GiB is allocated by PyTorch, and 12.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      }
+    }
+  ]
+}

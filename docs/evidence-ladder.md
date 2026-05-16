@@ -26,21 +26,30 @@ This proves the measurement harness is alive. It does not prove model quality or
 
 ## Ladder 2: Shared Recurrence Reduces Stored Parameters
 
-Artifact: `docs/recurrent-vs-stack-summary.md`
+Artifacts:
+
+- `docs/recurrent-vs-stack-summary.md`
+- `docs/recurrent-vs-unique-stack-scaling-summary.md`
 
 Result:
 
 - Shared recurrent workshop: 99,072 parameters
 - Fourteen-layer unique stack: 1,387,008 parameters
 - Unique stack uses 14.0x more parameters for the same effective depth
+- Scaled dimension 4,096 shared recurrent parameters: 100,687,872
+- Scaled dimension 4,096 unique stack parameters: 1,409,630,208
+- Scaled dimension 4,096 unique stack peak memory: 5,386.688 MB
+- Scaled dimension 4,096 shared recurrent peak memory: 393.469 MB
+- Scaled dimension 8,192 shared recurrent completed with 402,702,336 parameters and 1,545.812 MB peak memory
+- Scaled dimension 8,192 unique stack hit CUDA OOM
 
 Meaning:
 
-For a fixed effective refinement depth, shared recurrence can provide depth without multiplying stored parameter count.
+For a fixed effective refinement depth, shared recurrence can provide depth without multiplying stored parameter count. At larger dimensions, the unique stack's repeated parameters become a practical GPU memory limit while the shared recurrent path continues to run.
 
 Boundary:
 
-The unique stack was slightly faster at this small scale. The measured win is compactness, not speed.
+The unique stack can be latency-competitive at smaller sizes. The measured win is compactness and memory headroom, not universal speed.
 
 ## Ladder 3: Arbitrary Same-Budget Targets Are Not The Right Battlefield
 
@@ -237,6 +246,7 @@ HPP V5 has early measured evidence for:
 
 - low-footprint recurrent execution on an RTX 4050-class laptop GPU
 - parameter reuse through shared recurrent depth
+- larger-dimension shared recurrence continuing after the unique-depth stack hits CUDA OOM
 - stronger noisy-state stabilization through repeated loops
 - Habit-14-style protected recall after repeated exposure
 - context-aware Habit-14 recall under shifted context
@@ -257,7 +267,6 @@ HPP V5 should not yet claim:
 
 1. Add transcript logging for the original speech branch.
 2. Build a held-out speech regression suite.
-3. Compare recurrent scaling against unique-stack scaling at matched effective depth.
-4. Compare against named small baselines on defined tasks.
-5. Add power and CUDA memory logs for split-cycle training runs.
-6. Add autonomous stress-signal estimation instead of harness-provided stress values.
+3. Compare against named small baselines on defined tasks.
+4. Add power and CUDA memory logs for split-cycle training runs.
+5. Add autonomous stress-signal estimation instead of harness-provided stress values.

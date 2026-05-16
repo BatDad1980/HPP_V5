@@ -83,6 +83,15 @@ The first plugged RTX 4050 scaling probe measures inference-only recurrent works
 
 This should be treated as hardware envelope evidence only. Training, optimizer state, and useful learned behavior require separate tests.
 
+## Shared Depth Versus Unique Depth Scaling
+
+Artifact:
+
+- `scripts/sweep_recurrent_vs_unique_stack.py`
+- `docs/recurrent-vs-unique-stack-scaling-summary.md`
+
+The first scaled comparison shows the expected memory-pressure split. At dimension 4,096, the 14-layer unique stack used 14.0x more parameters and about 13.69x more peak CUDA memory than the shared recurrent workshop. At dimension 8,192, the shared recurrent workshop completed while the equivalent unique stack hit CUDA OOM.
+
 ### 5. Evidence Harness
 
 A measurement wrapper around every run.
