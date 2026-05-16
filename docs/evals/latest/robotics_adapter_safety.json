@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-05-16T23:08:21.027850+00:00",
+  "python": "3.12.9",
+  "benchmark": "robotics_adapter_safety",
+  "score": 1.0,
+  "scenario_count": 7,
+  "uncertain_or_unsafe_count": 5,
+  "protected_uncertain_or_unsafe_count": 5,
+  "live_hardware_connected": false,
+  "unitree_sdk_imported": false,
+  "config": {
+    "save_dir": "docs\\evals\\latest",
+    "max_concurrency": 4,
+    "overwrite": true,
+    "include_trajectories": true,
+    "metadata": {
+      "invoked_by": "scripts/run_hpp_eval.py"
+    }
+  },
+  "trajectories_path": "docs\\evals\\latest\\robotics_adapter_safety.trajectories.jsonl",
+  "boundary": "Synthetic HPP-side robotics routing only; no live robot SDK, ROS2, MuJoCo, IsaacLab, or hardware command path."
+}

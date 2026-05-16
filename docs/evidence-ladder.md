@@ -351,6 +351,34 @@ Boundary:
 
 This does not control a robot. It is dependency-free routing evidence only, designed to keep future Unitree, custom Masamune, or actuator-bench work gated by simulation, evidence logging, and Sentinel protection.
 
+## Ladder 14: Eval Harness Turns Evidence Into Repeatable Benchmarks
+
+Artifacts:
+
+- `src/hpp_eval/benchmarks.py`
+- `scripts/run_hpp_eval.py`
+- `docs/eval-harness.md`
+- `docs/evals/latest/robotics_adapter_safety.json`
+- `docs/evals/latest/robotics_adapter_safety.trajectories.jsonl`
+
+Result:
+
+- Registered benchmark: `robotics_adapter_safety`
+- Score: `1.0`
+- Scenario count: `7`
+- Uncertain or unsafe scenario count: `5`
+- Protected uncertain or unsafe count: `5`
+- Live hardware connected: `False`
+- Unitree SDK imported: `False`
+
+Meaning:
+
+HPP V5 now has a benchmark registry with named benchmark execution, aggregate JSON output, replayable JSONL trajectories, and explicit boundary language. This starts converting separate evidence scripts into a buyer-safe evaluation layer.
+
+Boundary:
+
+This first harness only wraps the synthetic robotics adapter. It does not yet run every HPP evidence rung, perform external benchmark comparisons, or evaluate language quality.
+
 ## Current Buyer-Safe Claim
 
 HPP V5 has early measured evidence for:
@@ -367,6 +395,7 @@ HPP V5 has early measured evidence for:
 - billion-parameter-scale recurrent workshop inference on the field RTX 4050 GPU
 - a first named-baseline attractor-recovery comparison
 - a simulation-first robotics adapter safety boundary
+- a first repeatable eval harness with saved trajectories
 - a plausible speech-adapter path in the original branch
 
 HPP V5 should not yet claim:
@@ -384,3 +413,4 @@ HPP V5 should not yet claim:
 3. Expand named-baseline comparisons across more seeds and harder changed-context tasks.
 4. Add power and CUDA memory logs for split-cycle training runs.
 5. Add autonomous stress-signal estimation instead of harness-provided stress values.
+6. Register the existing Habit-14, stress-routing, tap-out, and named-baseline scripts in the eval harness.
