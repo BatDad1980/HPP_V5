@@ -107,6 +107,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Robotics Adapter Spec](docs/robotics-adapter-spec.md)
 - [Robotics Adapter Synthetic Summary](docs/robotics-adapter-synthetic-summary.md)
 - [Superlinear / Subquadratic Integration Note](docs/superlinear-subq-integration-note.md)
+- [Phi-Mamba Code Intake](docs/phi-mamba-code-intake.md)
 - [Buyer Positioning](docs/buyer-positioning.md)
 - [Buyer Evidence Packet Index](docs/buyer-evidence-packet-index.md)
 - [Previous HPP Findings](docs/previous-version-findings.md)
