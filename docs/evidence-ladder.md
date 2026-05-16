@@ -173,6 +173,36 @@ Boundary:
 
 This is mechanism evidence only. It does not prove language ability, agency, broad reasoning, or general model superiority. The next version needs stronger baselines and changed-context memory tests.
 
+## Ladder 9: Stress-Aware Routing Beats Fixed Response Modes
+
+Artifacts:
+
+- `scripts/compare_stress_routing.py`
+- `scripts/summarize_stress_routing_sweep.py`
+- `docs/stress-routing-summary.md`
+- `docs/stress-routing-sweep-summary.md`
+- `docs/stress-routing-plugged.json`
+
+Result:
+
+- Single plugged run router versus nurture under stress: 6.88084155x
+- Single plugged run router versus sentinel under calm: 2.57655435x
+- Single plugged run router versus best fixed overall: 1.09107701x
+- Single plugged run router failure rate: 0.0
+- Ten-seed sweep router versus nurture under stress mean: 6.80870099x
+- Ten-seed sweep router versus sentinel under calm mean: 2.61898962x
+- Ten-seed sweep router versus best fixed overall mean: 1.09279677x
+- Ten-seed sweep router failure rate mean: 0.0
+- Plugged device: NVIDIA GeForce RTX 4050 Laptop GPU
+
+Meaning:
+
+This is the first explicit HPP V5 nurture-versus-sentinel routing harness. In calm probes, the router preserves the richer nurture path. Under stress probes, it switches to a protected sentinel path. Across ten plugged seeds, the mixed policy outperformed either fixed strategy alone.
+
+Boundary:
+
+The stress score is provided by the harness. This tests stress-aware routing behavior, not autonomous stress detection or real-world safety.
+
 ## Current Buyer-Safe Claim
 
 HPP V5 has early measured evidence for:
@@ -183,6 +213,7 @@ HPP V5 has early measured evidence for:
 - Habit-14-style protected recall after repeated exposure
 - context-aware Habit-14 recall under shifted context
 - staged developmental exposure outperforming a flat prototype on a toy recovery task
+- stress-aware routing outperforming fixed nurture or sentinel modes in a toy harness
 - a plausible speech-adapter path in the original branch
 
 HPP V5 should not yet claim:
@@ -197,6 +228,6 @@ HPP V5 should not yet claim:
 
 1. Add transcript logging for the original speech branch.
 2. Build a held-out speech regression suite.
-3. Add stress-routing harnesses that compare nurture versus sentinel behavior.
-4. Compare against named small baselines on defined tasks.
-5. Add power and CUDA memory logs for split-cycle training runs.
+3. Compare against named small baselines on defined tasks.
+4. Add power and CUDA memory logs for split-cycle training runs.
+5. Add autonomous stress-signal estimation instead of harness-provided stress values.

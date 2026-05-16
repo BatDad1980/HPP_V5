@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-05-16T13:58:52.743105+00:00",
+  "python": "3.12.9",
+  "mode": "demo",
+  "device": "cpu",
+  "device_name": "CPU",
+  "cuda_available": true,
+  "cuda_version": null,
+  "allocated_mb": 0.0,
+  "reserved_mb": 0.0,
+  "seed": 14,
+  "dim": 128,
+  "batch": 64,
+  "trials": 80,
+  "stress_low": 0.18,
+  "stress_high": 0.86,
+  "stress_threshold": 0.62,
+  "nurture_gain": 0.82,
+  "sentinel_gain": 0.76,
+  "protected_noise": 0.08,
+  "failure_mse": 0.16,
+  "elapsed_ms": 20.021,
+  "strategies": {
+    "nurture": {
+      "strategy": "nurture",
+      "sentinel_uses": 0,
+      "sentinel_use_rate": 0.0,
+      "failures": 40,
+      "failure_rate": 0.5,
+      "calm": {
+        "runs": 40,
+        "mse_min": 0.00420559,
+        "mse_mean": 0.00433078,
+        "mse_median": 0.00432399,
+        "mse_max": 0.00450867,
+        "mse_stdev": 7.155e-05
+      },
+      "stress": {
+        "runs": 40,
+        "mse_min": 0.49254489,
+        "mse_mean": 0.50958116,
+        "mse_median": 0.50929397,
+        "mse_max": 0.52738732,
+        "mse_stdev": 0.00841128
+      },
+      "overall": {
+        "runs": 80,
+        "mse_min": 0.00420559,
+        "mse_mean": 0.25695597,
+        "mse_median": 0.24852678,
+        "mse_max": 0.52738732,
+        "mse_stdev": 0.25428774
+      }
+    },
+    "sentinel": {
+      "strategy": "sentinel",
+      "sentinel_uses": 80,
+      "sentinel_use_rate": 1.0,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "calm": {
+        "runs": 40,
+        "mse_min": 0.01119001,
+        "mse_mean": 0.0115582,
+        "mse_median": 0.01154952,
+        "mse_max": 0.01200619,
+        "mse_stdev": 0.0001745
+      },
+      "stress": {
+        "runs": 40,
+        "mse_min": 0.07281668,
+        "mse_mean": 0.07514302,
+        "mse_median": 0.07519696,
+        "mse_max": 0.07782342,
+        "mse_stdev": 0.00129961
+      },
+      "overall": {
+        "runs": 80,
+        "mse_min": 0.01119001,
+        "mse_mean": 0.04335061,
+        "mse_median": 0.04241144,
+        "mse_max": 0.07782342,
+        "mse_stdev": 0.03200626
+      }
+    },
+    "router": {
+      "strategy": "router",
+      "sentinel_uses": 40,
+      "sentinel_use_rate": 0.5,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "calm": {
+        "runs": 40,
+        "mse_min": 0.00416308,
+        "mse_mean": 0.0043564,
+        "mse_median": 0.00434956,
+        "mse_max": 0.004564,
+        "mse_stdev": 7.583e-05
+      },
+      "stress": {
+        "runs": 40,
+        "mse_min": 0.07287311,
+        "mse_mean": 0.07532423,
+        "mse_median": 0.07537935,
+        "mse_max": 0.07749315,
+        "mse_stdev": 0.00105813
+      },
+      "overall": {
+        "runs": 80,
+        "mse_min": 0.00416308,
+        "mse_mean": 0.03984032,
+        "mse_median": 0.03871855,
+        "mse_max": 0.07749315,
+        "mse_stdev": 0.03571557
+      }
+    }
+  },
+  "comparison": {
+    "router_vs_nurture_stress": 6.76516919,
+    "router_vs_sentinel_calm": 2.65315398,
+    "router_vs_best_fixed_overall": 1.08810898,
+    "router_failure_rate": 0.0,
+    "nurture_failure_rate": 0.5,
+    "sentinel_failure_rate": 0.0
+  }
+}

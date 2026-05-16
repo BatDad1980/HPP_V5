@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-05-16T13:59:39.099170+00:00",
+  "python": "3.12.9",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "allocated_mb": 0.0,
+  "reserved_mb": 0.0,
+  "seed": 21,
+  "dim": 128,
+  "batch": 64,
+  "trials": 80,
+  "stress_low": 0.18,
+  "stress_high": 0.86,
+  "stress_threshold": 0.62,
+  "nurture_gain": 0.82,
+  "sentinel_gain": 0.76,
+  "protected_noise": 0.08,
+  "failure_mse": 0.16,
+  "elapsed_ms": 70.449,
+  "strategies": {
+    "nurture": {
+      "strategy": "nurture",
+      "sentinel_uses": 0,
+      "sentinel_use_rate": 0.0,
+      "failures": 40,
+      "failure_rate": 0.5,
+      "calm": {
+        "runs": 40,
+        "mse_min": 0.00419725,
+        "mse_mean": 0.00430542,
+        "mse_median": 0.00430523,
+        "mse_max": 0.00443209,
+        "mse_stdev": 6.546e-05
+      },
+      "stress": {
+        "runs": 40,
+        "mse_min": 0.4786551,
+        "mse_mean": 0.49380681,
+        "mse_median": 0.49509412,
+        "mse_max": 0.50956774,
+        "mse_stdev": 0.00863787
+      },
+      "overall": {
+        "runs": 80,
+        "mse_min": 0.00419725,
+        "mse_mean": 0.24905612,
+        "mse_median": 0.2415436,
+        "mse_max": 0.50956774,
+        "mse_stdev": 0.24636965
+      }
+    },
+    "sentinel": {
+      "strategy": "sentinel",
+      "sentinel_uses": 80,
+      "sentinel_use_rate": 1.0,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "calm": {
+        "runs": 40,
+        "mse_min": 0.00958291,
+        "mse_mean": 0.00996608,
+        "mse_median": 0.00997924,
+        "mse_max": 0.01024217,
+        "mse_stdev": 0.00013977
+      },
+      "stress": {
+        "runs": 40,
+        "mse_min": 0.0690297,
+        "mse_mean": 0.07103494,
+        "mse_median": 0.07099594,
+        "mse_max": 0.07257329,
+        "mse_stdev": 0.00088347
+      },
+      "overall": {
+        "runs": 80,
+        "mse_min": 0.00958291,
+        "mse_mean": 0.04050051,
+        "mse_median": 0.03963593,
+        "mse_max": 0.07257329,
+        "mse_stdev": 0.0307335
+      }
+    },
+    "router": {
+      "strategy": "router",
+      "sentinel_uses": 40,
+      "sentinel_use_rate": 0.5,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "calm": {
+        "runs": 40,
+        "mse_min": 0.0041653,
+        "mse_mean": 0.00428106,
+        "mse_median": 0.00427319,
+        "mse_max": 0.00440588,
+        "mse_stdev": 6.349e-05
+      },
+      "stress": {
+        "runs": 40,
+        "mse_min": 0.06739564,
+        "mse_mean": 0.07107717,
+        "mse_median": 0.07100674,
+        "mse_max": 0.07404441,
+        "mse_stdev": 0.00122846
+      },
+      "overall": {
+        "runs": 80,
+        "mse_min": 0.0041653,
+        "mse_mean": 0.03767912,
+        "mse_median": 0.03590076,
+        "mse_max": 0.07404441,
+        "mse_stdev": 0.03361988
+      }
+    }
+  },
+  "comparison": {
+    "router_vs_nurture_stress": 6.94747427,
+    "router_vs_sentinel_calm": 2.32794682,
+    "router_vs_best_fixed_overall": 1.0748794,
+    "router_failure_rate": 0.0,
+    "nurture_failure_rate": 0.5,
+    "sentinel_failure_rate": 0.0
+  }
+}

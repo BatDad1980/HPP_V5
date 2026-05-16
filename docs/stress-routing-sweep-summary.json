@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-05-16T14:00:02.274113+00:00",
+  "pattern": "docs/stress-routing-plugged-seed-*.json",
+  "mode": "plugged",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "rows": [
+    {
+      "file": "docs\\stress-routing-plugged-seed-101.json",
+      "seed": 101,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.65223459,
+      "router_vs_sentinel_calm": 2.79391435,
+      "router_vs_best_fixed_overall": 1.09855609,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-133.json",
+      "seed": 133,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.70373888,
+      "router_vs_sentinel_calm": 2.85292824,
+      "router_vs_best_fixed_overall": 1.10800913,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-14.json",
+      "seed": 14,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.88084155,
+      "router_vs_sentinel_calm": 2.57655435,
+      "router_vs_best_fixed_overall": 1.09107701,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-144.json",
+      "seed": 144,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.72130071,
+      "router_vs_sentinel_calm": 2.68048402,
+      "router_vs_best_fixed_overall": 1.09387545,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-199.json",
+      "seed": 199,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.95004535,
+      "router_vs_sentinel_calm": 2.47202209,
+      "router_vs_best_fixed_overall": 1.08792409,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-21.json",
+      "seed": 21,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.94747427,
+      "router_vs_sentinel_calm": 2.32794682,
+      "router_vs_best_fixed_overall": 1.0748794,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-256.json",
+      "seed": 256,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.66440336,
+      "router_vs_sentinel_calm": 2.90892218,
+      "router_vs_best_fixed_overall": 1.10496448,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-314.json",
+      "seed": 314,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.92114569,
+      "router_vs_sentinel_calm": 2.55932479,
+      "router_vs_best_fixed_overall": 1.08996855,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-42.json",
+      "seed": 42,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.76350531,
+      "router_vs_sentinel_calm": 2.48579114,
+      "router_vs_best_fixed_overall": 1.08515466,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    },
+    {
+      "file": "docs\\stress-routing-plugged-seed-77.json",
+      "seed": 77,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "router_vs_nurture_stress": 6.88232019,
+      "router_vs_sentinel_calm": 2.53200819,
+      "router_vs_best_fixed_overall": 1.09355881,
+      "router_failure_rate": 0.0,
+      "nurture_failure_rate": 0.5,
+      "sentinel_failure_rate": 0.0
+    }
+  ],
+  "metrics": {
+    "router_vs_nurture_stress": {
+      "runs": 10,
+      "min": 6.65223459,
+      "mean": 6.80870099,
+      "median": 6.82217343,
+      "max": 6.95004535,
+      "stdev": 0.11949252
+    },
+    "router_vs_sentinel_calm": {
+      "runs": 10,
+      "min": 2.32794682,
+      "mean": 2.61898962,
+      "median": 2.56793957,
+      "max": 2.90892218,
+      "stdev": 0.18563465
+    },
+    "router_vs_best_fixed_overall": {
+      "runs": 10,
+      "min": 1.0748794,
+      "mean": 1.09279677,
+      "median": 1.09231791,
+      "max": 1.10800913,
+      "stdev": 0.00959465
+    },
+    "router_failure_rate": {
+      "runs": 10,
+      "min": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    }
+  }
+}

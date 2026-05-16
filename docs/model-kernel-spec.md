@@ -65,6 +65,13 @@ Purpose:
 - use low-complexity paths under stress
 - support battery-safe, plugged-in, and demo execution
 
+First evidence:
+
+- `scripts/compare_stress_routing.py`
+- `docs/stress-routing-sweep-summary.md`
+
+The first toy harness uses a provided stress score to switch between nurture and sentinel strategies. This proves routing behavior only; autonomous stress detection remains future work.
+
 ### 5. Evidence Harness
 
 A measurement wrapper around every run.
