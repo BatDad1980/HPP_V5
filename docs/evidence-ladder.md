@@ -280,6 +280,36 @@ Boundary:
 
 This is inference-only scaling evidence. It does not prove model quality, training feasibility, optimizer memory fit, checkpoint practicality, or an efficiency multiple. The sharp latency jump after the 15,360-dimension point suggests the practical edge arrives before absolute allocation failure.
 
+## Ladder 12: HPP Beats Named Baselines On A Bounded Attractor-Recovery Task
+
+Artifacts:
+
+- `scripts/compare_named_baselines.py`
+- `docs/named-baseline-comparison-summary.md`
+- `docs/named-baseline-comparison-plugged.json`
+
+Result:
+
+- Named baselines: nearest-centroid prototype memory, one-pass MLP denoiser, GRU recurrent refiner
+- Best baseline by MSE: `gru_refiner`
+- HPP developmental memory MSE: `0.03431235`
+- Best baseline MSE: `0.03751529`
+- Best-baseline-to-HPP MSE ratio: `1.09334656x`
+- HPP accuracy: `0.47222223`
+- Best baseline accuracy: `0.40277779`
+- HPP stored memory values: `4,632`
+- One-pass MLP parameters: `295,872`
+- GRU parameters: `813,888`
+- Peak allocated CUDA memory: `39.811 MB`
+
+Meaning:
+
+This is the first HPP V5 harness that uses named baseline mechanisms instead of only internal comparisons. In this synthetic attractor-recovery task, HPP developmental memory recovered the target with lower mean error and higher pathway recognition accuracy than the best trained baseline, while using a much smaller stored-memory footprint.
+
+Boundary:
+
+This is mechanism evidence only. The HPP path receives trusted clean anchors after an early noisy period, while the MLP and GRU baselines receive supervised clean targets during gradient training. It does not prove language ability, broad reasoning, production safety, or a fixed efficiency multiple.
+
 ## Current Buyer-Safe Claim
 
 HPP V5 has early measured evidence for:
@@ -294,6 +324,7 @@ HPP V5 has early measured evidence for:
 - stress-aware routing outperforming fixed nurture or sentinel modes in a toy harness
 - inferred stress routing with profile-dependent tap-out behavior
 - billion-parameter-scale recurrent workshop inference on the field RTX 4050 GPU
+- a first named-baseline attractor-recovery comparison
 - a plausible speech-adapter path in the original branch
 
 HPP V5 should not yet claim:
@@ -308,6 +339,6 @@ HPP V5 should not yet claim:
 
 1. Add transcript logging for the original speech branch.
 2. Build a held-out speech regression suite.
-3. Compare against named small baselines on defined tasks.
+3. Expand named-baseline comparisons across more seeds and harder changed-context tasks.
 4. Add power and CUDA memory logs for split-cycle training runs.
 5. Add autonomous stress-signal estimation instead of harness-provided stress values.

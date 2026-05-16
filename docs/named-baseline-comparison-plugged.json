@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-05-16T19:53:59.412190+00:00",
+  "python": "3.12.9",
+  "torch": "2.6.0+cu124",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "allocated_mb_before": 0.0,
+  "reserved_mb_before": 0.0,
+  "peak_allocated_mb": 39.811,
+  "peak_reserved_mb": 58.0,
+  "seed": 14,
+  "classes": 24,
+  "dim": 192,
+  "hidden": 384,
+  "batch": 96,
+  "exposures_per_class": 56,
+  "train_steps": 60,
+  "eval_batches": 24,
+  "train_noise": 0.42,
+  "eval_noise": 1.35,
+  "distractor_scale": 0.28,
+  "elapsed_ms": 1842.374,
+  "training": {
+    "mlp_first_loss": 0.03404231,
+    "mlp_final_loss": 0.00919658,
+    "gru_first_loss": 0.03439862,
+    "gru_final_loss": 0.00787704,
+    "hpp_min_exposures": 33,
+    "hpp_max_exposures": 56,
+    "hpp_locked_classes": 24
+  },
+  "results": {
+    "hpp_developmental_memory": {
+      "name": "hpp_developmental_memory",
+      "mse": {
+        "runs": 24,
+        "mse_min": 0.03036848,
+        "mse_mean": 0.03431235,
+        "mse_median": 0.03448131,
+        "mse_max": 0.04084443,
+        "mse_stdev": 0.00268642
+      },
+      "accuracy": {
+        "runs": 24,
+        "accuracy_min": 0.36458334,
+        "accuracy_mean": 0.47222223,
+        "accuracy_median": 0.46875,
+        "accuracy_max": 0.53125,
+        "accuracy_stdev": 0.04162891
+      },
+      "latency_ms": {
+        "runs": 24,
+        "latency_ms_min": 0.3139,
+        "latency_ms_mean": 1.75630417,
+        "latency_ms_median": 0.35335,
+        "latency_ms_max": 30.91459999,
+        "latency_ms_stdev": 6.21814967
+      }
+    },
+    "nearest_centroid": {
+      "name": "nearest_centroid",
+      "mse": {
+        "runs": 24,
+        "mse_min": 0.02997246,
+        "mse_mean": 0.0383665,
+        "mse_median": 0.03817246,
+        "mse_max": 0.04290775,
+        "mse_stdev": 0.00296564
+      },
+      "accuracy": {
+        "runs": 24,
+        "accuracy_min": 0.36458334,
+        "accuracy_mean": 0.44791668,
+        "accuracy_median": 0.45312501,
+        "accuracy_max": 0.57291669,
+        "accuracy_stdev": 0.04708838
+      },
+      "latency_ms": {
+        "runs": 24,
+        "latency_ms_min": 0.1818,
+        "latency_ms_mean": 0.2323625,
+        "latency_ms_median": 0.1977,
+        "latency_ms_max": 0.6442,
+        "latency_ms_stdev": 0.09710375
+      }
+    },
+    "one_pass_mlp": {
+      "name": "one_pass_mlp",
+      "mse": {
+        "runs": 24,
+        "mse_min": 0.04249796,
+        "mse_mean": 0.04537452,
+        "mse_median": 0.04548895,
+        "mse_max": 0.04911624,
+        "mse_stdev": 0.00153357
+      },
+      "accuracy": {
+        "runs": 24,
+        "accuracy_min": 0.34375,
+        "accuracy_mean": 0.42230904,
+        "accuracy_median": 0.42187501,
+        "accuracy_max": 0.5,
+        "accuracy_stdev": 0.04514252
+      },
+      "latency_ms": {
+        "runs": 24,
+        "latency_ms_min": 0.3062,
+        "latency_ms_mean": 0.615775,
+        "latency_ms_median": 0.5921,
+        "latency_ms_max": 1.3134,
+        "latency_ms_stdev": 0.29178625
+      }
+    },
+    "gru_refiner": {
+      "name": "gru_refiner",
+      "mse": {
+        "runs": 24,
+        "mse_min": 0.03528852,
+        "mse_mean": 0.03751529,
+        "mse_median": 0.03687237,
+        "mse_max": 0.04284312,
+        "mse_stdev": 0.00186476
+      },
+      "accuracy": {
+        "runs": 24,
+        "accuracy_min": 0.28125,
+        "accuracy_mean": 0.40277779,
+        "accuracy_median": 0.40625001,
+        "accuracy_max": 0.46875,
+        "accuracy_stdev": 0.04930704
+      },
+      "latency_ms": {
+        "runs": 24,
+        "latency_ms_min": 0.5402,
+        "latency_ms_mean": 0.85312917,
+        "latency_ms_median": 0.65945,
+        "latency_ms_max": 2.127,
+        "latency_ms_stdev": 0.4269632
+      }
+    }
+  },
+  "comparison": {
+    "best_baseline": "gru_refiner",
+    "hpp_mse_mean": 0.03431235,
+    "best_baseline_mse_mean": 0.03751529,
+    "hpp_vs_best_baseline_mse_ratio": 1.09334656,
+    "hpp_accuracy_mean": 0.47222223,
+    "best_baseline_accuracy_mean": 0.40277779,
+    "hpp_latency_ms_mean": 1.75630417,
+    "mlp_parameters": 295872,
+    "gru_parameters": 813888,
+    "hpp_memory_values": 4632
+  },
+  "boundary": "Synthetic attractor-recovery mechanism evidence only; not a language, agency, or general intelligence benchmark."
+}

@@ -22,8 +22,9 @@ HPP V5 explores whether useful adaptive behavior can be grown through shared rec
 8. `docs/stress-routing-sweep-summary.md`
 9. `docs/inferred-stress-routing-profile-summary.md`
 10. `docs/tapout-boundary-sweep-summary.md`
-11. `docs/soft-stop-guardian-principle.md`
-12. `docs/grow-first-freeze-later.md`
+11. `docs/named-baseline-comparison-summary.md`
+12. `docs/soft-stop-guardian-principle.md`
+13. `docs/grow-first-freeze-later.md`
 
 ## Strongest Current Proof Points
 
@@ -157,6 +158,27 @@ Buyer-safe claim:
 
 HPP can model profile-dependent redlines: the same noise does not mean the same thing for every system.
 
+### Named Baseline Attractor Recovery
+
+Artifact:
+
+- `docs/named-baseline-comparison-summary.md`
+
+Result:
+
+- Best baseline by MSE: `gru_refiner`
+- HPP MSE: `0.03431235`
+- Best baseline MSE: `0.03751529`
+- Best-baseline-to-HPP MSE ratio: `1.09334656x`
+- HPP accuracy: `0.47222223`
+- Best baseline accuracy: `0.40277779`
+- HPP stored memory values: `4,632`
+- GRU parameters: `813,888`
+
+Buyer-safe claim:
+
+On a bounded synthetic attractor-recovery task, HPP developmental memory beat the best named baseline in mean recovery error and pathway recognition accuracy while using a much smaller stored-memory footprint.
+
 ## Current Boundaries
 
 Do not claim:
@@ -167,11 +189,13 @@ Do not claim:
 - The stress/OOD harnesses perform real-world clinical detection.
 - The billion-parameter recurrent run proves training feasibility or model quality.
 - The original speech branch is buyer-safe conversational evidence.
+- The named-baseline result is a general benchmark win beyond the stated synthetic task.
 
 Do claim:
 
 - HPP V5 has reproducible local evidence harnesses.
 - HPP V5 measures shared recurrent depth, memory pressure, stabilization, Habit-14 protection, context-aware recall, developmental curriculum behavior, and stress routing.
+- HPP V5 now includes a first named-baseline synthetic comparison.
 - HPP V5 explicitly records hardware, CUDA mode, parameter count, memory, latency, and boundary notes.
 
 ## Suggested Technical Review Questions
@@ -196,4 +220,3 @@ For licensing or paid evaluation discussions, use:
 Preferred first commercial structure:
 
 `$10,000 - $25,000` for a 30-day private evaluation / option package, subject to written terms and diligence scope.
-

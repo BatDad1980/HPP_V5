@@ -97,6 +97,17 @@ The first plugged RTX 4050 scaling probe measures inference-only recurrent works
 
 This should be treated as hardware envelope evidence only. Training, optimizer state, and useful learned behavior require separate tests.
 
+## Named Baseline Comparison
+
+Artifact:
+
+- `scripts/compare_named_baselines.py`
+- `docs/named-baseline-comparison-summary.md`
+
+The first named-baseline harness compares HPP developmental memory against nearest-centroid prototype memory, a one-pass MLP denoiser, and a GRU recurrent refiner. On the plugged RTX 4050 run, HPP beat the best baseline by mean MSE and accuracy on a synthetic attractor-recovery task while using fewer stored memory values than the trained neural baselines use parameters.
+
+This is still toy mechanism evidence. It should be expanded across seeds, changed-context probes, and less scaffolded training conditions before being treated as a broad performance claim.
+
 ## Shared Depth Versus Unique Depth Scaling
 
 Artifact:
@@ -157,6 +168,7 @@ V5 should eventually measure:
 - quality before and after Habit-14-style stabilization
 - shared recurrent depth versus a unique-layer stack
 - shared recurrent depth versus a baseline with the same parameter budget
+- HPP developmental memory versus named public-style baselines
 - iterative stabilization under controlled noise
 - Habit-14 memory/protection across repeated exposures
 - rigidity risk after over-protection or excessive lock strength
