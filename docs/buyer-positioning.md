@@ -75,3 +75,9 @@ Every buyer-facing claim should point to one of:
 - demo video
 - architecture document
 - patent or portfolio reference
+
+## Evidence Packet
+
+For a reviewer-ready map of current proof points, use:
+
+- `docs/buyer-evidence-packet-index.md`
