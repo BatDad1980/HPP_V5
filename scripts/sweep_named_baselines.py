@@ -217,11 +217,31 @@ def write_summary(result: dict[str, object], output_path: Path) -> None:
         f"- MLP parameters: `{aggregate['mlp_parameters']}`",
         f"- GRU parameters: `{aggregate['gru_parameters']}`",
         "",
+        "## Interpretation",
+        "",
+    ]
+    if aggregate["hpp_mse_win_rate"] < aggregate["hpp_accuracy_win_rate"]:
+        lines.extend(
+            [
+                "This setting separates coordinate reconstruction from pathway recognition. HPP did not win mean MSE here, but it did win the class/pathway recovery metric across the tested seeds.",
+                "",
+            ]
+        )
+    else:
+        lines.extend(
+            [
+                "In this setting, HPP preserved both the recovery-error and pathway-recognition advantage across the tested seeds.",
+                "",
+            ]
+        )
+    lines.extend(
+        [
         "## Boundary",
         "",
         "This is still a synthetic mechanism sweep. It strengthens repeatability for this task only; it does not prove broad model superiority, language ability, production safety, or a fixed efficiency multiple.",
         "",
-    ]
+        ]
+    )
     output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -240,6 +260,7 @@ def main() -> None:
     parser.add_argument("--eval-noise", type=float, default=1.35)
     parser.add_argument("--distractor-scale", type=float, default=0.28)
     parser.add_argument("--lr", type=float, default=0.0016)
+    parser.add_argument("--output-tag", type=str, default="")
     args = parser.parse_args()
 
     seeds = [int(value.strip()) for value in args.seeds.split(",") if value.strip()]
@@ -296,8 +317,9 @@ def main() -> None:
         "boundary": "Synthetic attractor-recovery mechanism sweep only.",
     }
 
-    json_path = Path(f"docs/named-baseline-sweep-{args.mode}.json")
-    summary_path = Path("docs/named-baseline-sweep-summary.md")
+    suffix = f"-{args.output_tag}" if args.output_tag else ""
+    json_path = Path(f"docs/named-baseline-sweep-{args.mode}{suffix}.json")
+    summary_path = Path(f"docs/named-baseline-sweep{suffix}-summary.md")
     json_path.write_text(json.dumps(result, indent=2), encoding="utf-8")
     write_summary(result, summary_path)
 

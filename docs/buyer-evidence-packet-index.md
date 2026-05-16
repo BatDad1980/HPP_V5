@@ -164,6 +164,7 @@ Artifact:
 
 - `docs/named-baseline-comparison-summary.md`
 - `docs/named-baseline-sweep-summary.md`
+- `docs/named-baseline-sweep-big-summary.md`
 
 Result:
 
@@ -179,10 +180,13 @@ Result:
 - Ten-seed HPP accuracy win rate: `1.0`
 - Ten-seed best-baseline-to-HPP MSE ratio mean: `1.08667083x`
 - Ten-seed HPP accuracy minus best baseline mean: `0.02821181`
+- Larger 15-seed sweep HPP accuracy win rate: `1.0`
+- Larger 15-seed sweep HPP MSE win rate: `0.0`
+- Larger 15-seed sweep peak allocated CUDA memory: `103.958 MB`
 
 Buyer-safe claim:
 
-On a bounded synthetic attractor-recovery task, HPP developmental memory beat the best named baseline in mean recovery error and pathway recognition accuracy while using a much smaller stored-memory footprint. The first plugged sweep repeated that win across ten seeds.
+On a bounded synthetic attractor-recovery task, HPP developmental memory beat the best named baseline in mean recovery error and pathway recognition accuracy while using a much smaller stored-memory footprint. The first plugged sweep repeated that win across ten seeds. A larger sweep preserved the pathway-recognition advantage across fifteen seeds but did not preserve the raw MSE advantage.
 
 ## Current Boundaries
 

@@ -290,6 +290,8 @@ Artifacts:
 - `docs/named-baseline-comparison-plugged.json`
 - `docs/named-baseline-sweep-summary.md`
 - `docs/named-baseline-sweep-plugged.json`
+- `docs/named-baseline-sweep-big-summary.md`
+- `docs/named-baseline-sweep-plugged-big.json`
 
 Result:
 
@@ -308,14 +310,19 @@ Result:
 - Ten-seed sweep HPP accuracy win rate: `1.0`
 - Ten-seed best-baseline-to-HPP MSE ratio mean: `1.08667083x`
 - Ten-seed HPP accuracy minus best baseline mean: `0.02821181`
+- Larger 15-seed sweep dimension: `384`
+- Larger 15-seed sweep HPP MSE win rate: `0.0`
+- Larger 15-seed sweep HPP accuracy win rate: `1.0`
+- Larger 15-seed sweep HPP accuracy minus best baseline mean: `0.03271123`
+- Larger 15-seed sweep peak allocated CUDA memory: `103.958 MB`
 
 Meaning:
 
-This is the first HPP V5 harness that uses named baseline mechanisms instead of only internal comparisons. In this synthetic attractor-recovery task, HPP developmental memory recovered the target with lower mean error and higher pathway recognition accuracy than the best trained baseline, while using a much smaller stored-memory footprint. The ten-seed plugged sweep preserved the result across all tested seeds.
+This is the first HPP V5 harness that uses named baseline mechanisms instead of only internal comparisons. In this synthetic attractor-recovery task, HPP developmental memory recovered the target with lower mean error and higher pathway recognition accuracy than the best trained baseline, while using a much smaller stored-memory footprint. The ten-seed plugged sweep preserved the result across all tested seeds. A larger 15-seed sweep split the result: trained neural baselines won raw coordinate MSE, while HPP won pathway-recognition accuracy across all tested seeds.
 
 Boundary:
 
-This is mechanism evidence only. The HPP path receives trusted clean anchors after an early noisy period, while the MLP and GRU baselines receive supervised clean targets during gradient training. It does not prove language ability, broad reasoning, production safety, or a fixed efficiency multiple.
+This is mechanism evidence only. The HPP path receives trusted clean anchors after an early noisy period, while the MLP and GRU baselines receive supervised clean targets during gradient training. It does not prove language ability, broad reasoning, production safety, or a fixed efficiency multiple. The larger sweep shows that recognition and reconstruction should be measured separately.
 
 ## Current Buyer-Safe Claim
 

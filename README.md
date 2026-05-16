@@ -94,6 +94,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Developmental Curriculum Sweep Summary](docs/developmental-curriculum-sweep-summary.md)
 - [Named Baseline Comparison Summary](docs/named-baseline-comparison-summary.md)
 - [Named Baseline Sweep Summary](docs/named-baseline-sweep-summary.md)
+- [Named Baseline Big Sweep Summary](docs/named-baseline-sweep-big-summary.md)
 - [Origin Map](docs/origin-map.md)
 - [Silver / Echo Privacy Note](docs/silver-echo-privacy-note.md)
 - [Patent And IP Connection Map](docs/patent-ip-connection-map.md)

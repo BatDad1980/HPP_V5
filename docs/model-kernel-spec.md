@@ -105,8 +105,9 @@ Artifact:
 - `scripts/sweep_named_baselines.py`
 - `docs/named-baseline-comparison-summary.md`
 - `docs/named-baseline-sweep-summary.md`
+- `docs/named-baseline-sweep-big-summary.md`
 
-The first named-baseline harness compares HPP developmental memory against nearest-centroid prototype memory, a one-pass MLP denoiser, and a GRU recurrent refiner. On the plugged RTX 4050 run, HPP beat the best baseline by mean MSE and accuracy on a synthetic attractor-recovery task while using fewer stored memory values than the trained neural baselines use parameters. The first ten-seed sweep preserved the MSE and accuracy wins across all tested seeds.
+The first named-baseline harness compares HPP developmental memory against nearest-centroid prototype memory, a one-pass MLP denoiser, and a GRU recurrent refiner. On the plugged RTX 4050 run, HPP beat the best baseline by mean MSE and accuracy on a synthetic attractor-recovery task while using fewer stored memory values than the trained neural baselines use parameters. The first ten-seed sweep preserved the MSE and accuracy wins across all tested seeds. A larger 15-seed sweep at dimension 384 preserved pathway-recognition wins but not raw coordinate-MSE wins, which suggests future benchmarks should report reconstruction and recognition separately.
 
 This is still toy mechanism evidence. It should be expanded across seeds, changed-context probes, and less scaffolded training conditions before being treated as a broad performance claim.
 
