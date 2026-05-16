@@ -1,0 +1,351 @@
+{
+  "generated_at": "2026-05-16T13:28:16.444326+00:00",
+  "python": "3.12.9",
+  "mode": "demo",
+  "device": "cpu",
+  "device_name": "CPU",
+  "cuda_available": true,
+  "cuda_version": null,
+  "allocated_mb": 0.0,
+  "reserved_mb": 0.0,
+  "seed": 14,
+  "dim": 128,
+  "batch": 64,
+  "threshold": 14,
+  "exposure_noise": 0.22,
+  "recall_noise": 0.86,
+  "context_scale": 0.42,
+  "learning_rate": 0.35,
+  "trials": 25,
+  "elapsed_ms": 62.383,
+  "conditions": [
+    {
+      "exposures": 1,
+      "threshold": 14,
+      "locked": false,
+      "protection": 0.0,
+      "rigid_prototype_mse_familiar": 0.01169175,
+      "adaptive_core_mse": 0.00070171,
+      "familiar_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.7111674,
+          "mse_mean": 0.7339116,
+          "mse_median": 0.73179388,
+          "mse_max": 0.75529325
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.7111674,
+          "mse_mean": 0.7339116,
+          "mse_median": 0.73179388,
+          "mse_max": 0.75529325
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.7111674,
+          "mse_mean": 0.7339116,
+          "mse_median": 0.73179388,
+          "mse_max": 0.75529325
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        }
+      },
+      "shifted_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.71474832,
+          "mse_mean": 0.74331017,
+          "mse_median": 0.74287212,
+          "mse_max": 0.76885176
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.71474832,
+          "mse_mean": 0.74331017,
+          "mse_median": 0.74287212,
+          "mse_max": 0.76885176
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.71474832,
+          "mse_mean": 0.74331017,
+          "mse_median": 0.74287212,
+          "mse_max": 0.76885176
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        }
+      }
+    },
+    {
+      "exposures": 7,
+      "threshold": 14,
+      "locked": false,
+      "protection": 0.0,
+      "rigid_prototype_mse_familiar": 0.02059903,
+      "adaptive_core_mse": 0.0001742,
+      "familiar_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.71545464,
+          "mse_mean": 0.74179714,
+          "mse_median": 0.74178195,
+          "mse_max": 0.76585859
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.71545464,
+          "mse_mean": 0.74179714,
+          "mse_median": 0.74178195,
+          "mse_max": 0.76585859
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.71545464,
+          "mse_mean": 0.74179714,
+          "mse_median": 0.74178195,
+          "mse_max": 0.76585859
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        }
+      },
+      "shifted_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.71378779,
+          "mse_mean": 0.73660062,
+          "mse_median": 0.73160648,
+          "mse_max": 0.77693951
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.71378779,
+          "mse_mean": 0.73660062,
+          "mse_median": 0.73160648,
+          "mse_max": 0.77693951
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.71378779,
+          "mse_mean": 0.73660062,
+          "mse_median": 0.73160648,
+          "mse_max": 0.77693951
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 1.0,
+          "ratio_mean": 1.0,
+          "ratio_median": 1.0,
+          "ratio_max": 1.0
+        }
+      }
+    },
+    {
+      "exposures": 14,
+      "threshold": 14,
+      "locked": true,
+      "protection": 0.68,
+      "rigid_prototype_mse_familiar": 0.01380664,
+      "adaptive_core_mse": 0.00021317,
+      "familiar_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.7152468,
+          "mse_mean": 0.73690162,
+          "mse_median": 0.73567122,
+          "mse_max": 0.76784974
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.0793516,
+          "mse_mean": 0.08179476,
+          "mse_median": 0.08166374,
+          "mse_max": 0.0847614
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.07330455,
+          "mse_mean": 0.07555153,
+          "mse_median": 0.07548873,
+          "mse_max": 0.07866975
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 9.72959232,
+          "ratio_mean": 9.75363245,
+          "ratio_median": 9.75465902,
+          "ratio_max": 9.7755872
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 1.0756838,
+          "ratio_mean": 1.08266619,
+          "ratio_median": 1.08259104,
+          "ratio_max": 1.09003803
+        }
+      },
+      "shifted_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.72404242,
+          "mse_mean": 0.74214759,
+          "mse_median": 0.74319351,
+          "mse_max": 0.76275957
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.20910765,
+          "mse_mean": 0.21444829,
+          "mse_median": 0.21435603,
+          "mse_max": 0.2196653
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.07423272,
+          "mse_mean": 0.07609953,
+          "mse_median": 0.07619782,
+          "mse_max": 0.07815072
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 9.74311801,
+          "ratio_mean": 9.75234513,
+          "ratio_median": 9.7524465,
+          "ratio_max": 9.76040767
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 2.75421422,
+          "ratio_mean": 2.81826283,
+          "ratio_median": 2.8215676,
+          "ratio_max": 2.90842416
+        }
+      }
+    },
+    {
+      "exposures": 21,
+      "threshold": 14,
+      "locked": true,
+      "protection": 0.855,
+      "rigid_prototype_mse_familiar": 0.0078476,
+      "adaptive_core_mse": 0.00016493,
+      "familiar_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.71383971,
+          "mse_mean": 0.7381844,
+          "mse_median": 0.73993832,
+          "mse_max": 0.77630258
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.02067194,
+          "mse_mean": 0.02124209,
+          "mse_median": 0.02128313,
+          "mse_max": 0.02200279
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.01512046,
+          "mse_mean": 0.01563372,
+          "mse_median": 0.01569231,
+          "mse_max": 0.01642028
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 47.03282329,
+          "ratio_mean": 47.21702963,
+          "ratio_median": 47.22543582,
+          "ratio_max": 47.43171173
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 1.33046916,
+          "ratio_mean": 1.35884438,
+          "ratio_median": 1.35858067,
+          "ratio_max": 1.38053221
+        }
+      },
+      "shifted_context": {
+        "baseline": {
+          "runs": 25,
+          "mse_min": 0.70800257,
+          "mse_mean": 0.74046382,
+          "mse_median": 0.74035203,
+          "mse_max": 0.76175761
+        },
+        "rigid": {
+          "runs": 25,
+          "mse_min": 0.24215846,
+          "mse_mean": 0.24613038,
+          "mse_median": 0.24611239,
+          "mse_max": 0.24933617
+        },
+        "adaptive": {
+          "runs": 25,
+          "mse_min": 0.01502057,
+          "mse_mean": 0.01568795,
+          "mse_median": 0.01568475,
+          "mse_max": 0.01612076
+        },
+        "adaptive_vs_baseline": {
+          "runs": 25,
+          "ratio_min": 47.08590145,
+          "ratio_mean": 47.19932462,
+          "ratio_median": 47.16569785,
+          "ratio_max": 47.39634171
+        },
+        "adaptive_vs_rigid": {
+          "runs": 25,
+          "ratio_min": 15.16453486,
+          "ratio_mean": 15.69390152,
+          "ratio_median": 15.69527335,
+          "ratio_max": 16.38529221
+        }
+      }
+    }
+  ]
+}

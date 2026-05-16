@@ -97,7 +97,32 @@ Boundary:
 
 This is a toy mechanism harness with an explicit repeated signal. It does not prove general language learning, agency, or broad reasoning.
 
-## Ladder 6: Original Branch Speech Adapter Is Improving
+## Ladder 6: Habit-14 Can Protect A Core Without Freezing Context
+
+Artifacts:
+
+- `scripts/compare_changed_context_memory.py`
+- `docs/changed-context-habit-memory-summary.md`
+- `docs/changed-context-habit-memory-plugged.json`
+
+Result:
+
+- Before 14 exposures: no protection and no adaptive improvement
+- At 14 exposures: shifted-context adaptive recall improved over noisy baseline by 9.75428669x
+- At 14 exposures: shifted-context adaptive recall improved over rigid lock by 2.96621249x
+- At 21 exposures: shifted-context adaptive recall improved over noisy baseline by 47.17974545x
+- At 21 exposures: shifted-context adaptive recall improved over rigid lock by 17.01315969x
+- Plugged device: NVIDIA GeForce RTX 4050 Laptop GPU
+
+Meaning:
+
+This moves Habit-14 beyond identical-signal recall. The harness separates a protected core from a changing context and shows that context-aware protection can outperform a rigid full-pattern lock under shifted-context probes.
+
+Boundary:
+
+The context vector is known to the adaptive memory. This proves a design mechanism for context-aware protection, not autonomous context discovery or broad reasoning.
+
+## Ladder 7: Original Branch Speech Adapter Is Improving
 
 Artifact: `docs/original-speech-progress.md`
 
@@ -116,7 +141,7 @@ Boundary:
 
 This is not yet buyer-safe conversational evidence. It needs held-out prompts, transcript logging, repetition metrics, and cleaner curriculum.
 
-## Ladder 7: Staged Developmental Curriculum Beats A Flat Prototype On A Toy Task
+## Ladder 8: Staged Developmental Curriculum Beats A Flat Prototype On A Toy Task
 
 Artifacts:
 
@@ -156,6 +181,7 @@ HPP V5 has early measured evidence for:
 - parameter reuse through shared recurrent depth
 - stronger noisy-state stabilization through repeated loops
 - Habit-14-style protected recall after repeated exposure
+- context-aware Habit-14 recall under shifted context
 - staged developmental exposure outperforming a flat prototype on a toy recovery task
 - a plausible speech-adapter path in the original branch
 
@@ -169,9 +195,8 @@ HPP V5 should not yet claim:
 
 ## Next Evidence Rungs
 
-1. Measure Habit-14 memory under changed context, not only repeated identical signal.
-2. Add transcript logging for the original speech branch.
-3. Build a held-out speech regression suite.
-4. Add stress-routing harnesses that compare nurture versus sentinel behavior.
-5. Compare against named small baselines on defined tasks.
-6. Add power and CUDA memory logs for split-cycle training runs.
+1. Add transcript logging for the original speech branch.
+2. Build a held-out speech regression suite.
+3. Add stress-routing harnesses that compare nurture versus sentinel behavior.
+4. Compare against named small baselines on defined tasks.
+5. Add power and CUDA memory logs for split-cycle training runs.

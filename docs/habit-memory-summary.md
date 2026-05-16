@@ -70,3 +70,20 @@ This supports a more mature HPP rule:
 Human-facing translation:
 
 > Habit-14 is the point where repeated practice begins acting less like a fresh decision and more like muscle memory.
+
+## Changed-Context Follow-Up
+
+Artifact:
+
+- `docs/changed-context-habit-memory-summary.md`
+
+The next harness tested whether a protected pathway can preserve a stable core without becoming brittle when context changes.
+
+At 21 exposures on the plugged RTX 4050 run:
+
+- shifted-context adaptive recall improved over noisy baseline by 47.17974545x
+- shifted-context adaptive recall improved over a rigid full-pattern lock by 17.01315969x
+
+Meaning:
+
+Habit-14 should protect the core pathway, not freeze every surrounding condition. This supports a more mature HPP rule: stabilized memory needs context-aware plasticity, otherwise it can become a rigid habit instead of an adaptive one.

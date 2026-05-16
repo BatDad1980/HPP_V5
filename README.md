@@ -78,6 +78,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Iterative Stability Harness Plan](docs/iterative-stability-harness-plan.md)
 - [Iterative Stability Summary](docs/iterative-stability-summary.md)
 - [Habit-14 Memory Summary](docs/habit-memory-summary.md)
+- [Changed-Context Habit Memory Summary](docs/changed-context-habit-memory-summary.md)
 - [Developmental Noise Filtering](docs/developmental-noise-filtering.md)
 - [Grow First, Freeze Later](docs/grow-first-freeze-later.md)
 - [Developmental Curriculum Harness Plan](docs/developmental-curriculum-harness-plan.md)
