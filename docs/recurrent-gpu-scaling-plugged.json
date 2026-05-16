@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-05-16T15:10:54.062093+00:00",
+  "python": "3.12.9",
+  "torch": "2.6.0+cu124",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "batch": 2,
+  "passes": 14,
+  "warmups": 0,
+  "runs_per_size": 1,
+  "results": [
+    {
+      "dim": 4096,
+      "batch": 2,
+      "passes": 14,
+      "parameters": 100687872,
+      "parameter_mb_fp32": 384.094,
+      "timing": {
+        "runs": 1,
+        "elapsed_ms_min": 114.3853,
+        "elapsed_ms_mean": 114.3853,
+        "elapsed_ms_median": 114.3853,
+        "elapsed_ms_max": 114.3853
+      },
+      "peak_allocated_mb": 393.438,
+      "peak_reserved_mb": 406.0,
+      "current_allocated_mb_before_cleanup": 392.281,
+      "effective_token_steps": 28,
+      "effective_token_steps_per_second": 244.787,
+      "output_norm": 154.884857,
+      "status": "ok"
+    },
+    {
+      "dim": 8192,
+      "batch": 2,
+      "passes": 14,
+      "parameters": 402702336,
+      "parameter_mb_fp32": 1536.188,
+      "timing": {
+        "runs": 1,
+        "elapsed_ms_min": 141.8474,
+        "elapsed_ms_mean": 141.8474,
+        "elapsed_ms_median": 141.8474,
+        "elapsed_ms_max": 141.8474
+      },
+      "peak_allocated_mb": 1545.75,
+      "peak_reserved_mb": 1558.0,
+      "current_allocated_mb_before_cleanup": 1544.438,
+      "effective_token_steps": 28,
+      "effective_token_steps_per_second": 197.395,
+      "output_norm": 215.913101,
+      "status": "ok"
+    },
+    {
+      "dim": 12288,
+      "batch": 2,
+      "passes": 14,
+      "parameters": 906043392,
+      "parameter_mb_fp32": 3456.281,
+      "timing": {
+        "runs": 1,
+        "elapsed_ms_min": 318.0524,
+        "elapsed_ms_mean": 318.0524,
+        "elapsed_ms_median": 318.0524,
+        "elapsed_ms_max": 318.0524
+      },
+      "peak_allocated_mb": 3466.062,
+      "peak_reserved_mb": 3480.0,
+      "current_allocated_mb_before_cleanup": 3464.594,
+      "effective_token_steps": 28,
+      "effective_token_steps_per_second": 88.036,
+      "output_norm": 267.332611,
+      "status": "ok"
+    },
+    {
+      "dim": 15360,
+      "batch": 2,
+      "passes": 14,
+      "parameters": 1415669760,
+      "parameter_mb_fp32": 5400.352,
+      "timing": {
+        "runs": 1,
+        "elapsed_ms_min": 457.0935,
+        "elapsed_ms_mean": 457.0935,
+        "elapsed_ms_median": 457.0935,
+        "elapsed_ms_max": 457.0935
+      },
+      "peak_allocated_mb": 5410.297,
+      "peak_reserved_mb": 5424.0,
+      "current_allocated_mb_before_cleanup": 5408.711,
+      "effective_token_steps": 28,
+      "effective_token_steps_per_second": 61.257,
+      "output_norm": 298.30011,
+      "status": "ok"
+    },
+    {
+      "dim": 17408,
+      "batch": 2,
+      "passes": 14,
+      "parameters": 1818335232,
+      "parameter_mb_fp32": 6936.398,
+      "timing": {
+        "runs": 1,
+        "elapsed_ms_min": 4306.4649,
+        "elapsed_ms_mean": 4306.4649,
+        "elapsed_ms_median": 4306.4649,
+        "elapsed_ms_max": 4306.4649
+      },
+      "peak_allocated_mb": 6946.453,
+      "peak_reserved_mb": 6960.0,
+      "current_allocated_mb_before_cleanup": 6944.789,
+      "effective_token_steps": 28,
+      "effective_token_steps_per_second": 6.502,
+      "output_norm": 314.990204,
+      "status": "ok"
+    },
+    {
+      "dim": 18432,
+      "batch": 2,
+      "passes": 14,
+      "parameters": 2038542336,
+      "parameter_mb_fp32": 7776.422,
+      "timing": {
+        "runs": 1,
+        "elapsed_ms_min": 6240.978,
+        "elapsed_ms_mean": 6240.978,
+        "elapsed_ms_median": 6240.978,
+        "elapsed_ms_max": 6240.978
+      },
+      "peak_allocated_mb": 7786.531,
+      "peak_reserved_mb": 7800.0,
+      "current_allocated_mb_before_cleanup": 7784.828,
+      "effective_token_steps": 28,
+      "effective_token_steps_per_second": 4.486,
+      "output_norm": 322.895203,
+      "status": "ok"
+    },
+    {
+      "dim": 19456,
+      "batch": 2,
+      "passes": 14,
+      "parameters": 2271332352,
+      "parameter_mb_fp32": 8664.445,
+      "timing": {
+        "runs": 1,
+        "elapsed_ms_min": 8555.7338,
+        "elapsed_ms_mean": 8555.7338,
+        "elapsed_ms_median": 8555.7338,
+        "elapsed_ms_max": 8555.7338
+      },
+      "peak_allocated_mb": 8674.609,
+      "peak_reserved_mb": 8688.0,
+      "current_allocated_mb_before_cleanup": 8672.867,
+      "effective_token_steps": 28,
+      "effective_token_steps_per_second": 3.273,
+      "output_norm": 333.951385,
+      "status": "ok"
+    }
+  ]
+}

@@ -71,6 +71,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Field Lab Constraints](docs/field-lab-constraints.md)
 - [Model Kernel Spec](docs/model-kernel-spec.md)
 - [Kernel Probe Summary](docs/kernel-probe-summary.md)
+- [Recurrent GPU Scaling Summary](docs/recurrent-gpu-scaling-summary.md)
 - [Evidence Ladder](docs/evidence-ladder.md)
 - [Disconnect Handoff 2026-05-15](docs/disconnect-handoff-2026-05-15.md)
 - [Recurrent vs Stack Summary](docs/recurrent-vs-stack-summary.md)

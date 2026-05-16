@@ -72,6 +72,17 @@ First evidence:
 
 The first toy harness uses a provided stress score to switch between nurture and sentinel strategies. This proves routing behavior only; autonomous stress detection remains future work.
 
+## Scaling Probe
+
+Artifact:
+
+- `scripts/sweep_recurrent_gpu_scale.py`
+- `docs/recurrent-gpu-scaling-summary.md`
+
+The first plugged RTX 4050 scaling probe measures inference-only recurrent workshop size. The largest completed probe used a 19,456-dimensional workshop with 2,271,332,352 parameters and 14 recurrent passes. The practical latency edge appeared earlier, around the 15,360-dimensional probe with 1,415,669,760 parameters.
+
+This should be treated as hardware envelope evidence only. Training, optimizer state, and useful learned behavior require separate tests.
+
 ### 5. Evidence Harness
 
 A measurement wrapper around every run.

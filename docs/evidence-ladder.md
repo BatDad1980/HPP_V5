@@ -203,6 +203,34 @@ Boundary:
 
 The stress score is provided by the harness. This tests stress-aware routing behavior, not autonomous stress detection or real-world safety.
 
+## Ladder 10: Recurrent Workshop Scales Into Billion-Parameter Inference On Field GPU
+
+Artifacts:
+
+- `scripts/sweep_recurrent_gpu_scale.py`
+- `docs/recurrent-gpu-scaling-summary.md`
+- `docs/recurrent-gpu-scaling-plugged.json`
+
+Result:
+
+- Plugged device: NVIDIA GeForce RTX 4050 Laptop GPU
+- Passes per run: 14
+- Largest successful dimension: 19,456
+- Largest successful batch: 2
+- Largest successful parameter count: 2,271,332,352
+- FP32 parameter footprint at largest size: 8,664.445 MB
+- Peak allocated CUDA memory at largest size: 8,674.609 MB
+- Mean latency at largest size: 8,555.7338 ms
+- Largest practical faster point before the sharp slowdown: 15,360 dimension, 1,415,669,760 parameters, 457.0935 ms mean latency, 5,410.297 MB peak allocated
+
+Meaning:
+
+This is the first deliberate GPU ceiling probe for the HPP recurrent workshop. It shows that the field laptop can execute very large shared-weight recurrent inference in FP32, including billion-parameter-scale workshop instances, without training or optimizer state.
+
+Boundary:
+
+This is inference-only scaling evidence. It does not prove model quality, training feasibility, optimizer memory fit, checkpoint practicality, or an efficiency multiple. The sharp latency jump after the 15,360-dimension point suggests the practical edge arrives before absolute allocation failure.
+
 ## Current Buyer-Safe Claim
 
 HPP V5 has early measured evidence for:
@@ -214,6 +242,7 @@ HPP V5 has early measured evidence for:
 - context-aware Habit-14 recall under shifted context
 - staged developmental exposure outperforming a flat prototype on a toy recovery task
 - stress-aware routing outperforming fixed nurture or sentinel modes in a toy harness
+- billion-parameter-scale recurrent workshop inference on the field RTX 4050 GPU
 - a plausible speech-adapter path in the original branch
 
 HPP V5 should not yet claim:
@@ -228,6 +257,7 @@ HPP V5 should not yet claim:
 
 1. Add transcript logging for the original speech branch.
 2. Build a held-out speech regression suite.
-3. Compare against named small baselines on defined tasks.
-4. Add power and CUDA memory logs for split-cycle training runs.
-5. Add autonomous stress-signal estimation instead of harness-provided stress values.
+3. Compare recurrent scaling against unique-stack scaling at matched effective depth.
+4. Compare against named small baselines on defined tasks.
+5. Add power and CUDA memory logs for split-cycle training runs.
+6. Add autonomous stress-signal estimation instead of harness-provided stress values.
