@@ -72,6 +72,13 @@ First evidence:
 
 The first toy harness uses a provided stress score to switch between nurture and sentinel strategies. This proves routing behavior only; autonomous stress detection remains future work.
 
+Inferred-routing follow-up:
+
+- `scripts/compare_inferred_stress_routing.py`
+- `docs/inferred-stress-routing-profile-summary.md`
+
+The inferred-routing harness estimates stress from state telemetry and adds an OOD tap-out path. The first profile comparison shows that tap-out thresholds should be profile-dependent: a high-intensity profile can treat noise as tolerable that a standard profile would route away from.
+
 ## Scaling Probe
 
 Artifact:

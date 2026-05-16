@@ -212,7 +212,37 @@ Boundary:
 
 The stress score is provided by the harness. This tests stress-aware routing behavior, not autonomous stress detection or real-world safety.
 
-## Ladder 10: Recurrent Workshop Scales Into Billion-Parameter Inference On Field GPU
+## Ladder 10: Inferred Stress Routing Supports Tolerance Profiles
+
+Artifacts:
+
+- `scripts/compare_inferred_stress_routing.py`
+- `docs/inferred-stress-routing-summary.md`
+- `docs/inferred-stress-routing-profile-summary.md`
+- `docs/inferred-stress-routing-plugged.json`
+
+Result:
+
+- Inferred route accuracy: 0.90
+- Standard profile inferred router versus nurture under stress: 6.92724491x
+- Standard profile inferred router failure rate: 0.20
+- Standard profile tap-out router versus inferred router overall: 2.41826887x
+- Standard profile tap-out router failure rate: 0.0
+- Low-tolerance profile tap-out rate: 0.20
+- Standard profile tap-out rate: 0.20
+- High-intensity profile tap-out rate: 0.0
+- High-intensity profile tap-out failure rate: 0.20
+- Plugged device: NVIDIA GeForce RTX 4050 Laptop GPU
+
+Meaning:
+
+This moves stress routing beyond an oracle stress value. The harness estimates stress from state telemetry and adds an out-of-distribution tap-out path. It also introduces tolerance profiles: the same noise can trigger tap-out in a standard profile while remaining within operating range for a high-intensity profile.
+
+Boundary:
+
+The stress and OOD estimators are hand-built and calibrated to this synthetic harness. This is not real-world mental-state detection, clinical safety, or autonomous risk assessment.
+
+## Ladder 11: Recurrent Workshop Scales Into Billion-Parameter Inference On Field GPU
 
 Artifacts:
 
@@ -252,6 +282,7 @@ HPP V5 has early measured evidence for:
 - context-aware Habit-14 recall under shifted context
 - staged developmental exposure outperforming a flat prototype on a toy recovery task
 - stress-aware routing outperforming fixed nurture or sentinel modes in a toy harness
+- inferred stress routing with profile-dependent tap-out behavior
 - billion-parameter-scale recurrent workshop inference on the field RTX 4050 GPU
 - a plausible speech-adapter path in the original branch
 

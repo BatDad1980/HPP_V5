@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-05-16T16:20:41.944717+00:00",
+  "python": "3.12.9",
+  "mode": "demo",
+  "device": "cpu",
+  "device_name": "CPU",
+  "cuda_available": true,
+  "cuda_version": null,
+  "seed": 14,
+  "dim": 128,
+  "batch": 64,
+  "trials": 100,
+  "stress_low": 0.18,
+  "stress_high": 0.86,
+  "stress_threshold": 0.62,
+  "ood_threshold": 0.55,
+  "elapsed_ms": 34.675,
+  "route_accuracy": 0.9,
+  "tapout_rate": 0.2,
+  "inferred_stress": {
+    "runs": 100,
+    "value_min": 0.3630045,
+    "value_mean": 0.75396228,
+    "value_median": 1.0,
+    "value_max": 1.0,
+    "value_stdev": 0.30292104
+  },
+  "ood_score": {
+    "runs": 100,
+    "value_min": 0.0,
+    "value_mean": 0.13677715,
+    "value_median": 0.0,
+    "value_max": 0.72015674,
+    "value_stdev": 0.27521234
+  },
+  "strategies": {
+    "nurture": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00420559,
+        "mse_mean": 0.45797338,
+        "mse_median": 0.33961096,
+        "mse_max": 2.39977551,
+        "mse_stdev": 0.67125209
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00420559,
+        "mse_mean": 0.04032396,
+        "mse_median": 0.00436081,
+        "mse_max": 0.18830137,
+        "mse_stdev": 0.07270852
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.49092054,
+        "mse_mean": 0.87562279,
+        "mse_median": 0.51215419,
+        "mse_max": 2.39977551,
+        "mse_stdev": 0.74100336
+      },
+      "failure_rate": 0.6
+    },
+    "sentinel": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.01112052,
+        "mse_mean": 0.1013301,
+        "mse_median": 0.07453812,
+        "mse_max": 0.34152305,
+        "mse_stdev": 0.11968216
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.01112052,
+        "mse_mean": 0.0754158,
+        "mse_median": 0.01159471,
+        "mse_max": 0.33838347,
+        "mse_stdev": 0.12907839
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.07281668,
+        "mse_mean": 0.1272444,
+        "mse_median": 0.07596807,
+        "mse_max": 0.34152305,
+        "mse_stdev": 0.10444242
+      },
+      "failure_rate": 0.2
+    },
+    "oracle_router": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00420559,
+        "mse_mean": 0.08378418,
+        "mse_median": 0.07453812,
+        "mse_max": 0.34152305,
+        "mse_stdev": 0.09961652
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00420559,
+        "mse_mean": 0.04032396,
+        "mse_median": 0.00436081,
+        "mse_max": 0.18830137,
+        "mse_stdev": 0.07270852
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.07281668,
+        "mse_mean": 0.1272444,
+        "mse_median": 0.07596807,
+        "mse_max": 0.34152305,
+        "mse_stdev": 0.10444242
+      },
+      "failure_rate": 0.2
+    },
+    "inferred_router": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00492338,
+        "mse_mean": 0.09911821,
+        "mse_median": 0.07453812,
+        "mse_max": 0.34152305,
+        "mse_stdev": 0.12137801
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00492338,
+        "mse_mean": 0.07099201,
+        "mse_median": 0.00609491,
+        "mse_max": 0.33838347,
+        "mse_stdev": 0.13131349
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.07281668,
+        "mse_mean": 0.1272444,
+        "mse_median": 0.07596807,
+        "mse_max": 0.34152305,
+        "mse_stdev": 0.10444242
+      },
+      "failure_rate": 0.2
+    },
+    "tapout_router": {
+      "overall": {
+        "runs": 100,
+        "mse_min": 0.00492338,
+        "mse_mean": 0.04103255,
+        "mse_median": 0.04221919,
+        "mse_max": 0.0781853,
+        "mse_stdev": 0.03128433
+      },
+      "calm": {
+        "runs": 50,
+        "mse_min": 0.00492338,
+        "mse_mean": 0.01316929,
+        "mse_median": 0.00609491,
+        "mse_max": 0.04273623,
+        "mse_stdev": 0.01449056
+      },
+      "stress": {
+        "runs": 50,
+        "mse_min": 0.04075506,
+        "mse_mean": 0.06889582,
+        "mse_median": 0.07505417,
+        "mse_max": 0.0781853,
+        "mse_stdev": 0.01352791
+      },
+      "failure_rate": 0.0
+    }
+  },
+  "comparison": {
+    "inferred_vs_nurture_stress": 6.88142494,
+    "inferred_vs_sentinel_calm": 1.06231391,
+    "inferred_vs_best_fixed_overall": 1.02231573,
+    "inferred_vs_oracle_overall": 0.84529556,
+    "inferred_failure_rate": 0.2,
+    "tapout_vs_inferred_overall": 2.41559935,
+    "tapout_failure_rate": 0.0
+  }
+}
