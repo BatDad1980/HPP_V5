@@ -324,6 +324,33 @@ Boundary:
 
 This is mechanism evidence only. The HPP path receives trusted clean anchors after an early noisy period, while the MLP and GRU baselines receive supervised clean targets during gradient training. It does not prove language ability, broad reasoning, production safety, or a fixed efficiency multiple. The larger sweep shows that recognition and reconstruction should be measured separately.
 
+## Ladder 13: Robotics Adapter Routes Unsafe States To Protection Before Hardware
+
+Artifacts:
+
+- `docs/embodied-safety-charter.md`
+- `docs/robotics-adapter-spec.md`
+- `scripts/simulate_robotics_adapter.py`
+- `docs/robotics-adapter-synthetic-summary.md`
+- `docs/robotics-adapter-synthetic.json`
+
+Result:
+
+- Live hardware connected: `False`
+- Unitree SDK imported: `False`
+- Scenario count: `7`
+- Uncertain or unsafe scenario count: `5`
+- Protected uncertain or unsafe count: `5`
+- Protected uncertain or unsafe rate: `1.0`
+
+Meaning:
+
+This is the first embodied HPP evidence artifact. It proves the software-side safety boundary before any live robot integration. The synthetic adapter routes low battery, high IMU instability, high joint error, operator override, and unknown state away from autonomous action.
+
+Boundary:
+
+This does not control a robot. It is dependency-free routing evidence only, designed to keep future Unitree, custom Masamune, or actuator-bench work gated by simulation, evidence logging, and Sentinel protection.
+
 ## Current Buyer-Safe Claim
 
 HPP V5 has early measured evidence for:
@@ -339,6 +366,7 @@ HPP V5 has early measured evidence for:
 - inferred stress routing with profile-dependent tap-out behavior
 - billion-parameter-scale recurrent workshop inference on the field RTX 4050 GPU
 - a first named-baseline attractor-recovery comparison
+- a simulation-first robotics adapter safety boundary
 - a plausible speech-adapter path in the original branch
 
 HPP V5 should not yet claim:
