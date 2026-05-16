@@ -87,6 +87,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [Inferred Stress Routing Profile Summary](docs/inferred-stress-routing-profile-summary.md)
 - [Inferred Stress Profile Sweep Summary](docs/inferred-stress-profile-sweep-summary.md)
 - [Tap-Out Boundary Sweep Summary](docs/tapout-boundary-sweep-summary.md)
+- [Soft-Stop Guardian Principle](docs/soft-stop-guardian-principle.md)
 - [Grow First, Freeze Later](docs/grow-first-freeze-later.md)
 - [Developmental Curriculum Harness Plan](docs/developmental-curriculum-harness-plan.md)
 - [Developmental Curriculum Summary](docs/developmental-curriculum-summary.md)

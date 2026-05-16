@@ -40,6 +40,7 @@ HPP emphasizes:
 - local evidence
 - pathway stabilization
 - state-aware routing
+- profile-aware soft stops
 - efficient adaptation under constraint
 
 ## Biological Inspiration
@@ -53,6 +54,16 @@ It uses biological development as an engineering metaphor:
 - adolescence: executive oversight
 - adulthood: stabilized pathways and filtered signal
 - guardian state: reliable response under stress
+
+## Guardian Principle
+
+HPP separates tolerance from safety judgment.
+
+A system may be capable of continuing under extreme noise, stress, novelty, or resource pressure. That does not mean continuing is wise. Mature intelligence should develop soft-stop thresholds before substrate failure.
+
+Design phrase:
+
+> Do not wait for hardware failure to prove the system needs protection.
 
 ## Evidence Path
 

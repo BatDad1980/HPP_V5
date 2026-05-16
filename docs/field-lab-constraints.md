@@ -83,3 +83,7 @@ HPP V5 should eventually include:
 ## Design Principle
 
 If HPP can work from a car on uncertain power, it can work almost anywhere.
+
+Field-lab guardian rule:
+
+Do not wait for hardware failure to prove the system needs protection. Prefer bounded runs, CUDA checks, frequent commits, and resumable experiments over heroic monolithic jobs.
