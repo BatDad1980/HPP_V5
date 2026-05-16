@@ -102,9 +102,11 @@ This should be treated as hardware envelope evidence only. Training, optimizer s
 Artifact:
 
 - `scripts/compare_named_baselines.py`
+- `scripts/sweep_named_baselines.py`
 - `docs/named-baseline-comparison-summary.md`
+- `docs/named-baseline-sweep-summary.md`
 
-The first named-baseline harness compares HPP developmental memory against nearest-centroid prototype memory, a one-pass MLP denoiser, and a GRU recurrent refiner. On the plugged RTX 4050 run, HPP beat the best baseline by mean MSE and accuracy on a synthetic attractor-recovery task while using fewer stored memory values than the trained neural baselines use parameters.
+The first named-baseline harness compares HPP developmental memory against nearest-centroid prototype memory, a one-pass MLP denoiser, and a GRU recurrent refiner. On the plugged RTX 4050 run, HPP beat the best baseline by mean MSE and accuracy on a synthetic attractor-recovery task while using fewer stored memory values than the trained neural baselines use parameters. The first ten-seed sweep preserved the MSE and accuracy wins across all tested seeds.
 
 This is still toy mechanism evidence. It should be expanded across seeds, changed-context probes, and less scaffolded training conditions before being treated as a broad performance claim.
 

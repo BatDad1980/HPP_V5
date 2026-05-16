@@ -285,8 +285,11 @@ This is inference-only scaling evidence. It does not prove model quality, traini
 Artifacts:
 
 - `scripts/compare_named_baselines.py`
+- `scripts/sweep_named_baselines.py`
 - `docs/named-baseline-comparison-summary.md`
 - `docs/named-baseline-comparison-plugged.json`
+- `docs/named-baseline-sweep-summary.md`
+- `docs/named-baseline-sweep-plugged.json`
 
 Result:
 
@@ -301,10 +304,14 @@ Result:
 - One-pass MLP parameters: `295,872`
 - GRU parameters: `813,888`
 - Peak allocated CUDA memory: `39.811 MB`
+- Ten-seed sweep HPP MSE win rate: `1.0`
+- Ten-seed sweep HPP accuracy win rate: `1.0`
+- Ten-seed best-baseline-to-HPP MSE ratio mean: `1.08667083x`
+- Ten-seed HPP accuracy minus best baseline mean: `0.02821181`
 
 Meaning:
 
-This is the first HPP V5 harness that uses named baseline mechanisms instead of only internal comparisons. In this synthetic attractor-recovery task, HPP developmental memory recovered the target with lower mean error and higher pathway recognition accuracy than the best trained baseline, while using a much smaller stored-memory footprint.
+This is the first HPP V5 harness that uses named baseline mechanisms instead of only internal comparisons. In this synthetic attractor-recovery task, HPP developmental memory recovered the target with lower mean error and higher pathway recognition accuracy than the best trained baseline, while using a much smaller stored-memory footprint. The ten-seed plugged sweep preserved the result across all tested seeds.
 
 Boundary:
 

@@ -1,0 +1,1408 @@
+{
+  "generated_at": "2026-05-16T20:03:21.339677+00:00",
+  "python": "3.12.9",
+  "torch": "2.6.0+cu124",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "seeds": [
+    14,
+    21,
+    42,
+    77,
+    101,
+    133,
+    144,
+    199,
+    256,
+    314
+  ],
+  "classes": 24,
+  "dim": 192,
+  "hidden": 384,
+  "batch": 96,
+  "exposures_per_class": 56,
+  "train_steps": 60,
+  "eval_batches": 24,
+  "train_noise": 0.42,
+  "eval_noise": 1.35,
+  "distractor_scale": 0.28,
+  "aggregate": {
+    "hpp_mse_wins": 10,
+    "hpp_accuracy_wins": 10,
+    "hpp_mse_win_rate": 1.0,
+    "hpp_accuracy_win_rate": 1.0,
+    "best_baseline_to_hpp_mse_ratio": {
+      "runs": 10,
+      "ratio_min": 1.04869616,
+      "ratio_mean": 1.08667083,
+      "ratio_median": 1.08728139,
+      "ratio_max": 1.12808547,
+      "ratio_stdev": 0.02504579
+    },
+    "hpp_accuracy_minus_best_baseline": {
+      "runs": 10,
+      "delta_min": 0.00694444,
+      "delta_mean": 0.02821181,
+      "delta_median": 0.02256945,
+      "delta_max": 0.05902778,
+      "delta_stdev": 0.01640908
+    },
+    "peak_allocated_mb": {
+      "runs": 10,
+      "mb_min": 39.811,
+      "mb_mean": 39.811,
+      "mb_median": 39.811,
+      "mb_max": 39.811,
+      "mb_stdev": 0.0
+    },
+    "mlp_parameters": 295872,
+    "gru_parameters": 813888,
+    "hpp_memory_values": 4632
+  },
+  "seed_reports": [
+    {
+      "comparison": {
+        "seed": 14,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.03431235,
+        "best_baseline_mse_mean": 0.03751529,
+        "best_baseline_to_hpp_mse_ratio": 1.09334656,
+        "hpp_accuracy_mean": 0.47222223,
+        "best_baseline_accuracy_mean": 0.44791668,
+        "hpp_accuracy_minus_best_baseline": 0.02430555,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 1893.078,
+        "mlp_final_loss": 0.00919658,
+        "gru_final_loss": 0.00787704,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03036848,
+            "mse_mean": 0.03431235,
+            "mse_median": 0.03448131,
+            "mse_max": 0.04084443,
+            "mse_stdev": 0.00268642
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.36458334,
+            "accuracy_mean": 0.47222223,
+            "accuracy_median": 0.46875,
+            "accuracy_max": 0.53125,
+            "accuracy_stdev": 0.04162891
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.32580001,
+            "latency_ms_mean": 1.588325,
+            "latency_ms_median": 0.3674,
+            "latency_ms_max": 28.5018,
+            "latency_ms_stdev": 5.73384408
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02997246,
+            "mse_mean": 0.0383665,
+            "mse_median": 0.03817246,
+            "mse_max": 0.04290775,
+            "mse_stdev": 0.00296564
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.36458334,
+            "accuracy_mean": 0.44791668,
+            "accuracy_median": 0.45312501,
+            "accuracy_max": 0.57291669,
+            "accuracy_stdev": 0.04708838
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.1889,
+            "latency_ms_mean": 0.25585833,
+            "latency_ms_median": 0.2055,
+            "latency_ms_max": 0.9271,
+            "latency_ms_stdev": 0.14941019
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04249796,
+            "mse_mean": 0.04537452,
+            "mse_median": 0.04548895,
+            "mse_max": 0.04911624,
+            "mse_stdev": 0.00153357
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.34375,
+            "accuracy_mean": 0.42230904,
+            "accuracy_median": 0.42187501,
+            "accuracy_max": 0.5,
+            "accuracy_stdev": 0.04514252
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.32229999,
+            "latency_ms_mean": 0.3926875,
+            "latency_ms_median": 0.3456,
+            "latency_ms_max": 0.64100001,
+            "latency_ms_stdev": 0.09850115
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03528852,
+            "mse_mean": 0.03751529,
+            "mse_median": 0.03687237,
+            "mse_max": 0.04284312,
+            "mse_stdev": 0.00186476
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.28125,
+            "accuracy_mean": 0.40277779,
+            "accuracy_median": 0.40625001,
+            "accuracy_max": 0.46875,
+            "accuracy_stdev": 0.04930704
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.68490001,
+            "latency_ms_mean": 0.9510375,
+            "latency_ms_median": 0.78474999,
+            "latency_ms_max": 2.3045,
+            "latency_ms_stdev": 0.42014995
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 21,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.03311518,
+        "best_baseline_mse_mean": 0.0361132,
+        "best_baseline_to_hpp_mse_ratio": 1.0905331,
+        "hpp_accuracy_mean": 0.48437501,
+        "best_baseline_accuracy_mean": 0.42534723,
+        "hpp_accuracy_minus_best_baseline": 0.05902778,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 648.215,
+        "mlp_final_loss": 0.00958128,
+        "gru_final_loss": 0.00699314,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02688412,
+            "mse_mean": 0.03311518,
+            "mse_median": 0.03323018,
+            "mse_max": 0.04008343,
+            "mse_stdev": 0.00329201
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.375,
+            "accuracy_mean": 0.48437501,
+            "accuracy_median": 0.47916669,
+            "accuracy_max": 0.58333337,
+            "accuracy_stdev": 0.05103104
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.34280001,
+            "latency_ms_mean": 0.53965417,
+            "latency_ms_median": 0.41295,
+            "latency_ms_max": 1.27570001,
+            "latency_ms_stdev": 0.25386274
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03319207,
+            "mse_mean": 0.03982781,
+            "mse_median": 0.0396028,
+            "mse_max": 0.04575113,
+            "mse_stdev": 0.00358246
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.33333334,
+            "accuracy_mean": 0.42534723,
+            "accuracy_median": 0.42708334,
+            "accuracy_max": 0.53125,
+            "accuracy_stdev": 0.05727451
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.1986,
+            "latency_ms_mean": 0.25056667,
+            "latency_ms_median": 0.2198,
+            "latency_ms_max": 0.50929999,
+            "latency_ms_stdev": 0.0784031
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04672341,
+            "mse_mean": 0.05057105,
+            "mse_median": 0.05090374,
+            "mse_max": 0.05421568,
+            "mse_stdev": 0.00195062
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.33333334,
+            "accuracy_mean": 0.41015626,
+            "accuracy_median": 0.40104167,
+            "accuracy_max": 0.51041669,
+            "accuracy_stdev": 0.04756809
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.32020001,
+            "latency_ms_mean": 0.47485,
+            "latency_ms_median": 0.39655,
+            "latency_ms_max": 1.2615,
+            "latency_ms_stdev": 0.21499913
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03218474,
+            "mse_mean": 0.0361132,
+            "mse_median": 0.03591495,
+            "mse_max": 0.04003377,
+            "mse_stdev": 0.0019129
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.30208334,
+            "accuracy_mean": 0.41883682,
+            "accuracy_median": 0.42708334,
+            "accuracy_max": 0.51041669,
+            "accuracy_stdev": 0.05311294
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.569,
+            "latency_ms_mean": 0.85327083,
+            "latency_ms_median": 0.7944,
+            "latency_ms_max": 1.46680001,
+            "latency_ms_stdev": 0.25688426
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 42,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.03532797,
+        "best_baseline_mse_mean": 0.03739911,
+        "best_baseline_to_hpp_mse_ratio": 1.05862607,
+        "hpp_accuracy_mean": 0.45399306,
+        "best_baseline_accuracy_mean": 0.43402779,
+        "hpp_accuracy_minus_best_baseline": 0.01996527,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 607.736,
+        "mlp_final_loss": 0.00944008,
+        "gru_final_loss": 0.0077287,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02970439,
+            "mse_mean": 0.03532797,
+            "mse_median": 0.03506827,
+            "mse_max": 0.04034552,
+            "mse_stdev": 0.00306394
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.375,
+            "accuracy_mean": 0.45399306,
+            "accuracy_median": 0.45833334,
+            "accuracy_max": 0.54166669,
+            "accuracy_stdev": 0.04637329
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3255,
+            "latency_ms_mean": 0.43797084,
+            "latency_ms_median": 0.38605001,
+            "latency_ms_max": 0.82850001,
+            "latency_ms_stdev": 0.11420707
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03346884,
+            "mse_mean": 0.03928289,
+            "mse_median": 0.03963252,
+            "mse_max": 0.04304727,
+            "mse_stdev": 0.00253881
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.375,
+            "accuracy_mean": 0.43402779,
+            "accuracy_median": 0.42708334,
+            "accuracy_max": 0.53125,
+            "accuracy_stdev": 0.0409433
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.20380001,
+            "latency_ms_mean": 0.25286667,
+            "latency_ms_median": 0.2369,
+            "latency_ms_max": 0.39860001,
+            "latency_ms_stdev": 0.05252747
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04599723,
+            "mse_mean": 0.05054427,
+            "mse_median": 0.0511317,
+            "mse_max": 0.0534875,
+            "mse_stdev": 0.00203206
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.34375,
+            "accuracy_mean": 0.41710071,
+            "accuracy_median": 0.41666669,
+            "accuracy_max": 0.5,
+            "accuracy_stdev": 0.03987062
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.32139999,
+            "latency_ms_mean": 0.46769167,
+            "latency_ms_median": 0.40955,
+            "latency_ms_max": 1.08449999,
+            "latency_ms_stdev": 0.17051699
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03431153,
+            "mse_mean": 0.03739911,
+            "mse_median": 0.03784113,
+            "mse_max": 0.03995043,
+            "mse_stdev": 0.00174305
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.32291669,
+            "accuracy_mean": 0.39105904,
+            "accuracy_median": 0.38020834,
+            "accuracy_max": 0.5,
+            "accuracy_stdev": 0.04797956
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.5891,
+            "latency_ms_mean": 0.86207083,
+            "latency_ms_median": 0.67835,
+            "latency_ms_max": 1.77690001,
+            "latency_ms_stdev": 0.37351862
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 77,
+        "best_mse_baseline": "nearest_centroid",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.0347254,
+        "best_baseline_mse_mean": 0.03797129,
+        "best_baseline_to_hpp_mse_ratio": 1.09347308,
+        "hpp_accuracy_mean": 0.46137154,
+        "best_baseline_accuracy_mean": 0.44878473,
+        "hpp_accuracy_minus_best_baseline": 0.01258681,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 629.576,
+        "mlp_final_loss": 0.00964822,
+        "gru_final_loss": 0.00776781,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02752228,
+            "mse_mean": 0.0347254,
+            "mse_median": 0.03542461,
+            "mse_max": 0.03860717,
+            "mse_stdev": 0.0027858
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.40625,
+            "accuracy_mean": 0.46137154,
+            "accuracy_median": 0.44791669,
+            "accuracy_max": 0.57291669,
+            "accuracy_stdev": 0.04360085
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.34109999,
+            "latency_ms_mean": 0.4608625,
+            "latency_ms_median": 0.3819,
+            "latency_ms_max": 0.9428,
+            "latency_ms_stdev": 0.16746654
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03015964,
+            "mse_mean": 0.03797129,
+            "mse_median": 0.03726154,
+            "mse_max": 0.04559654,
+            "mse_stdev": 0.00376084
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.32291669,
+            "accuracy_mean": 0.44878473,
+            "accuracy_median": 0.46354167,
+            "accuracy_max": 0.57291669,
+            "accuracy_stdev": 0.05899891
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.2081,
+            "latency_ms_mean": 0.27091666,
+            "latency_ms_median": 0.23999999,
+            "latency_ms_max": 0.58349999,
+            "latency_ms_stdev": 0.09871177
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04215259,
+            "mse_mean": 0.0473482,
+            "mse_median": 0.04776408,
+            "mse_max": 0.05133944,
+            "mse_stdev": 0.00219402
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.33333334,
+            "accuracy_mean": 0.41710071,
+            "accuracy_median": 0.41666669,
+            "accuracy_max": 0.55208337,
+            "accuracy_stdev": 0.0522623
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.32220001,
+            "latency_ms_mean": 0.4550625,
+            "latency_ms_median": 0.3905,
+            "latency_ms_max": 1.1425,
+            "latency_ms_stdev": 0.21601801
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03514196,
+            "mse_mean": 0.03875909,
+            "mse_median": 0.03910198,
+            "mse_max": 0.0417008,
+            "mse_stdev": 0.00178368
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.32291669,
+            "accuracy_mean": 0.40842015,
+            "accuracy_median": 0.40104167,
+            "accuracy_max": 0.52083337,
+            "accuracy_stdev": 0.0565544
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.5786,
+            "latency_ms_mean": 0.72212917,
+            "latency_ms_median": 0.6342,
+            "latency_ms_max": 1.22460001,
+            "latency_ms_stdev": 0.17479937
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 101,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "one_pass_mlp",
+        "hpp_mse_mean": 0.03340371,
+        "best_baseline_mse_mean": 0.03768224,
+        "best_baseline_to_hpp_mse_ratio": 1.12808547,
+        "hpp_accuracy_mean": 0.48003473,
+        "best_baseline_accuracy_mean": 0.43489584,
+        "hpp_accuracy_minus_best_baseline": 0.04513889,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 648.281,
+        "mlp_final_loss": 0.00994189,
+        "gru_final_loss": 0.00745449,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02835531,
+            "mse_mean": 0.03340371,
+            "mse_median": 0.03398937,
+            "mse_max": 0.03890055,
+            "mse_stdev": 0.00278261
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.39583334,
+            "accuracy_mean": 0.48003473,
+            "accuracy_median": 0.47395834,
+            "accuracy_max": 0.5625,
+            "accuracy_stdev": 0.04439831
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3347,
+            "latency_ms_mean": 0.5002,
+            "latency_ms_median": 0.4226,
+            "latency_ms_max": 1.20319999,
+            "latency_ms_stdev": 0.22625361
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.0328524,
+            "mse_mean": 0.03932018,
+            "mse_median": 0.03989179,
+            "mse_max": 0.04544647,
+            "mse_stdev": 0.00384534
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.33333334,
+            "accuracy_mean": 0.43142362,
+            "accuracy_median": 0.42187501,
+            "accuracy_max": 0.54166669,
+            "accuracy_stdev": 0.0609652
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.189,
+            "latency_ms_mean": 0.33850417,
+            "latency_ms_median": 0.2276,
+            "latency_ms_max": 1.18019999,
+            "latency_ms_stdev": 0.23195397
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04563822,
+            "mse_mean": 0.04942294,
+            "mse_median": 0.04949078,
+            "mse_max": 0.05426503,
+            "mse_stdev": 0.00221058
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.35416669,
+            "accuracy_mean": 0.43489584,
+            "accuracy_median": 0.42708334,
+            "accuracy_max": 0.55208337,
+            "accuracy_stdev": 0.05756891
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3213,
+            "latency_ms_mean": 0.4742,
+            "latency_ms_median": 0.33615,
+            "latency_ms_max": 1.4581,
+            "latency_ms_stdev": 0.33427474
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03490604,
+            "mse_mean": 0.03768224,
+            "mse_median": 0.03778811,
+            "mse_max": 0.0407657,
+            "mse_stdev": 0.00129159
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.35416669,
+            "accuracy_mean": 0.40060765,
+            "accuracy_median": 0.39583334,
+            "accuracy_max": 0.46875,
+            "accuracy_stdev": 0.0364718
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.5864,
+            "latency_ms_mean": 0.79822083,
+            "latency_ms_median": 0.64445,
+            "latency_ms_max": 2.1505,
+            "latency_ms_stdev": 0.37331309
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 133,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.03462764,
+        "best_baseline_mse_mean": 0.03753739,
+        "best_baseline_to_hpp_mse_ratio": 1.08402969,
+        "hpp_accuracy_mean": 0.46744793,
+        "best_baseline_accuracy_mean": 0.43098959,
+        "hpp_accuracy_minus_best_baseline": 0.03645834,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 647.592,
+        "mlp_final_loss": 0.01003615,
+        "gru_final_loss": 0.008082,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02949474,
+            "mse_mean": 0.03462764,
+            "mse_median": 0.03433862,
+            "mse_max": 0.04296993,
+            "mse_stdev": 0.00275295
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.34375,
+            "accuracy_mean": 0.46744793,
+            "accuracy_median": 0.46875,
+            "accuracy_max": 0.54166669,
+            "accuracy_stdev": 0.04204005
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.32180001,
+            "latency_ms_mean": 0.50197917,
+            "latency_ms_median": 0.3728,
+            "latency_ms_max": 1.0458,
+            "latency_ms_stdev": 0.24704194
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03425093,
+            "mse_mean": 0.03940383,
+            "mse_median": 0.03988029,
+            "mse_max": 0.04633502,
+            "mse_stdev": 0.00289746
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.33333334,
+            "accuracy_mean": 0.43098959,
+            "accuracy_median": 0.42708334,
+            "accuracy_max": 0.51041669,
+            "accuracy_stdev": 0.04502043
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.1872,
+            "latency_ms_mean": 0.23577917,
+            "latency_ms_median": 0.2088,
+            "latency_ms_max": 0.41930001,
+            "latency_ms_stdev": 0.0668748
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04643454,
+            "mse_mean": 0.05030254,
+            "mse_median": 0.04961262,
+            "mse_max": 0.0556212,
+            "mse_stdev": 0.00250672
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.30208334,
+            "accuracy_mean": 0.41623265,
+            "accuracy_median": 0.43229167,
+            "accuracy_max": 0.5,
+            "accuracy_stdev": 0.0490973
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3169,
+            "latency_ms_mean": 0.50585833,
+            "latency_ms_median": 0.35195,
+            "latency_ms_max": 1.36620001,
+            "latency_ms_stdev": 0.29194167
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03432434,
+            "mse_mean": 0.03753739,
+            "mse_median": 0.03772012,
+            "mse_max": 0.03921444,
+            "mse_stdev": 0.00149981
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.3125,
+            "accuracy_mean": 0.41406251,
+            "accuracy_median": 0.40104167,
+            "accuracy_max": 0.57291669,
+            "accuracy_stdev": 0.06044711
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.5938,
+            "latency_ms_mean": 1.01160833,
+            "latency_ms_median": 0.73770001,
+            "latency_ms_max": 2.33649999,
+            "latency_ms_stdev": 0.52339205
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 144,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.03420779,
+        "best_baseline_mse_mean": 0.03703042,
+        "best_baseline_to_hpp_mse_ratio": 1.08251425,
+        "hpp_accuracy_mean": 0.47222224,
+        "best_baseline_accuracy_mean": 0.4513889,
+        "hpp_accuracy_minus_best_baseline": 0.02083334,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 634.049,
+        "mlp_final_loss": 0.01027099,
+        "gru_final_loss": 0.00694768,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02947103,
+            "mse_mean": 0.03420779,
+            "mse_median": 0.03515613,
+            "mse_max": 0.04066727,
+            "mse_stdev": 0.00294941
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.375,
+            "accuracy_mean": 0.47222224,
+            "accuracy_median": 0.45833334,
+            "accuracy_max": 0.54166669,
+            "accuracy_stdev": 0.04479501
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.327,
+            "latency_ms_mean": 0.46022083,
+            "latency_ms_median": 0.3865,
+            "latency_ms_max": 1.3726,
+            "latency_ms_stdev": 0.21464817
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03354116,
+            "mse_mean": 0.03830394,
+            "mse_median": 0.03769644,
+            "mse_max": 0.04399802,
+            "mse_stdev": 0.00350298
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.36458334,
+            "accuracy_mean": 0.4513889,
+            "accuracy_median": 0.45833334,
+            "accuracy_max": 0.53125,
+            "accuracy_stdev": 0.05326261
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.2021,
+            "latency_ms_mean": 0.28835417,
+            "latency_ms_median": 0.25979999,
+            "latency_ms_max": 0.49380001,
+            "latency_ms_stdev": 0.07777808
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04346157,
+            "mse_mean": 0.0465249,
+            "mse_median": 0.04629826,
+            "mse_max": 0.05273654,
+            "mse_stdev": 0.00199071
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.32291669,
+            "accuracy_mean": 0.41493057,
+            "accuracy_median": 0.41145834,
+            "accuracy_max": 0.51041669,
+            "accuracy_stdev": 0.04775163
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3224,
+            "latency_ms_mean": 0.38882083,
+            "latency_ms_median": 0.3553,
+            "latency_ms_max": 0.76600001,
+            "latency_ms_stdev": 0.10630009
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.0337936,
+            "mse_mean": 0.03703042,
+            "mse_median": 0.03721168,
+            "mse_max": 0.03924414,
+            "mse_stdev": 0.00142492
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.32291669,
+            "accuracy_mean": 0.39930557,
+            "accuracy_median": 0.39583334,
+            "accuracy_max": 0.5,
+            "accuracy_stdev": 0.04715513
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.6045,
+            "latency_ms_mean": 0.73739584,
+            "latency_ms_median": 0.72450001,
+            "latency_ms_max": 0.96230001,
+            "latency_ms_stdev": 0.09723646
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 199,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.03464704,
+        "best_baseline_mse_mean": 0.03695327,
+        "best_baseline_to_hpp_mse_ratio": 1.06656355,
+        "hpp_accuracy_mean": 0.46180557,
+        "best_baseline_accuracy_mean": 0.44531251,
+        "hpp_accuracy_minus_best_baseline": 0.01649306,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 628.691,
+        "mlp_final_loss": 0.01013289,
+        "gru_final_loss": 0.00759265,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.0278702,
+            "mse_mean": 0.03464704,
+            "mse_median": 0.03498907,
+            "mse_max": 0.03899012,
+            "mse_stdev": 0.00315852
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.39583334,
+            "accuracy_mean": 0.46180557,
+            "accuracy_median": 0.45833334,
+            "accuracy_max": 0.57291669,
+            "accuracy_stdev": 0.04882631
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3306,
+            "latency_ms_mean": 0.47659583,
+            "latency_ms_median": 0.37260001,
+            "latency_ms_max": 1.6263,
+            "latency_ms_stdev": 0.27673769
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03308335,
+            "mse_mean": 0.03861653,
+            "mse_median": 0.03884552,
+            "mse_max": 0.04371621,
+            "mse_stdev": 0.00286947
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.35416669,
+            "accuracy_mean": 0.44531251,
+            "accuracy_median": 0.44270834,
+            "accuracy_max": 0.54166669,
+            "accuracy_stdev": 0.04701318
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.19169999,
+            "latency_ms_mean": 0.25282084,
+            "latency_ms_median": 0.2099,
+            "latency_ms_max": 0.7189,
+            "latency_ms_stdev": 0.12242434
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04263693,
+            "mse_mean": 0.04565413,
+            "mse_median": 0.04565698,
+            "mse_max": 0.04966222,
+            "mse_stdev": 0.00185575
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.35416669,
+            "accuracy_mean": 0.41840279,
+            "accuracy_median": 0.42187501,
+            "accuracy_max": 0.51041669,
+            "accuracy_stdev": 0.04140163
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3115,
+            "latency_ms_mean": 0.47158333,
+            "latency_ms_median": 0.33274999,
+            "latency_ms_max": 1.4318,
+            "latency_ms_stdev": 0.33943115
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03373444,
+            "mse_mean": 0.03695327,
+            "mse_median": 0.0373581,
+            "mse_max": 0.04054325,
+            "mse_stdev": 0.00189965
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.29166669,
+            "accuracy_mean": 0.41102432,
+            "accuracy_median": 0.43229167,
+            "accuracy_max": 0.52083337,
+            "accuracy_stdev": 0.06309942
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.58959999,
+            "latency_ms_mean": 0.86189167,
+            "latency_ms_median": 0.65725,
+            "latency_ms_max": 2.28089999,
+            "latency_ms_stdev": 0.42594467
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 256,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.03352828,
+        "best_baseline_mse_mean": 0.03757985,
+        "best_baseline_to_hpp_mse_ratio": 1.12084038,
+        "hpp_accuracy_mean": 0.47656251,
+        "best_baseline_accuracy_mean": 0.43619793,
+        "hpp_accuracy_minus_best_baseline": 0.04036458,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 592.67,
+        "mlp_final_loss": 0.00965885,
+        "gru_final_loss": 0.00765965,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02714211,
+            "mse_mean": 0.03352828,
+            "mse_median": 0.03469803,
+            "mse_max": 0.03846964,
+            "mse_stdev": 0.00327886
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.39583334,
+            "accuracy_mean": 0.47656251,
+            "accuracy_median": 0.46354167,
+            "accuracy_max": 0.58333337,
+            "accuracy_stdev": 0.05278066
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3381,
+            "latency_ms_mean": 0.48569583,
+            "latency_ms_median": 0.38029999,
+            "latency_ms_max": 1.3546,
+            "latency_ms_stdev": 0.28609832
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03325957,
+            "mse_mean": 0.0391239,
+            "mse_median": 0.03883423,
+            "mse_max": 0.04598,
+            "mse_stdev": 0.00293872
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.33333334,
+            "accuracy_mean": 0.43619793,
+            "accuracy_median": 0.4375,
+            "accuracy_max": 0.52083337,
+            "accuracy_stdev": 0.04379877
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.1875,
+            "latency_ms_mean": 0.2774125,
+            "latency_ms_median": 0.214,
+            "latency_ms_max": 0.6495,
+            "latency_ms_stdev": 0.14033121
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04567574,
+            "mse_mean": 0.0485751,
+            "mse_median": 0.0481922,
+            "mse_max": 0.05194841,
+            "mse_stdev": 0.00156322
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.34375,
+            "accuracy_mean": 0.39409723,
+            "accuracy_median": 0.38541669,
+            "accuracy_max": 0.46875,
+            "accuracy_stdev": 0.04285738
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3159,
+            "latency_ms_mean": 0.42250417,
+            "latency_ms_median": 0.335,
+            "latency_ms_max": 1.2308,
+            "latency_ms_stdev": 0.20127147
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03301505,
+            "mse_mean": 0.03757985,
+            "mse_median": 0.03711024,
+            "mse_max": 0.0406155,
+            "mse_stdev": 0.00184912
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.32291669,
+            "accuracy_mean": 0.40625001,
+            "accuracy_median": 0.41145834,
+            "accuracy_max": 0.47916669,
+            "accuracy_stdev": 0.04668591
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.5911,
+            "latency_ms_mean": 0.87072917,
+            "latency_ms_median": 0.6318,
+            "latency_ms_max": 2.2508,
+            "latency_ms_stdev": 0.47748547
+          }
+        }
+      }
+    },
+    {
+      "comparison": {
+        "seed": 314,
+        "best_mse_baseline": "gru_refiner",
+        "best_accuracy_baseline": "nearest_centroid",
+        "hpp_mse_mean": 0.0349697,
+        "best_baseline_mse_mean": 0.03667259,
+        "best_baseline_to_hpp_mse_ratio": 1.04869616,
+        "hpp_accuracy_mean": 0.46223959,
+        "best_baseline_accuracy_mean": 0.45529515,
+        "hpp_accuracy_minus_best_baseline": 0.00694444,
+        "hpp_won_mse": true,
+        "hpp_won_accuracy": true,
+        "peak_allocated_mb": 39.811,
+        "peak_reserved_mb": 58.0,
+        "elapsed_ms": 588.48,
+        "mlp_final_loss": 0.00980815,
+        "gru_final_loss": 0.00718561,
+        "hpp_locked_classes": 24,
+        "mlp_parameters": 295872,
+        "gru_parameters": 813888,
+        "hpp_memory_values": 4632
+      },
+      "results": {
+        "hpp_developmental_memory": {
+          "name": "hpp_developmental_memory",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03017351,
+            "mse_mean": 0.0349697,
+            "mse_median": 0.03525409,
+            "mse_max": 0.04199979,
+            "mse_stdev": 0.00306359
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.34375,
+            "accuracy_mean": 0.46223959,
+            "accuracy_median": 0.45833334,
+            "accuracy_max": 0.53125,
+            "accuracy_stdev": 0.0478647
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.3518,
+            "latency_ms_mean": 0.50299167,
+            "latency_ms_median": 0.4481,
+            "latency_ms_max": 1.46609999,
+            "latency_ms_stdev": 0.22958938
+          }
+        },
+        "nearest_centroid": {
+          "name": "nearest_centroid",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.02956044,
+            "mse_mean": 0.03810112,
+            "mse_median": 0.03803478,
+            "mse_max": 0.0446329,
+            "mse_stdev": 0.00412636
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.36458334,
+            "accuracy_mean": 0.45529515,
+            "accuracy_median": 0.45312501,
+            "accuracy_max": 0.58333337,
+            "accuracy_stdev": 0.0628372
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.19989999,
+            "latency_ms_mean": 0.26505,
+            "latency_ms_median": 0.22935,
+            "latency_ms_max": 0.58990001,
+            "latency_ms_stdev": 0.09163552
+          }
+        },
+        "one_pass_mlp": {
+          "name": "one_pass_mlp",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.04288794,
+            "mse_mean": 0.04682573,
+            "mse_median": 0.0464477,
+            "mse_max": 0.05116186,
+            "mse_stdev": 0.00199975
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.32291669,
+            "accuracy_mean": 0.41362848,
+            "accuracy_median": 0.41666669,
+            "accuracy_max": 0.51041669,
+            "accuracy_stdev": 0.0442453
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.31579999,
+            "latency_ms_mean": 0.37404583,
+            "latency_ms_median": 0.33125,
+            "latency_ms_max": 0.5907,
+            "latency_ms_stdev": 0.0787837
+          }
+        },
+        "gru_refiner": {
+          "name": "gru_refiner",
+          "mse": {
+            "runs": 24,
+            "mse_min": 0.03426989,
+            "mse_mean": 0.03667259,
+            "mse_median": 0.03635062,
+            "mse_max": 0.03960383,
+            "mse_stdev": 0.00157638
+          },
+          "accuracy": {
+            "runs": 24,
+            "accuracy_min": 0.3125,
+            "accuracy_mean": 0.40885418,
+            "accuracy_median": 0.41145834,
+            "accuracy_max": 0.48958334,
+            "accuracy_stdev": 0.04281149
+          },
+          "latency_ms": {
+            "runs": 24,
+            "latency_ms_min": 0.5765,
+            "latency_ms_mean": 0.825625,
+            "latency_ms_median": 0.68655,
+            "latency_ms_max": 1.87199999,
+            "latency_ms_stdev": 0.31000551
+          }
+        }
+      }
+    }
+  ],
+  "boundary": "Synthetic attractor-recovery mechanism sweep only."
+}

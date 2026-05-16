@@ -163,6 +163,7 @@ HPP can model profile-dependent redlines: the same noise does not mean the same 
 Artifact:
 
 - `docs/named-baseline-comparison-summary.md`
+- `docs/named-baseline-sweep-summary.md`
 
 Result:
 
@@ -174,10 +175,14 @@ Result:
 - Best baseline accuracy: `0.40277779`
 - HPP stored memory values: `4,632`
 - GRU parameters: `813,888`
+- Ten-seed HPP MSE win rate: `1.0`
+- Ten-seed HPP accuracy win rate: `1.0`
+- Ten-seed best-baseline-to-HPP MSE ratio mean: `1.08667083x`
+- Ten-seed HPP accuracy minus best baseline mean: `0.02821181`
 
 Buyer-safe claim:
 
-On a bounded synthetic attractor-recovery task, HPP developmental memory beat the best named baseline in mean recovery error and pathway recognition accuracy while using a much smaller stored-memory footprint.
+On a bounded synthetic attractor-recovery task, HPP developmental memory beat the best named baseline in mean recovery error and pathway recognition accuracy while using a much smaller stored-memory footprint. The first plugged sweep repeated that win across ten seeds.
 
 ## Current Boundaries
 
