@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-05-16T13:09:19.604829+00:00",
+  "python": "3.12.9",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "allocated_mb": 0.0,
+  "reserved_mb": 0.0,
+  "seed": 14,
+  "dim": 128,
+  "batch": 32,
+  "threshold": 14,
+  "noise": 0.24,
+  "recall_noise": 0.78,
+  "distractor_ratio": 0.3,
+  "elapsed_ms": 95.92,
+  "stage_reports": [
+    {
+      "name": "infant",
+      "target_events": 3,
+      "distractor_events": 1,
+      "hpp_exposures": 3,
+      "hpp_locked": false,
+      "hpp_protection": 0.0
+    },
+    {
+      "name": "nurture",
+      "target_events": 9,
+      "distractor_events": 1,
+      "hpp_exposures": 12,
+      "hpp_locked": false,
+      "hpp_protection": 0.0
+    },
+    {
+      "name": "scaffold",
+      "target_events": 7,
+      "distractor_events": 0,
+      "hpp_exposures": 19,
+      "hpp_locked": true,
+      "hpp_protection": 0.805
+    }
+  ],
+  "clean_context": {
+    "shifted_context": false,
+    "noisy": {
+      "runs": 25,
+      "mse_min": 0.59134889,
+      "mse_mean": 0.60999114,
+      "mse_median": 0.61014324,
+      "mse_max": 0.6424793
+    },
+    "flat": {
+      "runs": 25,
+      "mse_min": 0.0629655,
+      "mse_mean": 0.06502179,
+      "mse_median": 0.06485299,
+      "mse_max": 0.06800737
+    },
+    "hpp": {
+      "runs": 25,
+      "mse_min": 0.03000616,
+      "mse_mean": 0.03097806,
+      "mse_median": 0.03094499,
+      "mse_max": 0.03183509
+    },
+    "hpp_vs_flat": {
+      "runs": 25,
+      "ratio_min": 2.05320391,
+      "ratio_mean": 2.09890963,
+      "ratio_median": 2.1010181,
+      "ratio_max": 2.13872139
+    }
+  },
+  "shifted_context": {
+    "shifted_context": true,
+    "noisy": {
+      "runs": 25,
+      "mse_min": 0.596466,
+      "mse_mean": 0.63825938,
+      "mse_median": 0.64079493,
+      "mse_max": 0.6573236
+    },
+    "flat": {
+      "runs": 25,
+      "mse_min": 0.0681219,
+      "mse_mean": 0.07306546,
+      "mse_median": 0.07285748,
+      "mse_max": 0.078191
+    },
+    "hpp": {
+      "runs": 25,
+      "mse_min": 0.03219642,
+      "mse_mean": 0.03631747,
+      "mse_median": 0.03670771,
+      "mse_max": 0.04147888
+    },
+    "hpp_vs_flat": {
+      "runs": 25,
+      "ratio_min": 1.86270024,
+      "ratio_mean": 2.02085768,
+      "ratio_median": 1.99238964,
+      "ratio_max": 2.20617653
+    }
+  },
+  "comparison": {
+    "flat_observations": 21,
+    "hpp_exposures": 19,
+    "hpp_locked": true,
+    "hpp_protection": 0.805,
+    "flat_prototype_mse": 0.00566856,
+    "hpp_prototype_mse": 0.01216678,
+    "clean_context_hpp_vs_flat_mean": 2.09890963,
+    "shifted_context_hpp_vs_flat_mean": 2.02085768
+  }
+}

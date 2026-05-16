@@ -116,6 +116,33 @@ Boundary:
 
 This is not yet buyer-safe conversational evidence. It needs held-out prompts, transcript logging, repetition metrics, and cleaner curriculum.
 
+## Ladder 7: Staged Developmental Curriculum Beats A Flat Prototype On A Toy Task
+
+Artifacts:
+
+- `scripts/compare_developmental_curriculum.py`
+- `docs/developmental-curriculum-summary.md`
+- `docs/developmental-curriculum-sweep-summary.md`
+- `docs/developmental-curriculum-plugged.json`
+
+Result:
+
+- HPP path reached Habit-14 protection and locked the staged pathway.
+- Clean-context HPP versus flat improvement: 2.09890963x
+- Shifted-context HPP versus flat improvement: 2.02085768x
+- Five-seed plugged sweep clean-context mean improvement: 2.200289028x
+- Five-seed plugged sweep shifted-context mean improvement: 2.08615022x
+- Five-seed Habit-14 lock rate: 5/5
+- Plugged device: NVIDIA GeForce RTX 4050 Laptop GPU
+
+Meaning:
+
+This is the first direct HPP V5 harness comparing staged developmental exposure against a flat all-at-once prototype. In this toy signal-recovery setup, staged plasticity plus Habit-14 protection recovered the target better under both clean and shifted-context probes across the first five plugged seeds.
+
+Boundary:
+
+This is mechanism evidence only. It does not prove language ability, agency, broad reasoning, or general model superiority. The next version needs stronger baselines and changed-context memory tests.
+
 ## Current Buyer-Safe Claim
 
 HPP V5 has early measured evidence for:
@@ -124,6 +151,7 @@ HPP V5 has early measured evidence for:
 - parameter reuse through shared recurrent depth
 - stronger noisy-state stabilization through repeated loops
 - Habit-14-style protected recall after repeated exposure
+- staged developmental exposure outperforming a flat prototype on a toy recovery task
 - a plausible speech-adapter path in the original branch
 
 HPP V5 should not yet claim:
@@ -136,10 +164,10 @@ HPP V5 should not yet claim:
 
 ## Next Evidence Rungs
 
-1. Add transcript logging for the original speech branch.
-2. Build a held-out speech regression suite.
-3. Measure Habit-14 memory under changed context, not only repeated identical signal.
-4. Add stress-routing harnesses that compare nurture versus sentinel behavior.
-5. Compare against named small baselines on defined tasks.
-6. Add power and CUDA memory logs for split-cycle training runs.
-
+1. Strengthen the developmental curriculum baseline and report variance more formally.
+2. Measure Habit-14 memory under changed context, not only repeated identical signal.
+3. Add transcript logging for the original speech branch.
+4. Build a held-out speech regression suite.
+5. Add stress-routing harnesses that compare nurture versus sentinel behavior.
+6. Compare against named small baselines on defined tasks.
+7. Add power and CUDA memory logs for split-cycle training runs.

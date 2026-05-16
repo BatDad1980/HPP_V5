@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-05-16T13:09:02.233073+00:00",
+  "python": "3.12.9",
+  "mode": "demo",
+  "device": "cpu",
+  "device_name": "CPU",
+  "cuda_available": true,
+  "cuda_version": null,
+  "allocated_mb": 0.0,
+  "reserved_mb": 0.0,
+  "seed": 14,
+  "dim": 128,
+  "batch": 32,
+  "threshold": 14,
+  "noise": 0.24,
+  "recall_noise": 0.78,
+  "distractor_ratio": 0.3,
+  "elapsed_ms": 30.455,
+  "stage_reports": [
+    {
+      "name": "infant",
+      "target_events": 3,
+      "distractor_events": 1,
+      "hpp_exposures": 3,
+      "hpp_locked": false,
+      "hpp_protection": 0.0
+    },
+    {
+      "name": "nurture",
+      "target_events": 9,
+      "distractor_events": 1,
+      "hpp_exposures": 12,
+      "hpp_locked": false,
+      "hpp_protection": 0.0
+    },
+    {
+      "name": "scaffold",
+      "target_events": 7,
+      "distractor_events": 0,
+      "hpp_exposures": 19,
+      "hpp_locked": true,
+      "hpp_protection": 0.805
+    }
+  ],
+  "clean_context": {
+    "shifted_context": false,
+    "noisy": {
+      "runs": 25,
+      "mse_min": 0.56634498,
+      "mse_mean": 0.60510346,
+      "mse_median": 0.60887837,
+      "mse_max": 0.62667978
+    },
+    "flat": {
+      "runs": 25,
+      "mse_min": 0.0611573,
+      "mse_mean": 0.06510592,
+      "mse_median": 0.06560844,
+      "mse_max": 0.06706369
+    },
+    "hpp": {
+      "runs": 25,
+      "mse_min": 0.02817602,
+      "mse_mean": 0.03005946,
+      "mse_median": 0.03036133,
+      "mse_max": 0.03128815
+    },
+    "hpp_vs_flat": {
+      "runs": 25,
+      "ratio_min": 2.12783847,
+      "ratio_mean": 2.16604987,
+      "ratio_median": 2.16743299,
+      "ratio_max": 2.1950675
+    }
+  },
+  "shifted_context": {
+    "shifted_context": true,
+    "noisy": {
+      "runs": 25,
+      "mse_min": 0.61384165,
+      "mse_mean": 0.63478427,
+      "mse_median": 0.63527018,
+      "mse_max": 0.65302956
+    },
+    "flat": {
+      "runs": 25,
+      "mse_min": 0.06934961,
+      "mse_mean": 0.07398272,
+      "mse_median": 0.07378646,
+      "mse_max": 0.07858674
+    },
+    "hpp": {
+      "runs": 25,
+      "mse_min": 0.03124576,
+      "mse_mean": 0.0366602,
+      "mse_median": 0.0367132,
+      "mse_max": 0.04215819
+    },
+    "hpp_vs_flat": {
+      "runs": 25,
+      "ratio_min": 1.83036309,
+      "ratio_mean": 2.03000826,
+      "ratio_median": 1.98118843,
+      "ratio_max": 2.22745094
+    }
+  },
+  "comparison": {
+    "flat_observations": 21,
+    "hpp_exposures": 19,
+    "hpp_locked": true,
+    "hpp_protection": 0.805,
+    "flat_prototype_mse": 0.00709021,
+    "hpp_prototype_mse": 0.01105745,
+    "clean_context_hpp_vs_flat_mean": 2.16604987,
+    "shifted_context_hpp_vs_flat_mean": 2.03000826
+  }
+}

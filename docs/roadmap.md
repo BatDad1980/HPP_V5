@@ -43,6 +43,7 @@
 - Identity-aware coaching prompts.
 - CPU/GPU execution mode selection.
 - CUDA diagnostics and run-budget reporting.
+- Developmental curriculum harness with flat-baseline comparison.
 - Optional speech-adapter research track with transcript logging, repetition metrics, and buyer-safe evidence boundaries.
 
 ## Phase 5: System Maturity
@@ -56,6 +57,7 @@
 - Buyer packet export.
 - Private operating-core workspace.
 - Robotics/shop integration adapters.
+- Mature-pathway extraction notes for future fixed or semi-fixed inference targets.
 
 ## Suggested Initial Stack
 
