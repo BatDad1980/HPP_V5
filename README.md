@@ -102,6 +102,7 @@ HPP is being designed for real mobile constraints: laptop, RTX 4050-class GPU, b
 - [BACL Origin And Role](docs/bacl-origin-and-role.md)
 - [Forensic Audio Origin Boundary](docs/forensic-audio-origin-boundary.md)
 - [Unitree Robotics Intake](docs/unitree-robotics-intake.md)
+- [NVIDIA Robotics Intake](docs/nvidia-robotics-intake.md)
 - [Materials Funding Brief](docs/materials-funding-brief.md)
 - [Embodied Safety Charter](docs/embodied-safety-charter.md)
 - [Robotics Adapter Spec](docs/robotics-adapter-spec.md)
