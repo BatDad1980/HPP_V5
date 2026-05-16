@@ -10,6 +10,7 @@ The goal is not to clone the whole NVIDIA ecosystem. The goal is to identify the
 - NVIDIA Isaac ROS organization: https://github.com/NVIDIA-ISAAC-ROS
 - NVIDIA Isaac organization: https://github.com/nvidia-isaac
 - Isaac Lab: https://github.com/isaac-sim/IsaacLab
+- TensorRT: https://github.com/NVIDIA/TensorRT
 - Triton Inference Server: https://github.com/triton-inference-server/server
 
 ## Highest-Fit Repositories
@@ -33,6 +34,29 @@ Isaac Lab is the best candidate for a future HPP simulation curriculum. It can p
 Boundary:
 
 Isaac Lab depends on Isaac Sim and GPU-heavy simulation. It is not the first thing to run on the current laptop during battery/mobile work. It belongs in the plugged-in desktop/server or Jetson lab roadmap.
+
+### TensorRT
+
+Repository: https://github.com/NVIDIA/TensorRT
+
+Fit:
+
+- optimized deep-learning inference on NVIDIA GPUs
+- ONNX parser and TensorRT plugin source
+- sample applications and Python package path
+- Jetson/Thor/aarch64 build paths
+
+HPP use:
+
+TensorRT is the optimized inference path underneath HPP-adjacent models, perception models, and future state estimators. HPP should not depend on TensorRT for the core hypothesis, but TensorRT can make deployment practical once an HPP component or perception model is ready to freeze into an engine.
+
+Important 2026 note:
+
+The public TensorRT repository warns that TensorRT 11.0 is coming in 2026 Q2 with API cleanup. Migration notes include strongly typed networks, explicit quantization, and IPluginV3. HPP should avoid building around deprecated weak typing, implicit quantization, or older plugin APIs.
+
+Boundary:
+
+TensorRT is inference optimization, not training, cognition, or safety. It belongs after a model/interface is stable enough to export, benchmark, and freeze.
 
 ### Isaac ROS
 
@@ -210,5 +234,11 @@ Add an `nvidia_robotics_readiness` benchmark later that does not install or run 
 - hardware cutoff plan
 - replayable trajectory logging
 - Jetson target notes
+- TensorRT inference notes
+- license and dependency boundary
 
 This keeps the next step buyer-safe, laptop-safe, and aligned with the current HPP evidence harness.
+
+Status:
+
+The first `nvidia_robotics_readiness` benchmark has been added to the HPP eval harness. It is a checklist benchmark only. It does not install NVIDIA SDKs, import Isaac Lab, run TensorRT, connect ROS 2, or command hardware.

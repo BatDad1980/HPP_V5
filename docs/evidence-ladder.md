@@ -360,24 +360,32 @@ Artifacts:
 - `docs/eval-harness.md`
 - `docs/evals/latest/robotics_adapter_safety.json`
 - `docs/evals/latest/robotics_adapter_safety.trajectories.jsonl`
+- `docs/evals/latest/nvidia_robotics_readiness.json`
+- `docs/evals/latest/nvidia_robotics_readiness.trajectories.jsonl`
 
 Result:
 
 - Registered benchmark: `robotics_adapter_safety`
-- Score: `1.0`
+- Registered benchmark: `nvidia_robotics_readiness`
+- Robotics adapter safety score: `1.0`
 - Scenario count: `7`
 - Uncertain or unsafe scenario count: `5`
 - Protected uncertain or unsafe count: `5`
+- NVIDIA robotics readiness score: `0.9`
+- NVIDIA readiness present checks: `8`
+- NVIDIA readiness partial checks: `2`
+- NVIDIA readiness missing checks: `0`
 - Live hardware connected: `False`
 - Unitree SDK imported: `False`
+- NVIDIA SDK imported: `False`
 
 Meaning:
 
-HPP V5 now has a benchmark registry with named benchmark execution, aggregate JSON output, replayable JSONL trajectories, and explicit boundary language. This starts converting separate evidence scripts into a buyer-safe evaluation layer.
+HPP V5 now has a benchmark registry with named benchmark execution, aggregate JSON output, replayable JSONL trajectories, and explicit boundary language. This starts converting separate evidence scripts and integration plans into a buyer-safe evaluation layer.
 
 Boundary:
 
-This first harness only wraps the synthetic robotics adapter. It does not yet run every HPP evidence rung, perform external benchmark comparisons, or evaluate language quality.
+This first harness wraps the synthetic robotics adapter and an NVIDIA robotics readiness checklist. It does not yet run every HPP evidence rung, perform external benchmark comparisons, import Isaac Lab, run TensorRT, connect ROS 2, command hardware, or evaluate language quality.
 
 ## Current Buyer-Safe Claim
 

@@ -12,7 +12,7 @@ result = await run_benchmark(
 print(f"robotics_adapter_safety: {result.score:.1%}")
 
 results = await run_benchmarks(
-    ["robotics_adapter_safety"],
+    ["robotics_adapter_safety", "nvidia_robotics_readiness"],
     BenchmarkConfig(save_dir="docs/evals/latest"),
 )
 ```
@@ -44,6 +44,27 @@ It does not measure:
 - Unitree SDK integration
 - ROS2, MuJoCo, IsaacLab, or live hardware
 - production safety
+
+## NVIDIA Readiness Benchmark
+
+`nvidia_robotics_readiness`
+
+This benchmark grades whether the current NVIDIA robotics integration plan contains the safety and deployment boundaries HPP needs before using Isaac Lab, Isaac ROS, TensorRT, Triton, Jetson, or live hardware.
+
+It measures checklist readiness only:
+
+- simulation-first path
+- no direct motor command path
+- telemetry schema
+- Sentinel stop mapping
+- operator override mapping
+- hardware cutoff plan
+- replayable trajectory logging
+- Jetson target notes
+- TensorRT inference notes
+- license and dependency boundary
+
+It does not install NVIDIA SDKs, import Isaac Lab, run TensorRT, connect ROS 2, or command hardware.
 
 Run it with:
 

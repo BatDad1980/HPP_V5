@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-05-16T23:12:27.469797+00:00",
+  "python": "3.12.9",
+  "benchmark": "nvidia_robotics_readiness",
+  "score": 0.9,
+  "check_count": 10,
+  "present_count": 8,
+  "partial_count": 2,
+  "missing_count": 0,
+  "live_hardware_connected": false,
+  "nvidia_sdk_imported": false,
+  "config": {
+    "save_dir": "docs\\evals\\latest",
+    "max_concurrency": 4,
+    "overwrite": true,
+    "include_trajectories": true,
+    "metadata": {
+      "invoked_by": "scripts/run_hpp_eval.py"
+    }
+  },
+  "checks": [
+    {
+      "name": "simulation_first_path",
+      "status": "present",
+      "evidence": "Isaac Lab is identified as the HPP simulation curriculum layer before physical actuation."
+    },
+    {
+      "name": "no_direct_motor_command_path",
+      "status": "present",
+      "evidence": "The intake requires HPP to stay above Isaac ROS/cuMotion and begin with telemetry-only bridges."
+    },
+    {
+      "name": "telemetry_schema",
+      "status": "partial",
+      "evidence": "The robotics adapter has a synthetic telemetry schema; NVIDIA ROS topic mappings are not implemented yet."
+    },
+    {
+      "name": "sentinel_stop_mapping",
+      "status": "present",
+      "evidence": "The robotics adapter maps instability, joint error, unknown state, and low power to protective actions."
+    },
+    {
+      "name": "operator_override_mapping",
+      "status": "present",
+      "evidence": "Operator override routes to operator_control with Sentinel required."
+    },
+    {
+      "name": "hardware_cutoff_plan",
+      "status": "partial",
+      "evidence": "The intake requires a low-power supervised actuator bench with hardware cutoff, but no bench wiring exists yet."
+    },
+    {
+      "name": "replayable_trajectory_logging",
+      "status": "present",
+      "evidence": "The HPP eval harness writes JSONL trajectories for robotics_adapter_safety."
+    },
+    {
+      "name": "jetson_target_notes",
+      "status": "present",
+      "evidence": "The intake places Jetson Orin/Thor as the robot-edge inference and telemetry target."
+    },
+    {
+      "name": "tensorrt_inference_notes",
+      "status": "present",
+      "evidence": "The intake identifies TensorRT as the optimized deployment path for ONNX/TensorRT engines on NVIDIA GPUs and Jetson."
+    },
+    {
+      "name": "license_and_dependency_boundary",
+      "status": "present",
+      "evidence": "The intake separates OSS repos from Isaac Sim/proprietary dependency review and avoids vendoring code."
+    }
+  ],
+  "trajectories_path": "docs\\evals\\latest\\nvidia_robotics_readiness.trajectories.jsonl",
+  "boundary": "Readiness checklist only; does not install NVIDIA SDKs, import Isaac Lab, run TensorRT, connect ROS 2, or command hardware."
+}
