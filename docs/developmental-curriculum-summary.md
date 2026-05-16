@@ -14,6 +14,8 @@ This toy harness compares a flat all-at-once prototype against staged HPP develo
 
 - Clean-context HPP/flat improvement: `2.09890963x`
 - Shifted-context HPP/flat improvement: `2.02085768x`
+- Clean-context HPP/context-aware-flat improvement: `2.09151815x`
+- Shifted-context HPP/context-aware-flat improvement: `1.95518574x`
 - HPP locked: `True`
 - HPP protection: `0.805`
 

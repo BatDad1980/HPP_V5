@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-05-16T13:25:23.537029+00:00",
+  "python": "3.12.9",
+  "mode": "plugged",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "allocated_mb": 0.0,
+  "reserved_mb": 0.0,
+  "seed": 144,
+  "dim": 128,
+  "batch": 32,
+  "threshold": 14,
+  "noise": 0.24,
+  "recall_noise": 0.78,
+  "distractor_ratio": 0.3,
+  "elapsed_ms": 52.402,
+  "stage_reports": [
+    {
+      "name": "infant",
+      "target_events": 3,
+      "distractor_events": 1,
+      "hpp_exposures": 3,
+      "hpp_locked": false,
+      "hpp_protection": 0.0
+    },
+    {
+      "name": "nurture",
+      "target_events": 9,
+      "distractor_events": 1,
+      "hpp_exposures": 12,
+      "hpp_locked": false,
+      "hpp_protection": 0.0
+    },
+    {
+      "name": "scaffold",
+      "target_events": 7,
+      "distractor_events": 0,
+      "hpp_exposures": 19,
+      "hpp_locked": true,
+      "hpp_protection": 0.805
+    }
+  ],
+  "clean_context": {
+    "shifted_context": false,
+    "noisy": {
+      "runs": 25,
+      "mse_min": 0.58831167,
+      "mse_mean": 0.60553967,
+      "mse_median": 0.60212493,
+      "mse_max": 0.63324583
+    },
+    "flat": {
+      "runs": 25,
+      "mse_min": 0.06291555,
+      "mse_mean": 0.06473268,
+      "mse_median": 0.06446868,
+      "mse_max": 0.06774398
+    },
+    "context_aware_flat": {
+      "runs": 25,
+      "mse_min": 0.0621919,
+      "mse_mean": 0.06405742,
+      "mse_median": 0.06376325,
+      "mse_max": 0.06683154
+    },
+    "hpp": {
+      "runs": 25,
+      "mse_min": 0.0283325,
+      "mse_mean": 0.02933107,
+      "mse_median": 0.02928066,
+      "mse_max": 0.03077944
+    },
+    "hpp_vs_flat": {
+      "runs": 25,
+      "ratio_min": 2.16635647,
+      "ratio_mean": 2.20699428,
+      "ratio_median": 2.20716917,
+      "ratio_max": 2.24567428
+    },
+    "hpp_vs_context_aware_flat": {
+      "runs": 25,
+      "ratio_min": 2.15488243,
+      "ratio_mean": 2.18398875,
+      "ratio_median": 2.18193041,
+      "ratio_max": 2.21563754
+    }
+  },
+  "shifted_context": {
+    "shifted_context": true,
+    "noisy": {
+      "runs": 25,
+      "mse_min": 0.61891711,
+      "mse_mean": 0.6414804,
+      "mse_median": 0.64244235,
+      "mse_max": 0.66223156
+    },
+    "flat": {
+      "runs": 25,
+      "mse_min": 0.06842154,
+      "mse_mean": 0.07371515,
+      "mse_median": 0.07464674,
+      "mse_max": 0.07769425
+    },
+    "context_aware_flat": {
+      "runs": 25,
+      "mse_min": 0.06600991,
+      "mse_mean": 0.07097584,
+      "mse_median": 0.07194429,
+      "mse_max": 0.0749156
+    },
+    "hpp": {
+      "runs": 25,
+      "mse_min": 0.03050884,
+      "mse_mean": 0.03542982,
+      "mse_median": 0.03638636,
+      "mse_max": 0.04057069
+    },
+    "hpp_vs_flat": {
+      "runs": 25,
+      "ratio_min": 1.87703372,
+      "ratio_mean": 2.09318582,
+      "ratio_median": 2.07235772,
+      "ratio_max": 2.31443685
+    },
+    "hpp_vs_context_aware_flat": {
+      "runs": 25,
+      "ratio_min": 1.81068575,
+      "ratio_mean": 2.01532336,
+      "ratio_median": 1.98824394,
+      "ratio_max": 2.2262158
+    }
+  },
+  "comparison": {
+    "flat_observations": 21,
+    "context_aware_flat_observations": 19,
+    "hpp_exposures": 19,
+    "hpp_locked": true,
+    "hpp_protection": 0.805,
+    "flat_prototype_mse": 0.00580445,
+    "context_aware_flat_prototype_mse": 0.00445391,
+    "hpp_prototype_mse": 0.00974931,
+    "clean_context_hpp_vs_flat_mean": 2.20699428,
+    "shifted_context_hpp_vs_flat_mean": 2.09318582,
+    "clean_context_hpp_vs_context_aware_flat_mean": 2.18398875,
+    "shifted_context_hpp_vs_context_aware_flat_mean": 2.01532336
+  }
+}

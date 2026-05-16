@@ -130,14 +130,19 @@ Result:
 - HPP path reached Habit-14 protection and locked the staged pathway.
 - Clean-context HPP versus flat improvement: 2.09890963x
 - Shifted-context HPP versus flat improvement: 2.02085768x
-- Five-seed plugged sweep clean-context mean improvement: 2.200289028x
-- Five-seed plugged sweep shifted-context mean improvement: 2.08615022x
-- Five-seed Habit-14 lock rate: 5/5
+- Clean-context HPP versus context-aware flat improvement: 2.09151815x
+- Shifted-context HPP versus context-aware flat improvement: 1.95518574x
+- Ten-seed plugged sweep HPP versus flat clean mean: 2.22223699x
+- Ten-seed plugged sweep HPP versus flat shifted mean: 2.10660734x
+- Ten-seed plugged sweep HPP versus context-aware flat clean mean: 2.20191598x
+- Ten-seed plugged sweep HPP versus context-aware flat shifted mean: 2.03043896x
+- Ten-seed context-aware shifted standard deviation: 0.03613556
+- Ten-seed Habit-14 lock rate: 10/10
 - Plugged device: NVIDIA GeForce RTX 4050 Laptop GPU
 
 Meaning:
 
-This is the first direct HPP V5 harness comparing staged developmental exposure against a flat all-at-once prototype. In this toy signal-recovery setup, staged plasticity plus Habit-14 protection recovered the target better under both clean and shifted-context probes across the first five plugged seeds.
+This is the first direct HPP V5 harness comparing staged developmental exposure against flat prototypes. In this toy signal-recovery setup, staged plasticity plus Habit-14 protection recovered the target better under both clean and shifted-context probes across the first ten plugged seeds. The stronger context-aware flat baseline receives oracle target/distractor labels and ignores distractor events, making it a more serious comparison than the naive flat baseline.
 
 Boundary:
 
@@ -164,10 +169,9 @@ HPP V5 should not yet claim:
 
 ## Next Evidence Rungs
 
-1. Strengthen the developmental curriculum baseline and report variance more formally.
-2. Measure Habit-14 memory under changed context, not only repeated identical signal.
-3. Add transcript logging for the original speech branch.
-4. Build a held-out speech regression suite.
-5. Add stress-routing harnesses that compare nurture versus sentinel behavior.
-6. Compare against named small baselines on defined tasks.
-7. Add power and CUDA memory logs for split-cycle training runs.
+1. Measure Habit-14 memory under changed context, not only repeated identical signal.
+2. Add transcript logging for the original speech branch.
+3. Build a held-out speech regression suite.
+4. Add stress-routing harnesses that compare nurture versus sentinel behavior.
+5. Compare against named small baselines on defined tasks.
+6. Add power and CUDA memory logs for split-cycle training runs.

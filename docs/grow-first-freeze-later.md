@@ -100,6 +100,8 @@ HPP is an upstream developmental architecture. Physical Foundation Models are a 
 
 The first HPP V5 developmental-curriculum harness now exists at `scripts/compare_developmental_curriculum.py`.
 
-It is intentionally small. It compares a flat all-at-once prototype against a staged HPP memory path with early plasticity, repeated safe exposure, Habit-14 locking, and shifted-context recall probes.
+It is intentionally small. It compares flat prototypes against a staged HPP memory path with early plasticity, repeated safe exposure, Habit-14 locking, and shifted-context recall probes.
 
 The first plugged RTX 4050 smoke run is recorded in `docs/developmental-curriculum-plugged.json`.
+
+The first ten-seed plugged sweep is summarized in `docs/developmental-curriculum-sweep-summary.md`.

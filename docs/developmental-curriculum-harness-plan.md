@@ -23,6 +23,14 @@ Does a model trained through staged plasticity, repetition, stabilization, and f
 - no maturity-dependent filtering
 - no Habit-14 protection
 
+### Context-Aware Flat Baseline
+
+- receives oracle target/distractor labels
+- ignores known distractor events
+- uses the same flat recall blend
+- has no staged maturity
+- has no Habit-14 protection
+
 ### HPP Developmental Path
 
 - infant stage: high noise, broad input, no hard filtering
@@ -121,4 +129,4 @@ Initial implementation status:
 - Default mode is `demo`, which forces CPU for a safe smoke run.
 - Use `--mode plugged` only when the machine is powered and CUDA use is intentional.
 - First `demo` and `plugged` runs have been captured under `docs/`.
-- First five-seed plugged sweep is summarized in `docs/developmental-curriculum-sweep-summary.md`.
+- First ten-seed plugged sweep with a context-aware flat baseline is summarized in `docs/developmental-curriculum-sweep-summary.md`.

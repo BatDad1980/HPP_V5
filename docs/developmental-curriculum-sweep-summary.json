@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-05-16T13:25:36.280010+00:00",
+  "pattern": "docs/developmental-curriculum-plugged-seed-*.json",
+  "mode": "plugged",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "lock_count": 10,
+  "rows": [
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-101.json",
+      "seed": 101,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.27694201,
+      "hpp_vs_flat_shifted": 2.12874872,
+      "hpp_vs_context_flat_clean": 2.24671439,
+      "hpp_vs_context_flat_shifted": 2.03739148
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-133.json",
+      "seed": 133,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.2818037,
+      "hpp_vs_flat_shifted": 2.13359157,
+      "hpp_vs_context_flat_clean": 2.2377176,
+      "hpp_vs_context_flat_shifted": 2.02236966
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-14.json",
+      "seed": 14,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.09890963,
+      "hpp_vs_flat_shifted": 2.02085768,
+      "hpp_vs_context_flat_clean": 2.09151815,
+      "hpp_vs_context_flat_shifted": 1.95518574
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-144.json",
+      "seed": 144,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.20699428,
+      "hpp_vs_flat_shifted": 2.09318582,
+      "hpp_vs_context_flat_clean": 2.18398875,
+      "hpp_vs_context_flat_shifted": 2.01532336
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-199.json",
+      "seed": 199,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.28357421,
+      "hpp_vs_flat_shifted": 2.14301017,
+      "hpp_vs_context_flat_clean": 2.26268289,
+      "hpp_vs_context_flat_shifted": 2.07410327
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-21.json",
+      "seed": 21,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.2274636,
+      "hpp_vs_flat_shifted": 2.07077445,
+      "hpp_vs_context_flat_clean": 2.20215769,
+      "hpp_vs_context_flat_shifted": 2.00804799
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-256.json",
+      "seed": 256,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.22065039,
+      "hpp_vs_flat_shifted": 2.1674531,
+      "hpp_vs_context_flat_clean": 2.19996737,
+      "hpp_vs_context_flat_shifted": 2.06691066
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-314.json",
+      "seed": 314,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.22790222,
+      "hpp_vs_flat_shifted": 2.09808163,
+      "hpp_vs_context_flat_clean": 2.21766564,
+      "hpp_vs_context_flat_shifted": 2.02765789
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-42.json",
+      "seed": 42,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.15610204,
+      "hpp_vs_flat_shifted": 2.07322928,
+      "hpp_vs_context_flat_clean": 2.1527342,
+      "hpp_vs_context_flat_shifted": 2.02287084
+    },
+    {
+      "file": "docs\\developmental-curriculum-plugged-seed-77.json",
+      "seed": 77,
+      "mode": "plugged",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "hpp_locked": true,
+      "hpp_protection": 0.805,
+      "hpp_vs_flat_clean": 2.24202786,
+      "hpp_vs_flat_shifted": 2.13714097,
+      "hpp_vs_context_flat_clean": 2.22401315,
+      "hpp_vs_context_flat_shifted": 2.07452869
+    }
+  ],
+  "metrics": {
+    "hpp_vs_flat_clean": {
+      "runs": 10,
+      "min": 2.09890963,
+      "mean": 2.22223699,
+      "median": 2.22768291,
+      "max": 2.28357421,
+      "stdev": 0.05828332
+    },
+    "hpp_vs_flat_shifted": {
+      "runs": 10,
+      "min": 2.02085768,
+      "mean": 2.10660734,
+      "median": 2.11341518,
+      "max": 2.1674531,
+      "stdev": 0.04369336
+    },
+    "hpp_vs_context_flat_clean": {
+      "runs": 10,
+      "min": 2.09151815,
+      "mean": 2.20191598,
+      "median": 2.20991166,
+      "max": 2.26268289,
+      "stdev": 0.0501657
+    },
+    "hpp_vs_context_flat_shifted": {
+      "runs": 10,
+      "min": 1.95518574,
+      "mean": 2.03043896,
+      "median": 2.02526436,
+      "max": 2.07452869,
+      "stdev": 0.03613556
+    }
+  }
+}

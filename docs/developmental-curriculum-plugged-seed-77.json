@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T13:10:29.158713+00:00",
+  "generated_at": "2026-05-16T13:25:17.108735+00:00",
   "python": "3.12.9",
   "mode": "plugged",
   "device": "cuda:0",
@@ -15,7 +15,7 @@
   "noise": 0.24,
   "recall_noise": 0.78,
   "distractor_ratio": 0.3,
-  "elapsed_ms": 53.907,
+  "elapsed_ms": 56.137,
   "stage_reports": [
     {
       "name": "infant",
@@ -58,6 +58,13 @@
       "mse_median": 0.06516062,
       "mse_max": 0.06689371
     },
+    "context_aware_flat": {
+      "runs": 25,
+      "mse_min": 0.06284021,
+      "mse_mean": 0.06447709,
+      "mse_median": 0.0644176,
+      "mse_max": 0.06631021
+    },
     "hpp": {
       "runs": 25,
       "mse_min": 0.02806454,
@@ -71,6 +78,13 @@
       "ratio_mean": 2.24202786,
       "ratio_median": 2.24593372,
       "ratio_max": 2.27194274
+    },
+    "hpp_vs_context_aware_flat": {
+      "runs": 25,
+      "ratio_min": 2.18442858,
+      "ratio_mean": 2.22401315,
+      "ratio_median": 2.22505085,
+      "ratio_max": 2.25689425
     }
   },
   "shifted_context": {
@@ -89,6 +103,13 @@
       "mse_median": 0.07265712,
       "mse_max": 0.07728979
     },
+    "context_aware_flat": {
+      "runs": 25,
+      "mse_min": 0.06271198,
+      "mse_mean": 0.07002711,
+      "mse_median": 0.07045026,
+      "mse_max": 0.07479338
+    },
     "hpp": {
       "runs": 25,
       "mse_min": 0.02745065,
@@ -102,16 +123,27 @@
       "ratio_mean": 2.13714097,
       "ratio_median": 2.10485645,
       "ratio_max": 2.35638933
+    },
+    "hpp_vs_context_aware_flat": {
+      "runs": 25,
+      "ratio_min": 1.82629314,
+      "ratio_mean": 2.07452869,
+      "ratio_median": 2.04781354,
+      "ratio_max": 2.2845354
     }
   },
   "comparison": {
     "flat_observations": 21,
+    "context_aware_flat_observations": 19,
     "hpp_exposures": 19,
     "hpp_locked": true,
     "hpp_protection": 0.805,
     "flat_prototype_mse": 0.00516169,
+    "context_aware_flat_prototype_mse": 0.00409507,
     "hpp_prototype_mse": 0.00876788,
     "clean_context_hpp_vs_flat_mean": 2.24202786,
-    "shifted_context_hpp_vs_flat_mean": 2.13714097
+    "shifted_context_hpp_vs_flat_mean": 2.13714097,
+    "clean_context_hpp_vs_context_aware_flat_mean": 2.22401315,
+    "shifted_context_hpp_vs_context_aware_flat_mean": 2.07452869
   }
 }

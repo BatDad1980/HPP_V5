@@ -50,6 +50,36 @@ class FlatPrototype:
 
 
 @dataclass
+class ContextAwareFlatPrototype:
+    """Single-phase learner with oracle target/distractor context labels.
+
+    This is a stronger baseline than FlatPrototype because it does not learn
+    from known distractor events. It still lacks maturity-dependent protection.
+    """
+
+    prototype: torch.Tensor
+    observations: int = 0
+    learning_rate: float = 0.18
+
+    def observe(self, sample: torch.Tensor, *, is_target_context: bool) -> None:
+        if not is_target_context:
+            return
+
+        batch_mean = sample.mean(dim=0, keepdim=True)
+        if self.observations == 0:
+            self.prototype = batch_mean.detach().clone()
+        else:
+            self.prototype = (
+                (1.0 - self.learning_rate) * self.prototype
+                + self.learning_rate * batch_mean.detach()
+            )
+        self.observations += 1
+
+    def recall(self, noisy: torch.Tensor, blend: float) -> torch.Tensor:
+        return noisy * (1.0 - blend) + self.prototype * blend
+
+
+@dataclass
 class DevelopmentalMemory:
     """HPP-style staged learner with maturity-dependent protection."""
 
@@ -107,6 +137,7 @@ def summarize(values: list[float], prefix: str) -> dict[str, float | int]:
 def observe_stage(
     *,
     flat: FlatPrototype,
+    context_flat: ContextAwareFlatPrototype,
     hpp: DevelopmentalMemory,
     target: torch.Tensor,
     distractor: torch.Tensor,
@@ -124,6 +155,7 @@ def observe_stage(
         sample = base + torch.randn_like(base) * noise
 
         flat.observe(sample)
+        context_flat.observe(sample, is_target_context=not is_distractor)
         hpp.observe(sample, is_target_context=not is_distractor)
 
         if is_distractor:
@@ -143,6 +175,7 @@ def observe_stage(
 def evaluate(
     *,
     flat: FlatPrototype,
+    context_flat: ContextAwareFlatPrototype,
     hpp: DevelopmentalMemory,
     target: torch.Tensor,
     distractor: torch.Tensor,
@@ -153,9 +186,11 @@ def evaluate(
     trials: int,
 ) -> dict[str, object]:
     flat_errors = []
+    context_flat_errors = []
     hpp_errors = []
     noisy_errors = []
-    improvement_ratios = []
+    hpp_vs_flat_ratios = []
+    hpp_vs_context_flat_ratios = []
 
     for trial in range(trials):
         shift = 0.12 * torch.sin(torch.tensor(float(trial), device=target.device))
@@ -164,23 +199,29 @@ def evaluate(
         noisy = clean.expand(batch, -1) + distractor_pressure + torch.randn(batch, target.shape[1], device=target.device) * recall_noise
 
         flat_out = flat.recall(noisy, blend=flat_blend)
+        context_flat_out = context_flat.recall(noisy, blend=flat_blend)
         hpp_out = hpp.recall(noisy)
 
         noisy_error = mse(noisy, clean.expand(batch, -1))
         flat_error = mse(flat_out, clean.expand(batch, -1))
+        context_flat_error = mse(context_flat_out, clean.expand(batch, -1))
         hpp_error = mse(hpp_out, clean.expand(batch, -1))
 
         noisy_errors.append(noisy_error)
         flat_errors.append(flat_error)
+        context_flat_errors.append(context_flat_error)
         hpp_errors.append(hpp_error)
-        improvement_ratios.append(flat_error / max(hpp_error, 1e-12))
+        hpp_vs_flat_ratios.append(flat_error / max(hpp_error, 1e-12))
+        hpp_vs_context_flat_ratios.append(context_flat_error / max(hpp_error, 1e-12))
 
     return {
         "shifted_context": shifted_context,
         "noisy": summarize(noisy_errors, "mse"),
         "flat": summarize(flat_errors, "mse"),
+        "context_aware_flat": summarize(context_flat_errors, "mse"),
         "hpp": summarize(hpp_errors, "mse"),
-        "hpp_vs_flat": summarize(improvement_ratios, "ratio"),
+        "hpp_vs_flat": summarize(hpp_vs_flat_ratios, "ratio"),
+        "hpp_vs_context_aware_flat": summarize(hpp_vs_context_flat_ratios, "ratio"),
     }
 
 
@@ -203,6 +244,8 @@ def write_summary(result: dict[str, object], output_path: Path) -> None:
         "",
         f"- Clean-context HPP/flat improvement: `{comparison['clean_context_hpp_vs_flat_mean']}x`",
         f"- Shifted-context HPP/flat improvement: `{comparison['shifted_context_hpp_vs_flat_mean']}x`",
+        f"- Clean-context HPP/context-aware-flat improvement: `{comparison['clean_context_hpp_vs_context_aware_flat_mean']}x`",
+        f"- Shifted-context HPP/context-aware-flat improvement: `{comparison['shifted_context_hpp_vs_context_aware_flat_mean']}x`",
         f"- HPP locked: `{comparison['hpp_locked']}`",
         f"- HPP protection: `{comparison['hpp_protection']}`",
         "",
@@ -246,6 +289,10 @@ def main() -> None:
         prototype=torch.zeros_like(target),
         learning_rate=args.flat_learning_rate,
     )
+    context_flat = ContextAwareFlatPrototype(
+        prototype=torch.zeros_like(target),
+        learning_rate=args.flat_learning_rate,
+    )
     hpp = DevelopmentalMemory(
         prototype=torch.zeros_like(target),
         threshold=args.threshold,
@@ -285,6 +332,7 @@ def main() -> None:
                 "name": stage["name"],
                 **observe_stage(
                     flat=flat,
+                    context_flat=context_flat,
                     hpp=hpp,
                     target=target,
                     distractor=distractor,
@@ -297,6 +345,7 @@ def main() -> None:
 
     clean_eval = evaluate(
         flat=flat,
+        context_flat=context_flat,
         hpp=hpp,
         target=target,
         distractor=distractor,
@@ -308,6 +357,7 @@ def main() -> None:
     )
     shifted_eval = evaluate(
         flat=flat,
+        context_flat=context_flat,
         hpp=hpp,
         target=target,
         distractor=distractor,
@@ -345,13 +395,17 @@ def main() -> None:
         "shifted_context": shifted_eval,
         "comparison": {
             "flat_observations": flat.observations,
+            "context_aware_flat_observations": context_flat.observations,
             "hpp_exposures": hpp.exposures,
             "hpp_locked": hpp.locked,
             "hpp_protection": round(hpp.protection, 4),
             "flat_prototype_mse": round(mse(flat.prototype, target), 8),
+            "context_aware_flat_prototype_mse": round(mse(context_flat.prototype, target), 8),
             "hpp_prototype_mse": round(mse(hpp.prototype, target), 8),
             "clean_context_hpp_vs_flat_mean": clean_eval["hpp_vs_flat"]["ratio_mean"],
             "shifted_context_hpp_vs_flat_mean": shifted_eval["hpp_vs_flat"]["ratio_mean"],
+            "clean_context_hpp_vs_context_aware_flat_mean": clean_eval["hpp_vs_context_aware_flat"]["ratio_mean"],
+            "shifted_context_hpp_vs_context_aware_flat_mean": shifted_eval["hpp_vs_context_aware_flat"]["ratio_mean"],
         },
     }
 
